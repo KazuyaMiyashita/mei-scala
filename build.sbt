@@ -10,6 +10,7 @@ lazy val commonSettings = Seq(
   Compile / console / scalacOptions ~= { _.filterNot(_ == "-Wunused:all") },
   scalafmtOnCompile := true,
 )
+
 lazy val root = project
   .in(file("."))
   .settings(
@@ -17,6 +18,16 @@ lazy val root = project
     version      := "0.1.0-SNAPSHOT",
     scalaVersion := scala3Version,
     commonSettings,
-    libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "2.4.0",
+    libraryDependencies += "org.scalatest"          %% "scalatest-funsuite" % "3.2.19" % Test,
+    libraryDependencies += "org.scala-lang.modules" %% "scala-xml"          % "2.4.0",
+  )
+
+lazy val generator = project
+  .in(file("generator"))
+  .settings(
+    name         := "mei-generator",
+    scalaVersion := scala3Version,
+    commonSettings,
+    libraryDependencies += "org.scala-lang.modules" %% "scala-xml"          % "2.4.0",
     libraryDependencies += "org.scalatest"          %% "scalatest-funsuite" % "3.2.19" % Test,
   )
