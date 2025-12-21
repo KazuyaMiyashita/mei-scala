@@ -1,0 +1,11 @@
+package meibasic.mei.data.eventrel
+
+/**
+ * Location of musical material relative to a symbol other than a staff.
+ * 
+ * Ident: data.EVENTREL.basic
+ * Module: MEI
+ */
+trait Basic  {
+
+} 

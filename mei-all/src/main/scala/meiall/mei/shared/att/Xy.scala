@@ -1,0 +1,11 @@
+package meiall.mei.shared.att
+
+/**
+ * Output coordinate attributes. Some elements may have their exact rendered *output* coordinates recorded. x and y attributes indicate where to place the rendered output. Recording the coordinates of a feature in a facsimile requires the use of the facs attribute.
+ * 
+ * Ident: att.xy
+ * Module: MEI.shared
+ */
+trait Xy  {
+
+} 

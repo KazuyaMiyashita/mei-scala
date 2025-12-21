@@ -1,0 +1,11 @@
+package meiall.mei.visual.att.mensural
+
+/**
+ * Used by staffDef and scoreDef to provide default values for attributes in the visual domain related to mensuration.
+ * 
+ * Ident: att.mensural.vis
+ * Module: MEI.visual
+ */
+trait Vis  {
+
+} 

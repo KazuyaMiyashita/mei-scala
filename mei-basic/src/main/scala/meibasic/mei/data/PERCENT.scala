@@ -1,0 +1,11 @@
+package meibasic.mei.data
+
+/**
+ * Positive decimal number plus '%',i.e., [0-9]+(\.[0-9]*)?%.
+ * 
+ * Ident: data.PERCENT
+ * Module: MEI
+ */
+trait PERCENT  {
+
+} 

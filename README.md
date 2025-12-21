@@ -2,17 +2,6 @@
 
 This project transforms the schema of the [Music Encoding Initiative (MEI)](https://music-encoding.org/) into Scala classes, making it accessible for programmatic manipulation.
 
-The schema used is **Version 5.1** from the [MEI Schema repository](https://github.com/music-encoding/schema).
-
-The models are provided as separate packages, corresponding to each of the following MEI Profiles:
-
-  * [mei-CMN](./src/main/scala/mei/cmn/MeiModel.scala)
-  * [mei-Mensural](./src/main/scala/mei/mensural/MeiModel.scala)
-  * [mei-Neumes](./src/main/scala/mei/neumes/MeiModel.scala)
-  * [mei-Basic](./src/main/scala/mei/basic/MeiModel.scala)
-  * [mei-all](./src/main/scala/mei/all/MeiModel.scala)
-  * [mei-all\_anyStart](./src/main/scala/mei/allanystart/MeiModel.scala)
-
 ## Usage
 
 ### Creating MEI Structures
@@ -20,54 +9,88 @@ The models are provided as separate packages, corresponding to each of the follo
 An MEI structure can be created as a case class hierarchy, as shown below:
 
 ```scala
-import mei.cmn.{List => MeiList, String => MeiString, *}
+import meibasic.Syntax.*
 
-Mei(
-  MeiHead(
-    FileDesc(
-      TitleStmt(
-        Title(
-          "My Works" :: Nil
-        ) :: Nil
-      ) :: Nil
-    ) :: Nil
-  ) :: 
-  Music(
-    /* ... */
-  )
-  :: Nil
+val meiStructure = mei()(
+  meiHead()(
+    fileDesc()(
+      titleStmt()(
+        title()("My Works"),
+      ),
+    ),
+  ),
+  music()(
+    body()(
+      mdiv()(
+        score()(
+          scoreDef(`meter.count` = "4", `meter.unit` = "4", keysig = "1f")(),
+          section()(
+            measure(n = "1")(
+              staff(n = "1")(
+                layer(n = "1")(
+                  mRest(`xml:id` = "d1e220")(),
+                ),
+              ),
+            ),
+            measure(n = "1")(
+              staff(n = "1")(
+                layer(n = "1")(
+                  rest(`xml:id` = "d1e282", dur = "4")(),
+                  note(`xml:id` = "d1e290", pname = "g", oct = "3", dur = "4", `stem.dir` = "down")(),
+                  note(`xml:id` = "d1e304", pname = "g", oct = "3", dur = "4", `stem.dir` = "down")(),
+                  note(`xml:id` = "d1e318", pname = "b", oct = "3", dur = "4", `stem.dir` = "down")(),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
 )
+
+meiStructure.validate() // true
 ```
 
-### Reading and Writing MEI XML Files
+### XML Conversion
 
-The library also supports reading from and writing to MEI XML files.
+You can load MEI structures from XML and convert them back to XML using the `MeiXML` object.
 
 ```scala
+import meibasic.MeiXML
 import scala.xml.XML
-import mei.cmn.parser.MeiParser
-import mei.cmn.writer.MeiWriter
 
-val inputFile = "/path/to/your/input.mei"
-val outputPath = "/path/to/save/output.mei"
+// Load from XML file
+val xml = XML.loadFile("path/to/file.mei")
+val mei = MeiXML.load(xml)
 
-// Reading: XML file -> Scala Case Class
-val meiRoot = MeiParser.parse(XML.loadFile(inputFile))
+// Manipulate the MEI structure...
 
-// Writing: Scala Case Class -> XML File
-XML.save(outputPath, MeiWriter.toXml(meiRoot), "UTF-8", true, null)
+// Convert back to XML
+val newXml = MeiXML.toXml(mei)
+XML.save("path/to/output.mei", newXml, "UTF-8", true)
 ```
 
------
+### Transforming MEI Structures
 
-### Customizing MEI
+You can use the `transform` method to apply a rewrite rule to the entire MEI tree. This is useful for tasks like renaming elements or modifying specific nodes recursively.
 
-MEI is customizable (see: [https://music-encoding.org/guidelines/v5/content/introduction.html\#meiCustomization](https://music-encoding.org/guidelines/v5/content/introduction.html#meiCustomization)).
+```scala
+import meiall.Element
+import meiall.mei.shared.{Dir, Tempo}
 
-By referring to [https://github.com/music-encoding/music-encoding](https://github.com/music-encoding/music-encoding) or [https://github.com/music-encoding/docker-mei](https://github.com/music-encoding/docker-mei) to create your own custom Relax NG files (`.rng`), you can then modify and run the **[generator subproject](./generator/src/main/scala/Main.scala)** to obtain the corresponding Scala files.
+// Define a transformation rule
+val rule: Element => Element = {
+  // Convert Dir elements to Tempo if they contain "Allegro"
+  case d: Dir if d.elements.exists {
+    case meiall.Text(t) => t.contains("Allegro")
+    case _ => false
+  } =>
+    Tempo(d.elements, d.attributes)
+    
+  case other => other
+}
 
-> (Note: The customized MEI schemas `mei-zero.rng` and `mei-minimum.rng` are for this project's development purposes only and can be ignored.)
-
-### Important Note
-
-**Compilation is extremely slow.** On the development environment, it takes approximately 200 seconds. This is due to the large number of class definitions and the fact that all MEI Profiles are grouped into a single project. This issue is currently under improvement, but be aware that **the interface is highly likely to change significantly** during this process.
+// Apply the transformation to the entire tree
+val transformedMei = mei.transform(rule)
+```

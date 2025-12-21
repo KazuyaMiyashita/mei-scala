@@ -1,0 +1,11 @@
+package meiall.mei.data
+
+/**
+ * Captures any notehead "modifiers"; that is, symbols added to the notehead, such as slashes, lines, text, and enclosures, etc.
+ * 
+ * Ident: data.NOTEHEADMODIFIER
+ * Module: MEI
+ */
+trait NOTEHEADMODIFIER  {
+
+} 

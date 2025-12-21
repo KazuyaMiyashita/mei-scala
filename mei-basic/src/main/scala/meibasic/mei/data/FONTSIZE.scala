@@ -1,0 +1,11 @@
+package meibasic.mei.data
+
+/**
+ * Font size expressions.
+ * 
+ * Ident: data.FONTSIZE
+ * Module: MEI
+ */
+trait FONTSIZE  {
+
+} 
