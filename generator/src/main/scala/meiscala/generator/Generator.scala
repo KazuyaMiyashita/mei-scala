@@ -42,10 +42,34 @@ object Generator {
          |  def validate(): Boolean = true
          |  def children: scala.List[Element]
          |  def withChildren(newChildren: scala.List[Element]): Element
+         |
+         |  /**
+         |   * Recursively applies a transformation rule to this element and its descendants.
+         |   * The rule is applied bottom-up (children are transformed before the parent).
+         |   *
+         |   * @param rule A function to rewrite elements.
+         |   * @return A new element tree with the transformation applied.
+         |   */
          |  def transform(rule: Element => Element): Element = {
          |    val newChildren = this.children.map(_.transform(rule))
          |    val newNode = this.withChildren(newChildren)
          |    rule(newNode)
+         |  }
+         |
+         |  /**
+         |   * Returns an iterator over this element and all its descendants in pre-order (depth-first).
+         |   * This enables collection operations like foreach, map, and find on the entire subtree.
+         |   */
+         |  def iterator: Iterator[Element] = {
+         |    Iterator(this) ++ children.iterator.flatMap(_.iterator)
+         |  }
+         |
+         |  /**
+         |   * Traverses the entire subtree and collects elements that match the specified partial function.
+         |   * Useful for extracting specific nodes (e.g., Measures) from the hierarchy.
+         |   */
+         |  def collect[T <: Element](pf: PartialFunction[Element, T]): Iterator[T] = {
+         |    iterator.collect(pf)
          |  }
          |}
          |
