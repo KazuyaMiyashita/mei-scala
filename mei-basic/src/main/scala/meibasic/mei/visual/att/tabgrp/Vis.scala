@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.tabgrp
  * Ident: att.tabGrp.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.shared.att.visualoffset.Ho {
+trait Vis  extends _root_.meibasic.mei.shared.att.visualoffset.Ho {
 
 } 

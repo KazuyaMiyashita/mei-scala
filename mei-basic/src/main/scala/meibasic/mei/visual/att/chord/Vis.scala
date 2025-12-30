@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.chord
  * Ident: att.chord.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.shared.att.Color with meibasic.mei.shared.att.EnclosingChars with meibasic.mei.externalsymbols.att.ExtSym with meibasic.mei.shared.att.Stems with meibasic.mei.shared.att.visualoffset.Ho with meibasic.mei.cmn.att.chord.vis.Cmn {
+trait Vis  extends _root_.meibasic.mei.shared.att.Color with _root_.meibasic.mei.shared.att.EnclosingChars with _root_.meibasic.mei.externalsymbols.att.ExtSym with _root_.meibasic.mei.shared.att.Stems with _root_.meibasic.mei.shared.att.visualoffset.Ho with _root_.meibasic.mei.cmn.att.chord.vis.Cmn {
 
 } 

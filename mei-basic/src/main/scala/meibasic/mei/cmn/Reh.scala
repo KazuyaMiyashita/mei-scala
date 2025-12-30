@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: reh
  * Module: MEI.cmn
  */
-case class Reh(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.Lang with meibasic.mei.cmn.att.reh.Log with meibasic.mei.visual.att.reh.Vis with meibasic.mei.cmn.model.controleventlike.Cmn {
+case class Reh(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.Lang with _root_.meibasic.mei.cmn.att.reh.Log with _root_.meibasic.mei.visual.att.reh.Vis with _root_.meibasic.mei.cmn.model.controleventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("color", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "ho", "label", "letterspacing", "lineheight", "place", "staff", "startid", "tstamp", "type", "vo", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

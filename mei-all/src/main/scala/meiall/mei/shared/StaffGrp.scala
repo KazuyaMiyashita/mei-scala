@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: staffGrp
  * Module: MEI.shared
  */
-case class StaffGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.MetadataPointing with meiall.mei.analytical.att.staffgrp.Anl with meiall.mei.gestural.att.staffgrp.Ges with meiall.mei.shared.att.staffgrp.Log with meiall.mei.visual.att.staffgrp.Vis with meiall.mei.shared.model.StaffGrpLike {
+case class StaffGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.MetadataPointing with _root_.meiall.mei.analytical.att.staffgrp.Anl with _root_.meiall.mei.gestural.att.staffgrp.Ges with _root_.meiall.mei.shared.att.staffgrp.Log with _root_.meiall.mei.visual.att.staffgrp.Vis with _root_.meiall.mei.shared.model.StaffGrpLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("bar.len", "bar.method", "bar.place", "bar.thru", "class", "copyof", "corresp", "decls", "facs", "follows", "instr", "label", "n", "next", "precedes", "prev", "resp", "sameas", "symbol", "synch", "type", "visible", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

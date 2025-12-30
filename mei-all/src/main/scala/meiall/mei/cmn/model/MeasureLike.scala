@@ -6,6 +6,6 @@ package meiall.mei.cmn.model
  * Ident: model.measureLike
  * Module: MEI.cmn
  */
-trait MeasureLike  extends meiall.mei.cmn.model.sectionpart.Cmn {
+trait MeasureLike  extends _root_.meiall.mei.cmn.model.sectionpart.Cmn {
 
 } 

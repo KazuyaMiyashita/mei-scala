@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: turn
  * Module: MEI.cmnOrnaments
  */
-case class Turn(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.turn.Anl with meiall.mei.gestural.att.turn.Ges with meiall.mei.cmnornaments.att.turn.Log with meiall.mei.visual.att.turn.Vis with meiall.mei.cmnornaments.model.ornamentlike.Cmn {
+case class Turn(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.turn.Anl with _root_.meiall.mei.gestural.att.turn.Ges with _root_.meiall.mei.cmnornaments.att.turn.Log with _root_.meiall.mei.visual.att.turn.Vis with _root_.meiall.mei.cmnornaments.model.ornamentlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("accidlower", "accidlower.ges", "accidupper", "accidupper.ges", "altsym", "class", "color", "copyof", "corresp", "delayed", "enclose", "evaluate", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "form", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "lineheight", "n", "next", "part", "partstaff", "place", "plist", "precedes", "prev", "resp", "sameas", "staff", "startid", "synch", "to", "tstamp", "tstamp.ges", "tstamp.real", "type", "vgrp", "vo", "when", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

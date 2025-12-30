@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: measure
  * Module: MEI.cmn
  */
-case class Measure(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.MetadataPointing with meiall.mei.shared.att.Pointing with meiall.mei.analytical.att.measure.Anl with meiall.mei.gestural.att.measure.Ges with meiall.mei.cmn.att.measure.Log with meiall.mei.visual.att.measure.Vis with meiall.mei.shared.att.TargetEval with meiall.mei.cmn.model.MeasureLike {
+case class Measure(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.MetadataPointing with _root_.meiall.mei.shared.att.Pointing with _root_.meiall.mei.analytical.att.measure.Anl with _root_.meiall.mei.gestural.att.measure.Ges with _root_.meiall.mei.cmn.att.measure.Log with _root_.meiall.mei.visual.att.measure.Vis with _root_.meiall.mei.shared.att.TargetEval with _root_.meiall.mei.cmn.model.MeasureLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("bar.len", "bar.method", "bar.place", "class", "control", "copyof", "corresp", "decls", "evaluate", "facs", "follows", "join", "label", "left", "metcon", "n", "next", "precedes", "prev", "resp", "right", "sameas", "synch", "target", "targettype", "tstamp.ges", "tstamp.real", "type", "when", "width", "xlink:actuate", "xlink:role", "xlink:show", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

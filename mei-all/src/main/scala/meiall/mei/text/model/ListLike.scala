@@ -6,6 +6,6 @@ package meiall.mei.text.model
  * Ident: model.listLike
  * Module: MEI.text
  */
-trait ListLike  extends meiall.mei.shared.model.ParacontentPart with meiall.mei.shared.model.TextComponentLike {
+trait ListLike  extends _root_.meiall.mei.shared.model.ParacontentPart with _root_.meiall.mei.shared.model.TextComponentLike {
 
 } 

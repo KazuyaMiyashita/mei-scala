@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: source
  * Module: MEI.header
  */
-case class Source(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Authorized with meiall.mei.shared.att.Bibl with meiall.mei.msdesc.att.ComponentType with meiall.mei.shared.att.DataPointing with meiall.mei.shared.att.Pointing with meiall.mei.header.att.RecordType with meiall.mei.shared.att.TargetEval {
+case class Source(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Authorized with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.msdesc.att.ComponentType with _root_.meiall.mei.shared.att.DataPointing with _root_.meiall.mei.shared.att.Pointing with _root_.meiall.mei.header.att.RecordType with _root_.meiall.mei.shared.att.TargetEval {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "auth", "auth.uri", "class", "codedval", "comptype", "copyof", "corresp", "data", "evaluate", "follows", "label", "n", "next", "precedes", "prev", "recordtype", "resp", "sameas", "synch", "target", "targettype", "type", "xlink:actuate", "xlink:role", "xlink:show", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

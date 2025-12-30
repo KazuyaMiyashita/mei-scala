@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.slur
  * Ident: att.slur.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.shared.att.Color with meibasic.mei.shared.att.Curvature with meibasic.mei.shared.att.linerend.Base with meibasic.mei.shared.att.VisualOffset with meibasic.mei.shared.att.VisualOffset2 {
+trait Vis  extends _root_.meibasic.mei.shared.att.Color with _root_.meibasic.mei.shared.att.Curvature with _root_.meibasic.mei.shared.att.linerend.Base with _root_.meibasic.mei.shared.att.VisualOffset with _root_.meibasic.mei.shared.att.VisualOffset2 {
 
 } 

@@ -6,6 +6,6 @@ package meiall.mei.analytical.att.note
  * Ident: att.note.anl
  * Module: MEI.analytical
  */
-trait Anl  extends meiall.mei.shared.att.Accidental with meiall.mei.shared.att.Articulation with meiall.mei.analytical.att.HarmonicFunction with meiall.mei.analytical.att.IntervalMelodic with meiall.mei.analytical.att.MelodicFunction with meiall.mei.cmn.att.note.anl.Cmn with meiall.mei.mensural.att.note.anl.Mensural with meiall.mei.shared.att.FermataPresent with meiall.mei.analytical.att.PitchClass with meiall.mei.analytical.att.Solfa {
+trait Anl  extends _root_.meiall.mei.shared.att.Accidental with _root_.meiall.mei.shared.att.Articulation with _root_.meiall.mei.analytical.att.HarmonicFunction with _root_.meiall.mei.analytical.att.IntervalMelodic with _root_.meiall.mei.analytical.att.MelodicFunction with _root_.meiall.mei.cmn.att.note.anl.Cmn with _root_.meiall.mei.mensural.att.note.anl.Mensural with _root_.meiall.mei.shared.att.FermataPresent with _root_.meiall.mei.analytical.att.PitchClass with _root_.meiall.mei.analytical.att.Solfa {
 
 } 

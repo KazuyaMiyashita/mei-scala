@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: harm
  * Module: MEI.harmony
  */
-case class Harm(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.harm.Anl with meiall.mei.gestural.att.harm.Ges with meiall.mei.harmony.att.harm.Log with meiall.mei.visual.att.harm.Vis with meiall.mei.harmony.model.HarmLike {
+case class Harm(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.harm.Anl with _root_.meiall.mei.gestural.att.harm.Ges with _root_.meiall.mei.harmony.att.harm.Log with _root_.meiall.mei.visual.att.harm.Vis with _root_.meiall.mei.harmony.model.HarmLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("chordref", "class", "color", "copyof", "corresp", "dots.ges", "dur", "dur.ges", "dur.metrical", "dur.ppq", "dur.real", "dur.recip", "endho", "endid", "endto", "evaluate", "extender", "facs", "follows", "form", "ho", "inth", "label", "layer", "lendsym", "lendsym.size", "lform", "lsegs", "lstartsym", "lstartsym.size", "lwidth", "n", "next", "part", "partstaff", "place", "plist", "precedes", "prev", "rendgrid", "resp", "sameas", "staff", "startho", "startid", "startto", "synch", "to", "tstamp", "tstamp.ges", "tstamp.real", "tstamp2", "tstamp2.ges", "tstamp2.real", "type", "vgrp", "vo", "when", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

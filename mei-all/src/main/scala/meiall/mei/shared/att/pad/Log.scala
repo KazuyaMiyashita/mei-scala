@@ -6,6 +6,6 @@ package meiall.mei.shared.att.pad
  * Ident: att.pad.log
  * Module: MEI.shared
  */
-trait Log  extends meiall.mei.shared.att.Event with meiall.mei.shared.att.Width {
+trait Log  extends _root_.meiall.mei.shared.att.Event with _root_.meiall.mei.shared.att.Width {
 
 } 

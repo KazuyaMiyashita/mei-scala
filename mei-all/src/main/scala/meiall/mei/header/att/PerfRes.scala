@@ -6,6 +6,6 @@ package meiall.mei.header.att
  * Ident: att.perfRes
  * Module: MEI.header
  */
-trait PerfRes  extends meiall.mei.header.att.perfres.Basic with meiall.mei.shared.att.Transposition {
+trait PerfRes  extends _root_.meiall.mei.header.att.perfres.Basic with _root_.meiall.mei.shared.att.Transposition {
 
 } 

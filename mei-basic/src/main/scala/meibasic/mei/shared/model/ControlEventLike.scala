@@ -6,6 +6,6 @@ package meibasic.mei.shared.model
  * Ident: model.controlEventLike
  * Module: MEI.shared
  */
-trait ControlEventLike  extends meibasic.mei.cmn.model.MeasurePart {
+trait ControlEventLike  extends _root_.meibasic.mei.cmn.model.MeasurePart {
 
 } 

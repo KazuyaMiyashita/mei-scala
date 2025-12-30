@@ -6,6 +6,6 @@ package meiall.mei.text.model
  * Ident: model.quoteLike
  * Module: MEI.text
  */
-trait QuoteLike  extends meiall.mei.shared.model.ParacontentPart with meiall.mei.shared.model.TextComponentLike {
+trait QuoteLike  extends _root_.meiall.mei.shared.model.ParacontentPart with _root_.meiall.mei.shared.model.TextComponentLike {
 
 } 

@@ -6,6 +6,6 @@ package meiall.mei.cmn.att.harppedal
  * Ident: att.harpPedal.log
  * Module: MEI.cmn
  */
-trait Log  extends meiall.mei.shared.att.ControlEvent with meiall.mei.shared.att.StartEndId {
+trait Log  extends _root_.meiall.mei.shared.att.ControlEvent with _root_.meiall.mei.shared.att.StartEndId {
 
 } 

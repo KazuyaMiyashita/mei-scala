@@ -6,6 +6,6 @@ package meibasic.mei.cmn.att.rest.vis
  * Ident: att.rest.vis.cmn
  * Module: MEI.cmn
  */
-trait Cmn  extends meibasic.mei.cmn.att.BeamSecondary {
+trait Cmn  extends _root_.meibasic.mei.cmn.att.BeamSecondary {
 
 } 

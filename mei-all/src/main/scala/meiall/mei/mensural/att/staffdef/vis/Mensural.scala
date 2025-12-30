@@ -6,6 +6,6 @@ package meiall.mei.mensural.att.staffdef.vis
  * Ident: att.staffDef.vis.mensural
  * Module: MEI.mensural
  */
-trait Mensural  extends meiall.mei.visual.att.mensural.Vis {
+trait Mensural  extends _root_.meiall.mei.visual.att.mensural.Vis {
 
 } 

@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: ornam
  * Module: MEI.shared
  */
-case class Ornam(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.ornam.Anl with meiall.mei.gestural.att.ornam.Ges with meiall.mei.shared.att.ornam.Log with meiall.mei.visual.att.ornam.Vis with meiall.mei.shared.model.ControlEventLike {
+case class Ornam(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.ornam.Anl with _root_.meiall.mei.gestural.att.ornam.Ges with _root_.meiall.mei.shared.att.ornam.Log with _root_.meiall.mei.visual.att.ornam.Vis with _root_.meiall.mei.shared.model.ControlEventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("accidlower", "accidlower.ges", "accidupper", "accidupper.ges", "altsym", "class", "color", "copyof", "corresp", "dots.ges", "dur", "dur.ges", "dur.metrical", "dur.ppq", "dur.real", "dur.recip", "enclose", "endho", "endid", "endto", "evaluate", "facs", "follows", "ho", "label", "layer", "n", "next", "part", "partstaff", "place", "plist", "precedes", "prev", "resp", "sameas", "staff", "startho", "startid", "startto", "synch", "to", "tstamp", "tstamp.ges", "tstamp.real", "tstamp2", "tstamp2.ges", "tstamp2.real", "type", "vgrp", "vo", "when", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

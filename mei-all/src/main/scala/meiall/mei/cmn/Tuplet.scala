@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: tuplet
  * Module: MEI.cmn
  */
-case class Tuplet(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.cmn.att.tuplet.Log with meiall.mei.visual.att.tuplet.Vis with meiall.mei.gestural.att.tuplet.Ges with meiall.mei.analytical.att.tuplet.Anl with meiall.mei.cmn.model.eventlike.Cmn {
+case class Tuplet(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.cmn.att.tuplet.Log with _root_.meiall.mei.visual.att.tuplet.Vis with _root_.meiall.mei.gestural.att.tuplet.Ges with _root_.meiall.mei.analytical.att.tuplet.Anl with _root_.meiall.mei.cmn.model.eventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("beam.with", "bracket.place", "bracket.visible", "class", "color", "copyof", "corresp", "dots.ges", "dur", "dur.ges", "dur.metrical", "dur.ppq", "dur.real", "dur.recip", "dur.visible", "endid", "facs", "follows", "label", "layer", "n", "next", "num", "num.format", "num.place", "num.visible", "numbase", "precedes", "prev", "resp", "sameas", "staff", "startid", "synch", "tstamp", "tstamp.ges", "tstamp.real", "type", "when", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

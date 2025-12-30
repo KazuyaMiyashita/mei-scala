@@ -6,6 +6,6 @@ package meiall.mei.gestural.att.tempo
  * Ident: att.tempo.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meiall.mei.midi.att.MidiTempo {
+trait Ges  extends _root_.meiall.mei.midi.att.MidiTempo {
 
 } 

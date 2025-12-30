@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: rend
  * Module: MEI.shared
  */
-case class Rend(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Color with meiall.mei.shared.att.Common with meiall.mei.externalsymbols.att.extsym.Auth with meiall.mei.shared.att.HorizontalAlign with meiall.mei.shared.att.Lang with meiall.mei.shared.att.TextRendition with meiall.mei.shared.att.Typography with meiall.mei.shared.att.VerticalAlign with meiall.mei.shared.att.Whitespace with meiall.mei.shared.model.RendLike {
+case class Rend(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Color with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.externalsymbols.att.extsym.Auth with _root_.meiall.mei.shared.att.HorizontalAlign with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.shared.att.TextRendition with _root_.meiall.mei.shared.att.Typography with _root_.meiall.mei.shared.att.VerticalAlign with _root_.meiall.mei.shared.att.Whitespace with _root_.meiall.mei.shared.model.RendLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altrend", "class", "color", "copyof", "corresp", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.uri", "halign", "label", "letterspacing", "lineheight", "n", "next", "precedes", "prev", "rend", "resp", "rotation", "sameas", "synch", "translit", "type", "valign", "xml:base", "xml:id", "xml:lang", "xml:space")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.incipLike
  * Module: MEI.shared
  */
-trait IncipLike  extends meiall.mei.header.model.PhysDescPart with meiall.mei.header.model.WorkIdent {
+trait IncipLike  extends _root_.meiall.mei.header.model.PhysDescPart with _root_.meiall.mei.header.model.WorkIdent {
 
 } 

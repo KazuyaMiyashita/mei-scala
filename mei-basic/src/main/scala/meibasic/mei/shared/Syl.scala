@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: syl
  * Module: MEI.shared
  */
-case class Syl(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.Lang with meibasic.mei.shared.att.syl.Log with meibasic.mei.visual.att.syl.Vis with meibasic.mei.shared.model.SylLike {
+case class Syl(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.Lang with _root_.meibasic.mei.shared.att.syl.Log with _root_.meibasic.mei.visual.att.syl.Vis with _root_.meibasic.mei.shared.model.SylLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("con", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "halign", "ho", "label", "letterspacing", "lineheight", "place", "type", "vo", "wordpos", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

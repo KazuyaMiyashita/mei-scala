@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: availability
  * Module: MEI.header
  */
-case class Availability(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.DataPointing {
+case class Availability(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.DataPointing {
   override def validate(): Boolean = {
     val allowedAttrs = Set("data", "label", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

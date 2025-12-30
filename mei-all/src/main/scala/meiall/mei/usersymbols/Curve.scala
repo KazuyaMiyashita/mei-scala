@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: curve
  * Module: MEI.usersymbols
  */
-case class Curve(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.analytical.att.curve.Anl with meiall.mei.gestural.att.curve.Ges with meiall.mei.usersymbols.att.curve.Log with meiall.mei.visual.att.curve.Vis with meiall.mei.facsimile.att.Facsimile with meiall.mei.usersymbols.model.GraphicPrimitiveLike {
+case class Curve(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.analytical.att.curve.Anl with _root_.meiall.mei.gestural.att.curve.Ges with _root_.meiall.mei.usersymbols.att.curve.Log with _root_.meiall.mei.visual.att.curve.Vis with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.usersymbols.model.GraphicPrimitiveLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("bezier", "bulge", "class", "color", "copyof", "corresp", "curvedir", "endho", "endid", "endto", "endvo", "facs", "follows", "func", "ho", "label", "lform", "lsegs", "lwidth", "n", "next", "precedes", "prev", "resp", "sameas", "startho", "startid", "startto", "startvo", "synch", "to", "type", "vo", "x", "x2", "xml:base", "xml:id", "y", "y2")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.shared.model.sectionpart
  * Ident: model.sectionPart.mensuralAndNeumes
  * Module: MEI.shared
  */
-trait MensuralAndNeumes  extends meiall.mei.shared.model.SectionPart {
+trait MensuralAndNeumes  extends _root_.meiall.mei.shared.model.SectionPart {
 
 } 

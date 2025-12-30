@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.sb
  * Ident: att.sb.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.externalsymbols.att.ExtSym with meibasic.mei.shared.att.Typography {
+trait Vis  extends _root_.meibasic.mei.externalsymbols.att.ExtSym with _root_.meibasic.mei.shared.att.Typography {
 
 } 

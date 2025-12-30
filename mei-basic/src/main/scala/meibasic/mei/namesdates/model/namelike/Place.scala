@@ -6,6 +6,6 @@ package meibasic.mei.namesdates.model.namelike
  * Ident: model.nameLike.place
  * Module: MEI.namesdates
  */
-trait Place  extends meibasic.mei.shared.model.NameLike {
+trait Place  extends _root_.meibasic.mei.shared.model.NameLike {
 
 } 

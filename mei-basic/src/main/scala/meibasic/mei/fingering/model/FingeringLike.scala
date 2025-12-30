@@ -6,6 +6,6 @@ package meibasic.mei.fingering.model
  * Ident: model.fingeringLike
  * Module: MEI.fingering
  */
-trait FingeringLike  extends meibasic.mei.shared.model.ControlEventLike {
+trait FingeringLike  extends _root_.meibasic.mei.shared.model.ControlEventLike {
 
 } 

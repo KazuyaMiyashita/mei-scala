@@ -6,6 +6,6 @@ package meibasic.mei.shared.att.accid
  * Ident: att.accid.log
  * Module: MEI.shared
  */
-trait Log  extends meibasic.mei.shared.att.Accidental with meibasic.mei.shared.att.ControlEvent {
+trait Log  extends _root_.meibasic.mei.shared.att.Accidental with _root_.meibasic.mei.shared.att.ControlEvent {
 
 } 

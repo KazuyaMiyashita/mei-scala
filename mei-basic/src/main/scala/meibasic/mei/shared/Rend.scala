@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: rend
  * Module: MEI.shared
  */
-case class Rend(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Color with meibasic.mei.shared.att.Common with meibasic.mei.externalsymbols.att.extsym.Auth with meibasic.mei.shared.att.HorizontalAlign with meibasic.mei.shared.att.Lang with meibasic.mei.shared.att.TextRendition with meibasic.mei.shared.att.Typography with meibasic.mei.shared.att.VerticalAlign with meibasic.mei.shared.att.Whitespace with meibasic.mei.shared.model.RendLike {
+case class Rend(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Color with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.externalsymbols.att.extsym.Auth with _root_.meibasic.mei.shared.att.HorizontalAlign with _root_.meibasic.mei.shared.att.Lang with _root_.meibasic.mei.shared.att.TextRendition with _root_.meibasic.mei.shared.att.Typography with _root_.meibasic.mei.shared.att.VerticalAlign with _root_.meibasic.mei.shared.att.Whitespace with _root_.meibasic.mei.shared.model.RendLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altrend", "color", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.uri", "halign", "label", "letterspacing", "lineheight", "rend", "rotation", "type", "valign", "xml:id", "xml:lang", "xml:space")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

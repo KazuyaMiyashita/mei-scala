@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: syl
  * Module: MEI.shared
  */
-case class Syl(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.analytical.att.syl.Anl with meiall.mei.gestural.att.syl.Ges with meiall.mei.shared.att.syl.Log with meiall.mei.visual.att.syl.Vis with meiall.mei.shared.model.SylLike {
+case class Syl(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.analytical.att.syl.Anl with _root_.meiall.mei.gestural.att.syl.Ges with _root_.meiall.mei.shared.att.syl.Log with _root_.meiall.mei.visual.att.syl.Vis with _root_.meiall.mei.shared.model.SylLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "con", "copyof", "corresp", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "halign", "ho", "label", "letterspacing", "lineheight", "n", "next", "place", "precedes", "prev", "resp", "sameas", "synch", "to", "translit", "type", "vo", "wordpos", "x", "xml:base", "xml:id", "xml:lang", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

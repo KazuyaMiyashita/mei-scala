@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: meterSig
  * Module: MEI.cmn
  */
-case class MeterSig(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.metersig.Anl with meiall.mei.gestural.att.metersig.Ges with meiall.mei.shared.att.metersig.Log with meiall.mei.visual.att.metersig.Vis with meiall.mei.shared.model.MeterSigLike {
+case class MeterSig(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.metersig.Anl with _root_.meiall.mei.gestural.att.metersig.Ges with _root_.meiall.mei.shared.att.metersig.Log with _root_.meiall.mei.visual.att.metersig.Vis with _root_.meiall.mei.shared.model.MeterSigLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "class", "color", "copyof", "corresp", "count", "enclose", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "form", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "label", "letterspacing", "lineheight", "n", "next", "precedes", "prev", "resp", "sameas", "sym", "synch", "type", "unit", "visible", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

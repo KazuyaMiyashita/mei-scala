@@ -6,6 +6,6 @@ package meiall.mei.text.model
  * Ident: model.qLike
  * Module: MEI.text
  */
-trait QLike  extends meiall.mei.shared.model.textphraselike.Limited {
+trait QLike  extends _root_.meiall.mei.shared.model.textphraselike.Limited {
 
 } 

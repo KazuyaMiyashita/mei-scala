@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: volta
  * Module: MEI.lyrics
  */
-case class Volta(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.lyrics.att.volta.Log with meiall.mei.visual.att.volta.Vis with meiall.mei.gestural.att.volta.Ges with meiall.mei.analytical.att.volta.Anl with meiall.mei.critapp.model.rdgpart.Music with meiall.mei.edittrans.model.edittranspart.Music {
+case class Volta(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.lyrics.att.volta.Log with _root_.meiall.mei.visual.att.volta.Vis with _root_.meiall.mei.gestural.att.volta.Ges with _root_.meiall.mei.analytical.att.volta.Anl with _root_.meiall.mei.critapp.model.rdgpart.Music with _root_.meiall.mei.edittrans.model.edittranspart.Music {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "color", "copyof", "corresp", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "label", "letterspacing", "lineheight", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "to", "translit", "type", "vo", "x", "xml:base", "xml:id", "xml:lang", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

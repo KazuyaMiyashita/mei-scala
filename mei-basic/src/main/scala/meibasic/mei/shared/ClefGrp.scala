@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: clefGrp
  * Module: MEI.shared
  */
-case class ClefGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.Event with meibasic.mei.shared.model.EventLike with meibasic.mei.shared.model.StaffDefPart {
+case class ClefGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.Event with _root_.meibasic.mei.shared.model.EventLike with _root_.meibasic.mei.shared.model.StaffDefPart {
   override def validate(): Boolean = {
     val allowedAttrs = Set("label", "layer", "staff", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

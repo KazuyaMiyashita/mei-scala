@@ -6,6 +6,6 @@ package meiall.mei.visual.att.phrase
  * Ident: att.phrase.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.Color with meiall.mei.shared.att.VisualOffset with meiall.mei.shared.att.VisualOffset2 with meiall.mei.shared.att.Xy with meiall.mei.shared.att.Xy2 with meiall.mei.cmn.att.phrase.vis.Cmn {
+trait Vis  extends _root_.meiall.mei.shared.att.Color with _root_.meiall.mei.shared.att.VisualOffset with _root_.meiall.mei.shared.att.VisualOffset2 with _root_.meiall.mei.shared.att.Xy with _root_.meiall.mei.shared.att.Xy2 with _root_.meiall.mei.cmn.att.phrase.vis.Cmn {
 
 } 

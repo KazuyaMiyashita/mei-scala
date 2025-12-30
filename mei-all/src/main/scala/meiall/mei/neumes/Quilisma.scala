@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: quilisma
  * Module: MEI.neumes
  */
-case class Quilisma(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.quilisma.Anl with meiall.mei.gestural.att.quilisma.Ges with meiall.mei.neumes.att.quilisma.Log with meiall.mei.visual.att.quilisma.Vis with meiall.mei.neumes.model.NeumeComponentModifierLike {
+case class Quilisma(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.quilisma.Anl with _root_.meiall.mei.gestural.att.quilisma.Ges with _root_.meiall.mei.neumes.att.quilisma.Log with _root_.meiall.mei.visual.att.quilisma.Vis with _root_.meiall.mei.neumes.model.NeumeComponentModifierLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "class", "color", "copyof", "corresp", "enclose", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "letterspacing", "lineheight", "loc", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "type", "visible", "waves", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

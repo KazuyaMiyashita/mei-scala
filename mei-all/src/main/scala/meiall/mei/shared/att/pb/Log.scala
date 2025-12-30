@@ -6,6 +6,6 @@ package meiall.mei.shared.att.pb
  * Ident: att.pb.log
  * Module: MEI.shared
  */
-trait Log  extends meiall.mei.performance.att.Alignment {
+trait Log  extends _root_.meiall.mei.performance.att.Alignment {
 
 } 

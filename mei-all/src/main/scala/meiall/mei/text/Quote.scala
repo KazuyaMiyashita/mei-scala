@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: quote
  * Module: MEI.text
  */
-case class Quote(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.shared.att.TextRendition with meiall.mei.shared.att.Xy with meiall.mei.text.model.QuoteLike {
+case class Quote(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.shared.att.TextRendition with _root_.meiall.mei.shared.att.Xy with _root_.meiall.mei.text.model.QuoteLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altrend", "class", "copyof", "corresp", "facs", "follows", "label", "n", "next", "precedes", "prev", "rend", "resp", "sameas", "synch", "translit", "type", "x", "xml:base", "xml:id", "xml:lang", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

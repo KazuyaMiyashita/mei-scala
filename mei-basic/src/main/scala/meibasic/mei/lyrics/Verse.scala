@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: verse
  * Module: MEI.lyrics
  */
-case class Verse(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.visual.att.verse.Vis with meibasic.mei.lyrics.model.VerseLike with meibasic.mei.shared.att.NNumberLike {
+case class Verse(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.visual.att.verse.Vis with _root_.meibasic.mei.lyrics.model.VerseLike with _root_.meibasic.mei.shared.att.NNumberLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("color", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "label", "letterspacing", "lineheight", "n", "place", "type", "vo", "voltasym", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

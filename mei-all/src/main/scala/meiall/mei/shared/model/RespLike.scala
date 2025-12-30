@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.respLike
  * Module: MEI.shared
  */
-trait RespLike  extends meiall.mei.shared.model.BiblPart {
+trait RespLike  extends _root_.meiall.mei.shared.model.BiblPart {
 
 } 

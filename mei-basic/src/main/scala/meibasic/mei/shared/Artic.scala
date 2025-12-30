@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: artic
  * Module: MEI.shared
  */
-case class Artic(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.gestural.att.artic.Ges with meibasic.mei.shared.att.artic.Log with meibasic.mei.visual.att.artic.Vis with meibasic.mei.shared.model.ChordPart with meibasic.mei.shared.model.NoteModifierLike {
+case class Artic(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.gestural.att.artic.Ges with _root_.meibasic.mei.shared.att.artic.Log with _root_.meibasic.mei.visual.att.artic.Vis with _root_.meibasic.mei.shared.model.ChordPart with _root_.meibasic.mei.shared.model.NoteModifierLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("artic", "color", "enclose", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "place", "plist", "staff", "tstamp", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

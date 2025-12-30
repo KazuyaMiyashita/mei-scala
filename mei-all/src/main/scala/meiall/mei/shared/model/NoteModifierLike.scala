@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.noteModifierLike
  * Module: MEI.shared
  */
-trait NoteModifierLike  extends meiall.mei.shared.model.layerpart.MensuralAndNeumes {
+trait NoteModifierLike  extends _root_.meiall.mei.shared.model.layerpart.MensuralAndNeumes {
 
 } 

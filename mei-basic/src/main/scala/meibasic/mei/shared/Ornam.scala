@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: ornam
  * Module: MEI.shared
  */
-case class Ornam(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.gestural.att.ornam.Ges with meibasic.mei.shared.att.ornam.Log with meibasic.mei.visual.att.ornam.Vis with meibasic.mei.shared.model.ControlEventLike {
+case class Ornam(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.gestural.att.ornam.Ges with _root_.meibasic.mei.shared.att.ornam.Log with _root_.meibasic.mei.visual.att.ornam.Vis with _root_.meibasic.mei.shared.model.ControlEventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("accidlower", "accidlower.ges", "accidupper", "accidupper.ges", "color", "dur", "enclose", "endho", "endid", "ho", "label", "layer", "place", "plist", "staff", "startho", "startid", "tstamp", "tstamp2", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

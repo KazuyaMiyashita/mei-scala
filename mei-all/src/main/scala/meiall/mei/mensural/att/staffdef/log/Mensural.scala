@@ -6,6 +6,6 @@ package meiall.mei.mensural.att.staffdef.log
  * Ident: att.staffDef.log.mensural
  * Module: MEI.mensural
  */
-trait Mensural  extends meiall.mei.mensural.att.mensural.Log {
+trait Mensural  extends _root_.meiall.mei.mensural.att.mensural.Log {
 
 } 

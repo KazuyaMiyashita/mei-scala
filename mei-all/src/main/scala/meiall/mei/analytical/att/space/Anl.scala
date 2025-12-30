@@ -6,6 +6,6 @@ package meiall.mei.analytical.att.space
  * Ident: att.space.anl
  * Module: MEI.analytical
  */
-trait Anl  extends meiall.mei.cmn.att.space.anl.Cmn {
+trait Anl  extends _root_.meiall.mei.cmn.att.space.anl.Cmn {
 
 } 

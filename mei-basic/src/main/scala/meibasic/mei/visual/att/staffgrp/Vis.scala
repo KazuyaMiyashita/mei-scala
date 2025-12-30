@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.staffgrp
  * Ident: att.staffGrp.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.shared.att.StaffGroupingSym {
+trait Vis  extends _root_.meibasic.mei.shared.att.StaffGroupingSym {
 
 } 

@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: mordent
  * Module: MEI.cmnOrnaments
  */
-case class Mordent(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmnornaments.att.mordent.Log with meibasic.mei.visual.att.mordent.Vis with meibasic.mei.cmnornaments.model.ornamentlike.Cmn {
+case class Mordent(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmnornaments.att.mordent.Log with _root_.meibasic.mei.visual.att.mordent.Vis with _root_.meibasic.mei.cmnornaments.model.ornamentlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("accidlower", "accidlower.ges", "accidupper", "accidupper.ges", "color", "enclose", "endid", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "form", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "lineheight", "long", "place", "plist", "staff", "startid", "tstamp", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

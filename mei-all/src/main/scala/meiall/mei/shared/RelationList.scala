@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: relationList
  * Module: MEI.shared
  */
-case class RelationList(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.model.RelationLike {
+case class RelationList(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.model.RelationLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "follows", "label", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

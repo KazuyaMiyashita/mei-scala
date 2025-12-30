@@ -6,6 +6,6 @@ package meiall.mei.mensural.att.mensural
  * Ident: att.mensural.log
  * Module: MEI.mensural
  */
-trait Log  extends meiall.mei.mensural.att.mensural.Shared {
+trait Log  extends _root_.meiall.mei.mensural.att.mensural.Shared {
 
 } 

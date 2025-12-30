@@ -6,6 +6,6 @@ package meiall.mei.visual.att.metersiggrp
  * Ident: att.meterSigGrp.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.EnclosingChars with meiall.mei.shared.att.Visibility {
+trait Vis  extends _root_.meiall.mei.shared.att.EnclosingChars with _root_.meiall.mei.shared.att.Visibility {
 
 } 

@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: mensuration
  * Module: MEI.header
  */
-case class Mensuration(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Bibl with meiall.mei.shared.att.Lang with meiall.mei.shared.att.mensur.Log with meiall.mei.visual.att.mensur.Vis with meiall.mei.header.model.WorkIdent {
+case class Mensuration(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.shared.att.mensur.Log with _root_.meiall.mei.visual.att.mensur.Vis with _root_.meiall.mei.header.model.WorkIdent {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "analog", "class", "color", "copyof", "corresp", "divisio", "dot", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "form", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "label", "letterspacing", "level", "lineheight", "loc", "modusmaior", "modusminor", "n", "next", "num", "numbase", "orient", "precedes", "prev", "prolatio", "resp", "sameas", "sign", "slash", "synch", "tempus", "translit", "type", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

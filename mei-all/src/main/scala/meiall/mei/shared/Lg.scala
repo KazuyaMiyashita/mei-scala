@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: lg
  * Module: MEI.shared
  */
-case class Lg(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.shared.att.MetadataPointing with meiall.mei.shared.att.Xy with meiall.mei.analytical.att.lyrics.Anl with meiall.mei.gestural.att.lyrics.Ges with meiall.mei.lyrics.att.lyrics.Log with meiall.mei.visual.att.lyrics.Vis with meiall.mei.text.model.LgLike {
+case class Lg(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.shared.att.MetadataPointing with _root_.meiall.mei.shared.att.Xy with _root_.meiall.mei.analytical.att.lyrics.Anl with _root_.meiall.mei.gestural.att.lyrics.Ges with _root_.meiall.mei.lyrics.att.lyrics.Log with _root_.meiall.mei.visual.att.lyrics.Vis with _root_.meiall.mei.text.model.LgLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "decls", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "label", "layer", "letterspacing", "lineheight", "n", "next", "part", "partstaff", "place", "precedes", "prev", "resp", "sameas", "staff", "synch", "translit", "type", "x", "xml:base", "xml:id", "xml:lang", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

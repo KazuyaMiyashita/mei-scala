@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.symbol
  * Ident: att.symbol.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.shared.att.Color with meibasic.mei.externalsymbols.att.ExtSym with meibasic.mei.shared.att.Scalable with meibasic.mei.shared.att.VisualOffset {
+trait Vis  extends _root_.meibasic.mei.shared.att.Color with _root_.meibasic.mei.externalsymbols.att.ExtSym with _root_.meibasic.mei.shared.att.Scalable with _root_.meibasic.mei.shared.att.VisualOffset {
 
 } 

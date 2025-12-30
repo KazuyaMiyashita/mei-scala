@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: staffDef
  * Module: MEI.shared
  */
-case class StaffDef(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Basic with meibasic.mei.shared.att.Labelled with meibasic.mei.shared.att.NInteger with meibasic.mei.shared.att.Typed with meibasic.mei.gestural.att.staffdef.Ges with meibasic.mei.shared.att.staffdef.Log with meibasic.mei.visual.att.staffdef.Vis with meibasic.mei.shared.model.StaffDefLike {
+case class StaffDef(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Basic with _root_.meibasic.mei.shared.att.Labelled with _root_.meibasic.mei.shared.att.NInteger with _root_.meibasic.mei.shared.att.Typed with _root_.meibasic.mei.gestural.att.staffdef.Ges with _root_.meibasic.mei.shared.att.staffdef.Log with _root_.meibasic.mei.visual.att.staffdef.Vis with _root_.meibasic.mei.shared.model.StaffDefLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("clef.dis", "clef.dis.place", "clef.line", "clef.shape", "instr", "keysig", "label", "lines", "lines.color", "lines.visible", "meter.count", "meter.sym", "meter.unit", "n", "ppq", "scale", "tab.courses", "tab.strings", "trans.diat", "trans.semi", "tune.Hz", "tune.pname", "tune.temper", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

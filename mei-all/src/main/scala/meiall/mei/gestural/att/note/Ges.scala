@@ -6,6 +6,6 @@ package meiall.mei.gestural.att.note
  * Ident: att.note.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meiall.mei.gestural.att.accidental.Ges with meiall.mei.gestural.att.articulation.Ges with meiall.mei.gestural.att.duration.Ges with meiall.mei.midi.att.InstrumentIdent with meiall.mei.midi.att.MidiVelocity with meiall.mei.mensural.att.note.ges.Mensural with meiall.mei.gestural.att.pitch.Ges with meiall.mei.stringtab.att.Stringtab {
+trait Ges  extends _root_.meiall.mei.gestural.att.accidental.Ges with _root_.meiall.mei.gestural.att.articulation.Ges with _root_.meiall.mei.gestural.att.duration.Ges with _root_.meiall.mei.midi.att.InstrumentIdent with _root_.meiall.mei.midi.att.MidiVelocity with _root_.meiall.mei.mensural.att.note.ges.Mensural with _root_.meiall.mei.gestural.att.pitch.Ges with _root_.meiall.mei.stringtab.att.Stringtab {
 
 } 

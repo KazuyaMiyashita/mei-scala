@@ -6,6 +6,6 @@ package meiall.mei.mensural.model.staffdefpart
  * Ident: model.staffDefPart.mensural
  * Module: MEI.mensural
  */
-trait Mensural  extends meiall.mei.shared.model.StaffDefPart {
+trait Mensural  extends _root_.meiall.mei.shared.model.StaffDefPart {
 
 } 

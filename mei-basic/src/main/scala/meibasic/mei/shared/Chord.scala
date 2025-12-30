@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: chord
  * Module: MEI.shared
  */
-case class Chord(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.gestural.att.chord.Ges with meibasic.mei.shared.att.chord.Log with meibasic.mei.visual.att.chord.Vis with meibasic.mei.shared.model.EventLike {
+case class Chord(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.gestural.att.chord.Ges with _root_.meibasic.mei.shared.att.chord.Log with _root_.meibasic.mei.visual.att.chord.Vis with _root_.meibasic.mei.shared.model.EventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("breaksec", "cluster", "color", "cue", "dots", "dur", "enclose", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "grace", "grace.time", "ho", "instr", "label", "layer", "staff", "stem.dir", "stem.len", "stem.mod", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meibasic.mei.shared.att.clef
  * Ident: att.clef.log
  * Module: MEI.shared
  */
-trait Log  extends meibasic.mei.shared.att.ClefShape with meibasic.mei.shared.att.LineLoc with meibasic.mei.shared.att.Octave with meibasic.mei.shared.att.OctaveDisplacement {
+trait Log  extends _root_.meibasic.mei.shared.att.ClefShape with _root_.meibasic.mei.shared.att.LineLoc with _root_.meibasic.mei.shared.att.Octave with _root_.meibasic.mei.shared.att.OctaveDisplacement {
 
 } 

@@ -6,6 +6,6 @@ package meibasic.mei.shared.att
  * Ident: att.pitched
  * Module: MEI.shared
  */
-trait Pitched  extends meibasic.mei.shared.att.Pitch with meibasic.mei.shared.att.Octave {
+trait Pitched  extends _root_.meibasic.mei.shared.att.Pitch with _root_.meibasic.mei.shared.att.Octave {
 
 } 

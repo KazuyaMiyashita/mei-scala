@@ -6,6 +6,6 @@ package meibasic.mei.stringtab.att.course
  * Ident: att.course.log
  * Module: MEI.stringtab
  */
-trait Log  extends meibasic.mei.shared.att.Accidental with meibasic.mei.shared.att.Pitched {
+trait Log  extends _root_.meibasic.mei.shared.att.Accidental with _root_.meibasic.mei.shared.att.Pitched {
 
 } 

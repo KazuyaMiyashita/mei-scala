@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: availability
  * Module: MEI.header
  */
-case class Availability(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Bibl with meiall.mei.shared.att.DataPointing with meiall.mei.header.model.PubStmtPart with meiall.mei.shared.model.ImprintPart {
+case class Availability(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.shared.att.DataPointing with _root_.meiall.mei.header.model.PubStmtPart with _root_.meiall.mei.shared.model.ImprintPart {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "class", "copyof", "corresp", "data", "follows", "label", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

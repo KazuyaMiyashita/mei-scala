@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.staffdef
  * Ident: att.staffDef.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.shared.att.Scalable {
+trait Vis  extends _root_.meibasic.mei.shared.att.Scalable {
 
 } 

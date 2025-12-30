@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: ending
  * Module: MEI.shared
  */
-case class Ending(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.ending.Log with meibasic.mei.visual.att.ending.Vis with meibasic.mei.shared.model.EndingLike {
+case class Ending(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.ending.Log with _root_.meibasic.mei.visual.att.ending.Vis with _root_.meibasic.mei.shared.model.EndingLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("label", "lendsym", "lendsym.size", "lform", "lsegs", "lstartsym", "lstartsym.size", "lwidth", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

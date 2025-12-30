@@ -6,6 +6,6 @@ package meiall.mei.shared.att.staff
  * Ident: att.staff.log
  * Module: MEI.shared
  */
-trait Log  extends meiall.mei.shared.att.MeterConformance {
+trait Log  extends _root_.meiall.mei.shared.att.MeterConformance {
 
 } 

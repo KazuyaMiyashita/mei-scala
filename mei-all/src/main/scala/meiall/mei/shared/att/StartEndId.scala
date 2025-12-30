@@ -6,6 +6,6 @@ package meiall.mei.shared.att
  * Ident: att.startEndId
  * Module: MEI.shared
  */
-trait StartEndId  extends meiall.mei.shared.att.StartId {
+trait StartEndId  extends _root_.meiall.mei.shared.att.StartId {
 
 } 

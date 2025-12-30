@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: grpSym
  * Module: MEI.shared
  */
-case class GrpSym(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.grpsym.Anl with meiall.mei.gestural.att.grpsym.Ges with meiall.mei.shared.att.grpsym.Log with meiall.mei.visual.att.grpsym.Vis {
+case class GrpSym(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.grpsym.Anl with _root_.meiall.mei.gestural.att.grpsym.Ges with _root_.meiall.mei.shared.att.grpsym.Log with _root_.meiall.mei.visual.att.grpsym.Vis {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "class", "color", "copyof", "corresp", "endid", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "letterspacing", "level", "lineheight", "n", "next", "precedes", "prev", "resp", "sameas", "startid", "symbol", "synch", "to", "type", "vo", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.usersymbols.att.anchoredtext
  * Ident: att.anchoredText.log
  * Module: MEI.usersymbols
  */
-trait Log  extends meiall.mei.shared.att.StartId {
+trait Log  extends _root_.meiall.mei.shared.att.StartId {
 
 } 

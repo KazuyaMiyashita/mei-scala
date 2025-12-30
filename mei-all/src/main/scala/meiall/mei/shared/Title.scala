@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: title
  * Module: MEI.shared
  */
-case class Title(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Authorized with meiall.mei.shared.att.Basic with meiall.mei.shared.att.Bibl with meiall.mei.shared.att.Classed with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Filing with meiall.mei.shared.att.Labelled with meiall.mei.shared.att.Lang with meiall.mei.shared.att.Linking with meiall.mei.shared.att.NNumberLike with meiall.mei.shared.att.Responsibility with meiall.mei.shared.model.TitleLike {
+case class Title(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Authorized with _root_.meiall.mei.shared.att.Basic with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.shared.att.Classed with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Filing with _root_.meiall.mei.shared.att.Labelled with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.shared.att.Linking with _root_.meiall.mei.shared.att.NNumberLike with _root_.meiall.mei.shared.att.Responsibility with _root_.meiall.mei.shared.model.TitleLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "auth", "auth.uri", "class", "codedval", "copyof", "corresp", "facs", "follows", "label", "level", "n", "next", "nonfiling", "precedes", "prev", "resp", "sameas", "synch", "translit", "type", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

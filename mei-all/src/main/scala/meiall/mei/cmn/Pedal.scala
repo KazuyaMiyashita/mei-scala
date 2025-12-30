@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: pedal
  * Module: MEI.cmn
  */
-case class Pedal(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.cmn.att.pedal.Log with meiall.mei.visual.att.pedal.Vis with meiall.mei.gestural.att.pedal.Ges with meiall.mei.analytical.att.pedal.Anl with meiall.mei.cmn.model.controleventlike.Cmn {
+case class Pedal(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.cmn.att.pedal.Log with _root_.meiall.mei.visual.att.pedal.Vis with _root_.meiall.mei.gestural.att.pedal.Ges with _root_.meiall.mei.analytical.att.pedal.Anl with _root_.meiall.mei.cmn.model.controleventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "class", "color", "copyof", "corresp", "dir", "endid", "evaluate", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "form", "func", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "lendsym", "lendsym.size", "letterspacing", "lform", "lineheight", "lsegs", "lstartsym", "lstartsym.size", "lwidth", "n", "next", "part", "partstaff", "place", "plist", "precedes", "prev", "resp", "sameas", "staff", "startid", "synch", "to", "tstamp", "tstamp.ges", "tstamp.real", "tstamp2", "tstamp2.ges", "tstamp2.real", "type", "vgrp", "vo", "when", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

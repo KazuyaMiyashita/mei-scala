@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.space
  * Ident: att.space.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.cmn.att.Cutout {
+trait Vis  extends _root_.meibasic.mei.cmn.att.Cutout {
 
 } 

@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: music
  * Module: MEI.shared
  */
-case class Music(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.MeiVersion with meiall.mei.shared.att.MetadataPointing {
+case class Music(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.MeiVersion with _root_.meiall.mei.shared.att.MetadataPointing {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "decls", "follows", "label", "meiversion", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

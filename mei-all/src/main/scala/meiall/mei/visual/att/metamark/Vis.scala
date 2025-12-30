@@ -6,6 +6,6 @@ package meiall.mei.visual.att.metamark
  * Ident: att.metaMark.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.Color with meiall.mei.shared.att.PlacementRelStaff with meiall.mei.shared.att.VerticalGroup {
+trait Vis  extends _root_.meiall.mei.shared.att.Color with _root_.meiall.mei.shared.att.PlacementRelStaff with _root_.meiall.mei.shared.att.VerticalGroup {
 
 } 

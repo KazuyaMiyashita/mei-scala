@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: arpeg
  * Module: MEI.cmn
  */
-case class Arpeg(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmn.att.arpeg.Log with meibasic.mei.visual.att.arpeg.Vis with meibasic.mei.cmn.model.controleventlike.Cmn {
+case class Arpeg(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmn.att.arpeg.Log with _root_.meibasic.mei.visual.att.arpeg.Vis with _root_.meibasic.mei.cmn.model.controleventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("arrow", "arrow.color", "arrow.fillcolor", "arrow.shape", "arrow.size", "color", "enclose", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "lform", "lineheight", "lsegs", "lwidth", "order", "plist", "staff", "startid", "tstamp", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

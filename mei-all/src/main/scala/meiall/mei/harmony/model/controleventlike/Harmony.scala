@@ -6,6 +6,6 @@ package meiall.mei.harmony.model.controleventlike
  * Ident: model.controlEventLike.harmony
  * Module: MEI.harmony
  */
-trait Harmony  extends meiall.mei.shared.model.ControlEventLike {
+trait Harmony  extends _root_.meiall.mei.shared.model.ControlEventLike {
 
 } 

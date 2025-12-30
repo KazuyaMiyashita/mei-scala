@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.sectionLike
  * Module: MEI.shared
  */
-trait SectionLike  extends meiall.mei.shared.model.ScorePart with meiall.mei.shared.model.SectionPart {
+trait SectionLike  extends _root_.meiall.mei.shared.model.ScorePart with _root_.meiall.mei.shared.model.SectionPart {
 
 } 

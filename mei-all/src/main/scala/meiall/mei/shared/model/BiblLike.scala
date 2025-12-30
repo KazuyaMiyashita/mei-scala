@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.biblLike
  * Module: MEI.shared
  */
-trait BiblLike  extends meiall.mei.shared.model.textphraselike.Limited {
+trait BiblLike  extends _root_.meiall.mei.shared.model.textphraselike.Limited {
 
 } 

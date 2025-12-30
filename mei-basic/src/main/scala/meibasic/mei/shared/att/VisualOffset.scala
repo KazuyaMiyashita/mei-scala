@@ -6,6 +6,6 @@ package meibasic.mei.shared.att
  * Ident: att.visualOffset
  * Module: MEI.shared
  */
-trait VisualOffset  extends meibasic.mei.shared.att.visualoffset.Ho with meibasic.mei.shared.att.visualoffset.Vo {
+trait VisualOffset  extends _root_.meibasic.mei.shared.att.visualoffset.Ho with _root_.meibasic.mei.shared.att.visualoffset.Vo {
 
 } 

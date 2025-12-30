@@ -6,6 +6,6 @@ package meiall.mei.visual.att.btrem
  * Ident: att.bTrem.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.cmn.att.NumberPlacement {
+trait Vis  extends _root_.meiall.mei.cmn.att.NumberPlacement {
 
 } 

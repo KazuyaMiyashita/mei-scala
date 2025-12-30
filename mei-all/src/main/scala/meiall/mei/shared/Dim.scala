@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: dim
  * Module: MEI.shared
  */
-case class Dim(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Bibl with meiall.mei.shared.att.Lang with meiall.mei.shared.att.Quantity with meiall.mei.shared.model.DimLike {
+case class Dim(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.shared.att.Quantity with _root_.meiall.mei.shared.model.DimLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "atleast", "atmost", "class", "confidence", "copyof", "corresp", "follows", "form", "label", "max", "min", "n", "next", "precedes", "prev", "quantity", "resp", "sameas", "synch", "translit", "type", "unit", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

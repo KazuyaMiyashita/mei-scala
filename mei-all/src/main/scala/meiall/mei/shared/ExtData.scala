@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: extData
  * Module: MEI.shared
  */
-case class ExtData(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Basic with meiall.mei.shared.att.Labelled with meiall.mei.shared.att.Responsibility with meiall.mei.shared.att.Typed with meiall.mei.shared.att.Whitespace with meiall.mei.shared.att.Pointing with meiall.mei.shared.att.InternetMedia {
+case class ExtData(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Basic with _root_.meiall.mei.shared.att.Labelled with _root_.meiall.mei.shared.att.Responsibility with _root_.meiall.mei.shared.att.Typed with _root_.meiall.mei.shared.att.Whitespace with _root_.meiall.mei.shared.att.Pointing with _root_.meiall.mei.shared.att.InternetMedia {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "label", "mimetype", "resp", "target", "targettype", "type", "xlink:actuate", "xlink:role", "xlink:show", "xml:base", "xml:id", "xml:space")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

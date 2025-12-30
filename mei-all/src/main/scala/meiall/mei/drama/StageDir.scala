@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: stageDir
  * Module: MEI.drama
  */
-case class StageDir(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.analytical.att.stagedir.Anl with meiall.mei.gestural.att.stagedir.Ges with meiall.mei.drama.att.stagedir.Log with meiall.mei.visual.att.stagedir.Vis with meiall.mei.drama.model.StageDirLike {
+case class StageDir(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.analytical.att.stagedir.Anl with _root_.meiall.mei.gestural.att.stagedir.Ges with _root_.meiall.mei.drama.att.stagedir.Log with _root_.meiall.mei.visual.att.stagedir.Vis with _root_.meiall.mei.drama.model.StageDirLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "endho", "endid", "endto", "evaluate", "facs", "follows", "ho", "label", "layer", "n", "next", "part", "partstaff", "place", "plist", "precedes", "prev", "resp", "sameas", "staff", "startho", "startid", "startto", "synch", "to", "translit", "tstamp", "tstamp.ges", "tstamp.real", "tstamp2", "tstamp2.ges", "tstamp2.real", "type", "vo", "when", "x", "xml:base", "xml:id", "xml:lang", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

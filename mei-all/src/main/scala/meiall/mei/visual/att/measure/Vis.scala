@@ -6,6 +6,6 @@ package meiall.mei.visual.att.measure
  * Ident: att.measure.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.Barring with meiall.mei.shared.att.Width {
+trait Vis  extends _root_.meiall.mei.shared.att.Barring with _root_.meiall.mei.shared.att.Width {
 
 } 

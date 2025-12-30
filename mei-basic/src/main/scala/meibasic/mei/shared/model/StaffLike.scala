@@ -6,6 +6,6 @@ package meibasic.mei.shared.model
  * Ident: model.staffLike
  * Module: MEI.shared
  */
-trait StaffLike  extends meibasic.mei.cmn.model.MeasurePart {
+trait StaffLike  extends _root_.meibasic.mei.cmn.model.MeasurePart {
 
 } 

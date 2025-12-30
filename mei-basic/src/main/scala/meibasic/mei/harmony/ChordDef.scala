@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: chordDef
  * Module: MEI.harmony
  */
-case class ChordDef(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.harmony.att.chorddef.Log {
+case class ChordDef(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.harmony.att.chorddef.Log {
   override def validate(): Boolean = {
     val allowedAttrs = Set("label", "tab.courses", "tab.pos", "tab.strings", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.critapp.model.rdgpart
  * Ident: model.rdgPart.music
  * Module: MEI.critapp
  */
-trait Music  extends meiall.mei.critapp.model.RdgPart {
+trait Music  extends _root_.meiall.mei.critapp.model.RdgPart {
 
 } 

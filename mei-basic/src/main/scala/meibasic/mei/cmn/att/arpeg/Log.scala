@@ -6,6 +6,6 @@ package meibasic.mei.cmn.att.arpeg
  * Ident: att.arpeg.log
  * Module: MEI.cmn
  */
-trait Log  extends meibasic.mei.shared.att.ControlEvent with meibasic.mei.shared.att.StartId {
+trait Log  extends _root_.meibasic.mei.shared.att.ControlEvent with _root_.meibasic.mei.shared.att.StartId {
 
 } 

@@ -6,6 +6,6 @@ package meiall.mei.analytical.att.nc
  * Ident: att.nc.anl
  * Module: MEI.analytical
  */
-trait Anl  extends meiall.mei.analytical.att.HarmonicFunction with meiall.mei.analytical.att.IntervalMelodic with meiall.mei.analytical.att.MelodicFunction with meiall.mei.neumes.att.NeumeType with meiall.mei.analytical.att.PitchClass with meiall.mei.analytical.att.Solfa {
+trait Anl  extends _root_.meiall.mei.analytical.att.HarmonicFunction with _root_.meiall.mei.analytical.att.IntervalMelodic with _root_.meiall.mei.analytical.att.MelodicFunction with _root_.meiall.mei.neumes.att.NeumeType with _root_.meiall.mei.analytical.att.PitchClass with _root_.meiall.mei.analytical.att.Solfa {
 
 } 

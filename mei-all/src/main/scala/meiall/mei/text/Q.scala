@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: q
  * Module: MEI.text
  */
-case class Q(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Basic with meiall.mei.shared.att.Classed with meiall.mei.shared.att.Labelled with meiall.mei.shared.att.Lang with meiall.mei.shared.att.Linking with meiall.mei.shared.att.NNumberLike with meiall.mei.shared.att.Responsibility with meiall.mei.shared.att.TextRendition with meiall.mei.text.model.QLike {
+case class Q(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Basic with _root_.meiall.mei.shared.att.Classed with _root_.meiall.mei.shared.att.Labelled with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.shared.att.Linking with _root_.meiall.mei.shared.att.NNumberLike with _root_.meiall.mei.shared.att.Responsibility with _root_.meiall.mei.shared.att.TextRendition with _root_.meiall.mei.text.model.QLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altrend", "class", "copyof", "corresp", "follows", "label", "n", "next", "precedes", "prev", "rend", "resp", "sameas", "synch", "translit", "type", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

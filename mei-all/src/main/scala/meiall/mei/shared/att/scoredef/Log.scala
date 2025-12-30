@@ -6,6 +6,6 @@ package meiall.mei.shared.att.scoredef
  * Ident: att.scoreDef.log
  * Module: MEI.shared
  */
-trait Log  extends meiall.mei.shared.att.cleffing.Log with meiall.mei.shared.att.duration.Default with meiall.mei.shared.att.keysigdefault.Log with meiall.mei.shared.att.metersigdefault.Log with meiall.mei.shared.att.OctaveDefault with meiall.mei.shared.att.Transposition with meiall.mei.cmn.att.scoredef.log.Cmn with meiall.mei.mensural.att.scoredef.log.Mensural {
+trait Log  extends _root_.meiall.mei.shared.att.cleffing.Log with _root_.meiall.mei.shared.att.duration.Default with _root_.meiall.mei.shared.att.keysigdefault.Log with _root_.meiall.mei.shared.att.metersigdefault.Log with _root_.meiall.mei.shared.att.OctaveDefault with _root_.meiall.mei.shared.att.Transposition with _root_.meiall.mei.cmn.att.scoredef.log.Cmn with _root_.meiall.mei.mensural.att.scoredef.log.Mensural {
 
 } 

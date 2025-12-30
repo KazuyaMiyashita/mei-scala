@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.editionLike
  * Module: MEI.shared
  */
-trait EditionLike  extends meiall.mei.shared.model.BiblPart with meiall.mei.shared.model.TitlePagePart {
+trait EditionLike  extends _root_.meiall.mei.shared.model.BiblPart with _root_.meiall.mei.shared.model.TitlePagePart {
 
 } 

@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: handShift
  * Module: MEI.edittrans
  */
-case class HandShift(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.edittrans.att.Edit with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Medium with meiall.mei.edittrans.model.TranscriptionLike {
+case class HandShift(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.edittrans.att.Edit with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Medium with _root_.meiall.mei.edittrans.model.TranscriptionLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("cert", "character", "class", "copyof", "corresp", "evidence", "facs", "follows", "label", "medium", "n", "new", "next", "old", "precedes", "prev", "resp", "sameas", "source", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

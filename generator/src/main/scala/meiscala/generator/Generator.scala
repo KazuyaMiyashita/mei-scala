@@ -98,7 +98,7 @@ object Generator {
         val (_, packageName, className) = getPathInfo(spec.ident, spec.module, prefix)
         val methodName                  = s"${className.head.toLower}${className.tail}"
 
-        val fullyQualifiedClass = s"$packageName.$className"
+        val fullyQualifiedClass = s"_root_.$packageName.$className"
         val resolvedAttrs       = resolveAttributes(spec, specsMap).sortBy(_.ident)
 
         val attrParams = resolvedAttrs
@@ -226,7 +226,7 @@ object Generator {
       .map { case spec =>
         val tagName                     = spec.ident.value
         val (_, packageName, className) = getPathInfo(spec.ident, spec.module, prefix)
-        val fqcn                        = s"$packageName.$className"
+        val fqcn                        = s"_root_.$packageName.$className"
         s"      case \"$tagName\" => $fqcn(children, attributes)"
       }
       .mkString("\n")
@@ -235,7 +235,7 @@ object Generator {
       .map { spec =>
         val tagName                     = spec.ident.value
         val (_, packageName, className) = getPathInfo(spec.ident, spec.module, prefix)
-        val fqcn                        = s"$packageName.$className"
+        val fqcn                        = s"_root_.$packageName.$className"
         s"""    case e: $fqcn => new scala.xml.Elem(null, "$tagName", mkAttributes(e.attributes), scope, true, e.elements.map(el => toXmlWithScope(el, scope))*)"""
       }
       .mkString("\n")
@@ -244,7 +244,7 @@ object Generator {
     val meiReturnType = meiSpec match {
       case Some(spec) =>
         val (_, packageName, className) = getPathInfo(spec.ident, spec.module, prefix)
-        s"$packageName.$className"
+        s"_root_.$packageName.$className"
       case None => s"$prefix.Element"
     }
 
@@ -334,7 +334,7 @@ $toXmlCases
     specsMap.get(ident) match {
       case Some(spec) =>
         val (_, packageName, className) = getPathInfo(spec.ident, spec.module, prefix)
-        s"$packageName.$className"
+        s"_root_.$packageName.$className"
       case None =>
         s"$prefix.Element"
     }
@@ -464,7 +464,7 @@ $toXmlCases
   private def resolveInheritance(spec: Spec, specsMap: Map[Ident, Spec], prefix: String): String = {
     val parents = spec.classes.flatMap(specsMap.get).map { parentSpec =>
       val (_, packageName, className) = getPathInfo(parentSpec.ident, parentSpec.module, prefix)
-      s"$packageName.$className"
+      s"_root_.$packageName.$className"
     }
     spec match {
       case _: ElementSpec =>

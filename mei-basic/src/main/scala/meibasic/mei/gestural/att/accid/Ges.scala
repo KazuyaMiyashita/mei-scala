@@ -6,6 +6,6 @@ package meibasic.mei.gestural.att.accid
  * Ident: att.accid.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meibasic.mei.gestural.att.accidental.Ges {
+trait Ges  extends _root_.meibasic.mei.gestural.att.accidental.Ges {
 
 } 

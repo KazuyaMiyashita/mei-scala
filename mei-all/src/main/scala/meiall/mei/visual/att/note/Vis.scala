@@ -6,6 +6,6 @@ package meiall.mei.visual.att.note
  * Ident: att.note.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.usersymbols.att.AltSym with meiall.mei.shared.att.Color with meiall.mei.shared.att.EnclosingChars with meiall.mei.externalsymbols.att.ExtSym with meiall.mei.shared.att.NoteHeads with meiall.mei.shared.att.StaffLoc with meiall.mei.shared.att.Stems with meiall.mei.shared.att.Typography with meiall.mei.shared.att.Visibility with meiall.mei.shared.att.visualoffset.Ho with meiall.mei.shared.att.visualoffset.To with meiall.mei.shared.att.Xy with meiall.mei.cmn.att.note.vis.Cmn with meiall.mei.mensural.att.note.vis.Mensural {
+trait Vis  extends _root_.meiall.mei.usersymbols.att.AltSym with _root_.meiall.mei.shared.att.Color with _root_.meiall.mei.shared.att.EnclosingChars with _root_.meiall.mei.externalsymbols.att.ExtSym with _root_.meiall.mei.shared.att.NoteHeads with _root_.meiall.mei.shared.att.StaffLoc with _root_.meiall.mei.shared.att.Stems with _root_.meiall.mei.shared.att.Typography with _root_.meiall.mei.shared.att.Visibility with _root_.meiall.mei.shared.att.visualoffset.Ho with _root_.meiall.mei.shared.att.visualoffset.To with _root_.meiall.mei.shared.att.Xy with _root_.meiall.mei.cmn.att.note.vis.Cmn with _root_.meiall.mei.mensural.att.note.vis.Mensural {
 
 } 

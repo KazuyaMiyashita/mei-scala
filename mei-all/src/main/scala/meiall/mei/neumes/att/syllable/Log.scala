@@ -6,6 +6,6 @@ package meiall.mei.neumes.att.syllable
  * Ident: att.syllable.log
  * Module: MEI.neumes
  */
-trait Log  extends meiall.mei.performance.att.Alignment {
+trait Log  extends _root_.meiall.mei.performance.att.Alignment {
 
 } 

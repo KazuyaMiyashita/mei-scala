@@ -6,6 +6,6 @@ package meiall.mei.edittrans.model.edittranspart
  * Ident: model.editTransPart.text
  * Module: MEI.edittrans
  */
-trait Text  extends meiall.mei.edittrans.model.EditTransPart {
+trait Text  extends _root_.meiall.mei.edittrans.model.EditTransPart {
 
 } 

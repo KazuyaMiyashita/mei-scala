@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: rest
  * Module: MEI.shared
  */
-case class Rest(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.gestural.att.rest.Ges with meibasic.mei.shared.att.rest.Log with meibasic.mei.visual.att.rest.Vis with meibasic.mei.shared.model.EventLike {
+case class Rest(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.gestural.att.rest.Ges with _root_.meibasic.mei.shared.att.rest.Log with _root_.meibasic.mei.visual.att.rest.Vis with _root_.meibasic.mei.shared.model.EventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("breaksec", "color", "cue", "dots", "dur", "enclose", "ho", "instr", "label", "layer", "oloc", "ploc", "staff", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

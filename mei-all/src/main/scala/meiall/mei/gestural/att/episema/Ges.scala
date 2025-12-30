@@ -6,6 +6,6 @@ package meiall.mei.gestural.att.episema
  * Ident: att.episema.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meiall.mei.gestural.att.articulation.Ges {
+trait Ges  extends _root_.meiall.mei.gestural.att.articulation.Ges {
 
 } 

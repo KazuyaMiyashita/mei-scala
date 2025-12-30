@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: plica
  * Module: MEI.mensural
  */
-case class Plica(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.mensural.att.plica.Log with meiall.mei.visual.att.plica.Vis with meiall.mei.gestural.att.plica.Ges with meiall.mei.analytical.att.plica.Anl {
+case class Plica(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.mensural.att.plica.Log with _root_.meiall.mei.visual.att.plica.Vis with _root_.meiall.mei.gestural.att.plica.Ges with _root_.meiall.mei.analytical.att.plica.Anl {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "dir", "facs", "follows", "label", "len", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.stringtab.att.tabdursym
  * Ident: att.tabDurSym.log
  * Module: MEI.stringtab
  */
-trait Log  extends meiall.mei.shared.att.LayerIdent with meiall.mei.shared.att.PartIdent {
+trait Log  extends _root_.meiall.mei.shared.att.LayerIdent with _root_.meiall.mei.shared.att.PartIdent {
 
 } 

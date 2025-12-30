@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: relatedItem
  * Module: MEI.shared
  */
-case class RelatedItem(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Bibl with meiall.mei.shared.att.DataPointing with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Pointing with meiall.mei.shared.att.TargetEval with meiall.mei.shared.model.BiblPart {
+case class RelatedItem(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.shared.att.DataPointing with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Pointing with _root_.meiall.mei.shared.att.TargetEval with _root_.meiall.mei.shared.model.BiblPart {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "class", "copyof", "corresp", "data", "evaluate", "facs", "follows", "label", "n", "next", "precedes", "prev", "rel", "resp", "sameas", "synch", "target", "targettype", "type", "xlink:actuate", "xlink:role", "xlink:show", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

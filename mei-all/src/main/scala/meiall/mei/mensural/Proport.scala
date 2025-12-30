@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: proport
  * Module: MEI.mensural
  */
-case class Proport(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.mensural.att.proport.Log with meiall.mei.visual.att.proport.Vis with meiall.mei.gestural.att.proport.Ges with meiall.mei.analytical.att.proport.Anl with meiall.mei.mensural.model.eventlike.Mensural with meiall.mei.mensural.model.staffdefpart.Mensural {
+case class Proport(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.mensural.att.proport.Log with _root_.meiall.mei.visual.att.proport.Vis with _root_.meiall.mei.gestural.att.proport.Ges with _root_.meiall.mei.analytical.att.proport.Anl with _root_.meiall.mei.mensural.model.eventlike.Mensural with _root_.meiall.mei.mensural.model.staffdefpart.Mensural {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "class", "color", "copyof", "corresp", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "label", "letterspacing", "lineheight", "loc", "n", "next", "num", "numbase", "precedes", "prev", "resp", "sameas", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meibasic.mei.shared.model
  * Ident: model.staffDefLike
  * Module: MEI.shared
  */
-trait StaffDefLike  extends meibasic.mei.shared.model.SectionPart {
+trait StaffDefLike  extends _root_.meibasic.mei.shared.model.SectionPart {
 
 } 

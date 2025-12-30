@@ -6,6 +6,6 @@ package meiall.mei.edittrans.model.edittranspart
  * Ident: model.editTransPart.music
  * Module: MEI.edittrans
  */
-trait Music  extends meiall.mei.edittrans.model.EditTransPart {
+trait Music  extends _root_.meiall.mei.edittrans.model.EditTransPart {
 
 } 

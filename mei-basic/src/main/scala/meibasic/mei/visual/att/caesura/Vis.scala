@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.caesura
  * Ident: att.caesura.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.shared.att.Color with meibasic.mei.externalsymbols.att.ExtSym with meibasic.mei.shared.att.VisualOffset {
+trait Vis  extends _root_.meibasic.mei.shared.att.Color with _root_.meibasic.mei.externalsymbols.att.ExtSym with _root_.meibasic.mei.shared.att.VisualOffset {
 
 } 

@@ -6,6 +6,6 @@ package meiall.mei.gestural.att.scoredef
  * Ident: att.scoreDef.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meiall.mei.midi.att.Channelized with meiall.mei.midi.att.TimeBase with meiall.mei.shared.att.Tuning with meiall.mei.midi.att.MidiTempo with meiall.mei.shared.att.MmTempo {
+trait Ges  extends _root_.meiall.mei.midi.att.Channelized with _root_.meiall.mei.midi.att.TimeBase with _root_.meiall.mei.shared.att.Tuning with _root_.meiall.mei.midi.att.MidiTempo with _root_.meiall.mei.shared.att.MmTempo {
 
 } 

@@ -6,6 +6,6 @@ package meibasic.mei.cmn.att.breath
  * Ident: att.breath.log
  * Module: MEI.cmn
  */
-trait Log  extends meibasic.mei.shared.att.LayerIdent with meibasic.mei.shared.att.StaffIdent with meibasic.mei.shared.att.StartId with meibasic.mei.shared.att.timestamp.Log {
+trait Log  extends _root_.meibasic.mei.shared.att.LayerIdent with _root_.meibasic.mei.shared.att.StaffIdent with _root_.meibasic.mei.shared.att.StartId with _root_.meibasic.mei.shared.att.timestamp.Log {
 
 } 

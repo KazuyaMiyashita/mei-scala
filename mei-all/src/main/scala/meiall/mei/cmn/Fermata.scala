@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: fermata
  * Module: MEI.cmn
  */
-case class Fermata(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.cmn.att.fermata.Log with meiall.mei.visual.att.fermata.Vis with meiall.mei.gestural.att.fermata.Ges with meiall.mei.analytical.att.fermata.Anl with meiall.mei.cmn.model.controleventlike.Cmn {
+case class Fermata(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.cmn.att.fermata.Log with _root_.meiall.mei.visual.att.fermata.Vis with _root_.meiall.mei.gestural.att.fermata.Ges with _root_.meiall.mei.analytical.att.fermata.Anl with _root_.meiall.mei.cmn.model.controleventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "class", "color", "copyof", "corresp", "dots.ges", "dur.ges", "dur.metrical", "dur.ppq", "dur.real", "dur.recip", "enclose", "endid", "evaluate", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "form", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "lineheight", "n", "next", "part", "partstaff", "place", "plist", "precedes", "prev", "resp", "sameas", "shape", "staff", "startid", "synch", "to", "tstamp", "tstamp.ges", "tstamp.real", "type", "vgrp", "vo", "when", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

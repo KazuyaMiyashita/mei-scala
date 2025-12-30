@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: repository
  * Module: MEI.shared
  */
-case class Repository(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Bibl with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.shared.att.Name with meiall.mei.shared.model.RepositoryLike {
+case class Repository(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.shared.att.Name with _root_.meiall.mei.shared.model.RepositoryLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "auth", "auth.uri", "class", "codedval", "copyof", "corresp", "enddate", "facs", "follows", "isodate", "label", "n", "next", "nonfiling", "notafter", "notbefore", "nymref", "precedes", "prev", "resp", "role", "sameas", "startdate", "synch", "translit", "type", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

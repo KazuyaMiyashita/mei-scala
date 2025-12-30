@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.keySigLike
  * Module: MEI.shared
  */
-trait KeySigLike  extends meiall.mei.shared.model.EventLike with meiall.mei.shared.model.StaffDefPart {
+trait KeySigLike  extends _root_.meiall.mei.shared.model.EventLike with _root_.meiall.mei.shared.model.StaffDefPart {
 
 } 

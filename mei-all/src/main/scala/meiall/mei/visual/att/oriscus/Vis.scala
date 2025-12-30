@@ -6,6 +6,6 @@ package meiall.mei.visual.att.oriscus
  * Ident: att.oriscus.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.usersymbols.att.AltSym with meiall.mei.shared.att.Color with meiall.mei.shared.att.EnclosingChars with meiall.mei.externalsymbols.att.ExtSym with meiall.mei.shared.att.StaffLoc with meiall.mei.shared.att.Typography with meiall.mei.shared.att.Visibility with meiall.mei.shared.att.visualoffset.Ho with meiall.mei.shared.att.Xy {
+trait Vis  extends _root_.meiall.mei.usersymbols.att.AltSym with _root_.meiall.mei.shared.att.Color with _root_.meiall.mei.shared.att.EnclosingChars with _root_.meiall.mei.externalsymbols.att.ExtSym with _root_.meiall.mei.shared.att.StaffLoc with _root_.meiall.mei.shared.att.Typography with _root_.meiall.mei.shared.att.Visibility with _root_.meiall.mei.shared.att.visualoffset.Ho with _root_.meiall.mei.shared.att.Xy {
 
 } 

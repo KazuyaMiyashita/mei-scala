@@ -6,6 +6,6 @@ package meiall.mei.gestural.att.layerdef
  * Ident: att.layerDef.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meiall.mei.midi.att.InstrumentIdent with meiall.mei.shared.att.Tuning {
+trait Ges  extends _root_.meiall.mei.midi.att.InstrumentIdent with _root_.meiall.mei.shared.att.Tuning {
 
 } 

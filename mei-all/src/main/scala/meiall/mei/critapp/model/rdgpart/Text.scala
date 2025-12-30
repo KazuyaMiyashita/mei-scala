@@ -6,6 +6,6 @@ package meiall.mei.critapp.model.rdgpart
  * Ident: model.rdgPart.text
  * Module: MEI.critapp
  */
-trait Text  extends meiall.mei.critapp.model.RdgPart {
+trait Text  extends _root_.meiall.mei.critapp.model.RdgPart {
 
 } 

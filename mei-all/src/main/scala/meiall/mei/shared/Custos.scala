@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: custos
  * Module: MEI.shared
  */
-case class Custos(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Source with meiall.mei.analytical.att.custos.Anl with meiall.mei.gestural.att.custos.Ges with meiall.mei.shared.att.custos.Log with meiall.mei.visual.att.custos.Vis with meiall.mei.shared.model.EventLike {
+case class Custos(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Source with _root_.meiall.mei.analytical.att.custos.Anl with _root_.meiall.mei.gestural.att.custos.Ges with _root_.meiall.mei.shared.att.custos.Log with _root_.meiall.mei.visual.att.custos.Vis with _root_.meiall.mei.shared.model.EventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("accid", "altsym", "class", "color", "copyof", "corresp", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "letterspacing", "lineheight", "loc", "n", "next", "oct", "pname", "precedes", "prev", "resp", "sameas", "source", "synch", "target", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

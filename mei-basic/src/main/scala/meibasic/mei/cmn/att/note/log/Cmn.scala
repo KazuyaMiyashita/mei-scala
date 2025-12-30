@@ -6,6 +6,6 @@ package meibasic.mei.cmn.att.note.log
  * Ident: att.note.log.cmn
  * Module: MEI.cmn
  */
-trait Cmn  extends meibasic.mei.cmn.att.Graced {
+trait Cmn  extends _root_.meibasic.mei.cmn.att.Graced {
 
 } 

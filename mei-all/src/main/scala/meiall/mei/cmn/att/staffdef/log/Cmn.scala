@@ -6,6 +6,6 @@ package meiall.mei.cmn.att.staffdef.log
  * Ident: att.staffDef.log.cmn
  * Module: MEI.cmn
  */
-trait Cmn  extends meiall.mei.cmn.att.beaming.Log {
+trait Cmn  extends _root_.meiall.mei.cmn.att.beaming.Log {
 
 } 

@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: rdg
  * Module: MEI.critapp
  */
-case class Rdg(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.critapp.att.Crit with meiall.mei.shared.att.Pointing with meiall.mei.analytical.att.rdg.Anl with meiall.mei.gestural.att.rdg.Ges with meiall.mei.critapp.att.rdg.Log with meiall.mei.visual.att.rdg.Vis with meiall.mei.shared.att.TargetEval {
+case class Rdg(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.critapp.att.Crit with _root_.meiall.mei.shared.att.Pointing with _root_.meiall.mei.analytical.att.rdg.Anl with _root_.meiall.mei.gestural.att.rdg.Ges with _root_.meiall.mei.critapp.att.rdg.Log with _root_.meiall.mei.visual.att.rdg.Vis with _root_.meiall.mei.shared.att.TargetEval {
   override def validate(): Boolean = {
     val allowedAttrs = Set("cause", "class", "copyof", "corresp", "evaluate", "follows", "hand", "label", "n", "next", "precedes", "prev", "resp", "sameas", "seq", "source", "synch", "target", "targettype", "type", "xlink:actuate", "xlink:role", "xlink:show", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.scoreDefLike
  * Module: MEI.shared
  */
-trait ScoreDefLike  extends meiall.mei.shared.model.SectionPart {
+trait ScoreDefLike  extends _root_.meiall.mei.shared.model.SectionPart {
 
 } 

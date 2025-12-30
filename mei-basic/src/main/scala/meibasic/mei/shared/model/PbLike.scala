@@ -6,6 +6,6 @@ package meibasic.mei.shared.model
  * Ident: model.pbLike
  * Module: MEI.shared
  */
-trait PbLike  extends meibasic.mei.shared.model.milestonelike.Music with meibasic.mei.shared.model.TextPhraseLike {
+trait PbLike  extends _root_.meibasic.mei.shared.model.milestonelike.Music with _root_.meibasic.mei.shared.model.TextPhraseLike {
 
 } 

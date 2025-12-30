@@ -6,6 +6,6 @@ package meiall.mei.shared.att.layer
  * Ident: att.layer.log
  * Module: MEI.shared
  */
-trait Log  extends meiall.mei.shared.att.Cue with meiall.mei.shared.att.MeterConformance {
+trait Log  extends _root_.meiall.mei.shared.att.Cue with _root_.meiall.mei.shared.att.MeterConformance {
 
 } 

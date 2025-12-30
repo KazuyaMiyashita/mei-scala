@@ -6,6 +6,6 @@ package meiall.mei.cmn.model.controleventlike
  * Ident: model.controlEventLike.cmn
  * Module: MEI.cmn
  */
-trait Cmn  extends meiall.mei.cmn.model.MeasurePart with meiall.mei.critapp.model.rdgpart.Music with meiall.mei.edittrans.model.edittranspart.Music {
+trait Cmn  extends _root_.meiall.mei.cmn.model.MeasurePart with _root_.meiall.mei.critapp.model.rdgpart.Music with _root_.meiall.mei.edittrans.model.edittranspart.Music {
 
 } 

@@ -6,6 +6,6 @@ package meibasic.mei.gestural.att.hairpin
  * Ident: att.hairpin.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meibasic.mei.midi.att.MidiValue with meibasic.mei.midi.att.MidiValue2 {
+trait Ges  extends _root_.meibasic.mei.midi.att.MidiValue with _root_.meibasic.mei.midi.att.MidiValue2 {
 
 } 

@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: rest
  * Module: MEI.shared
  */
-case class Rest(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.rest.Anl with meiall.mei.gestural.att.rest.Ges with meiall.mei.shared.att.rest.Log with meiall.mei.visual.att.rest.Vis with meiall.mei.shared.model.EventLike {
+case class Rest(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.rest.Anl with _root_.meiall.mei.gestural.att.rest.Ges with _root_.meiall.mei.shared.att.rest.Log with _root_.meiall.mei.visual.att.rest.Vis with _root_.meiall.mei.shared.model.EventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "beam", "breaksec", "class", "color", "copyof", "corresp", "cue", "dots", "dots.ges", "dur", "dur.ges", "dur.metrical", "dur.ppq", "dur.real", "dur.recip", "enclose", "facs", "fermata", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "lineheight", "loc", "n", "next", "num", "numbase", "oloc", "ploc", "precedes", "prev", "resp", "sameas", "spaces", "staff", "synch", "to", "tstamp", "tstamp.ges", "tstamp.real", "tuplet", "type", "vo", "when", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.shared.att.symbol
  * Ident: att.symbol.log
  * Module: MEI.shared
  */
-trait Log  extends meiall.mei.shared.att.StartId {
+trait Log  extends _root_.meiall.mei.shared.att.StartId {
 
 } 

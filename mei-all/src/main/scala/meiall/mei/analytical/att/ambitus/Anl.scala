@@ -6,6 +6,6 @@ package meiall.mei.analytical.att.ambitus
  * Ident: att.ambitus.anl
  * Module: MEI.analytical
  */
-trait Anl  extends meiall.mei.analytical.att.IntervalHarmonic {
+trait Anl  extends _root_.meiall.mei.analytical.att.IntervalHarmonic {
 
 } 

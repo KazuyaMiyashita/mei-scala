@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: cb
  * Module: MEI.shared
  */
-case class Cb(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Basic with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Labelled with meiall.mei.shared.att.Linking with meiall.mei.shared.att.Responsibility with meiall.mei.shared.att.Source with meiall.mei.shared.att.Typed with meiall.mei.shared.model.milestonelike.Music with meiall.mei.shared.model.milestonelike.Text {
+case class Cb(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Basic with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Labelled with _root_.meiall.mei.shared.att.Linking with _root_.meiall.mei.shared.att.Responsibility with _root_.meiall.mei.shared.att.Source with _root_.meiall.mei.shared.att.Typed with _root_.meiall.mei.shared.model.milestonelike.Music with _root_.meiall.mei.shared.model.milestonelike.Text {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "facs", "follows", "label", "n", "next", "precedes", "prev", "resp", "sameas", "source", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: staffGrp
  * Module: MEI.shared
  */
-case class StaffGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.visual.att.staffgrp.Vis with meibasic.mei.gestural.att.staffgrp.Ges with meibasic.mei.shared.model.StaffGrpLike {
+case class StaffGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.visual.att.staffgrp.Vis with _root_.meibasic.mei.gestural.att.staffgrp.Ges with _root_.meibasic.mei.shared.model.StaffGrpLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("bar.thru", "instr", "label", "symbol", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

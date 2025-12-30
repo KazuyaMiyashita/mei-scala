@@ -6,6 +6,6 @@ package meiall.mei.mensural.att.proport
  * Ident: att.proport.log
  * Module: MEI.mensural
  */
-trait Log  extends meiall.mei.shared.att.duration.Ratio {
+trait Log  extends _root_.meiall.mei.shared.att.duration.Ratio {
 
 } 

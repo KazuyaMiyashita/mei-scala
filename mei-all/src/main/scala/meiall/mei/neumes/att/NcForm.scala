@@ -6,6 +6,6 @@ package meiall.mei.neumes.att
  * Ident: att.ncForm
  * Module: MEI.neumes
  */
-trait NcForm  extends meiall.mei.visual.att.CurvatureDirection {
+trait NcForm  extends _root_.meiall.mei.visual.att.CurvatureDirection {
 
 } 

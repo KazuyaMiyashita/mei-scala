@@ -6,6 +6,6 @@ package meiall.mei.shared.att.artic
  * Ident: att.artic.log
  * Module: MEI.shared
  */
-trait Log  extends meiall.mei.shared.att.Articulation with meiall.mei.shared.att.ControlEvent {
+trait Log  extends _root_.meiall.mei.shared.att.Articulation with _root_.meiall.mei.shared.att.ControlEvent {
 
 } 

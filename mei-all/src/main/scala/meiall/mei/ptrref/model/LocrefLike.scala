@@ -6,6 +6,6 @@ package meiall.mei.ptrref.model
  * Ident: model.locrefLike
  * Module: MEI.ptrref
  */
-trait LocrefLike  extends meiall.mei.shared.model.textphraselike.Limited {
+trait LocrefLike  extends _root_.meiall.mei.shared.model.textphraselike.Limited {
 
 } 

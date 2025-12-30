@@ -6,6 +6,6 @@ package meiall.mei.neumes.model.eventlike
  * Ident: model.eventLike.neumes
  * Module: MEI.neumes
  */
-trait Neumes  extends meiall.mei.neumes.model.layerpart.Neumes with meiall.mei.neumes.model.SyllablePart {
+trait Neumes  extends _root_.meiall.mei.neumes.model.layerpart.Neumes with _root_.meiall.mei.neumes.model.SyllablePart {
 
 } 

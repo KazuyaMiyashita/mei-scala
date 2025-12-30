@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: note
  * Module: MEI.shared
  */
-case class Note(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.gestural.att.note.Ges with meibasic.mei.shared.att.note.Log with meibasic.mei.visual.att.note.Vis with meibasic.mei.shared.model.ChordPart with meibasic.mei.shared.model.EventLike {
+case class Note(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.gestural.att.note.Ges with _root_.meibasic.mei.shared.att.note.Log with _root_.meibasic.mei.visual.att.note.Vis with _root_.meibasic.mei.shared.model.ChordPart with _root_.meibasic.mei.shared.model.EventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("breaksec", "color", "cue", "dots", "dur", "enclose", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "grace", "grace.time", "ho", "instr", "label", "layer", "letterspacing", "lineheight", "oct", "oct.ges", "pname", "pname.ges", "staff", "stem.dir", "stem.len", "stem.mod", "tab.course", "tab.fing", "tab.fret", "tab.line", "tab.string", "type", "vel", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

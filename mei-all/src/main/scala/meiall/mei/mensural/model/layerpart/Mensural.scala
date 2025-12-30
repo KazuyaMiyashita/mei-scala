@@ -6,6 +6,6 @@ package meiall.mei.mensural.model.layerpart
  * Ident: model.layerPart.mensural
  * Module: MEI.mensural
  */
-trait Mensural  extends meiall.mei.shared.model.layerpart.MensuralAndNeumes {
+trait Mensural  extends _root_.meiall.mei.shared.model.layerpart.MensuralAndNeumes {
 
 } 

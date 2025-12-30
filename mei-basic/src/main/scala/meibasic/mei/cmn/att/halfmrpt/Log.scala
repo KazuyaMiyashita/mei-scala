@@ -6,6 +6,6 @@ package meibasic.mei.cmn.att.halfmrpt
  * Ident: att.halfmRpt.log
  * Module: MEI.cmn
  */
-trait Log  extends meibasic.mei.shared.att.Event with meibasic.mei.shared.att.duration.Additive {
+trait Log  extends _root_.meibasic.mei.shared.att.Event with _root_.meibasic.mei.shared.att.duration.Additive {
 
 } 

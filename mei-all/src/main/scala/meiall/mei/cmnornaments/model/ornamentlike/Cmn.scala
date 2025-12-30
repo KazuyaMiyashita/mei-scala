@@ -6,6 +6,6 @@ package meiall.mei.cmnornaments.model.ornamentlike
  * Ident: model.ornamentLike.cmn
  * Module: MEI.cmnOrnaments
  */
-trait Cmn  extends meiall.mei.cmn.model.controleventlike.Cmn {
+trait Cmn  extends _root_.meiall.mei.cmn.model.controleventlike.Cmn {
 
 } 

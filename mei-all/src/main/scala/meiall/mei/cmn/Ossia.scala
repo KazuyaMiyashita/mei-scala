@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: ossia
  * Module: MEI.cmn
  */
-case class Ossia(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.cmn.att.ossia.Log with meiall.mei.visual.att.ossia.Vis with meiall.mei.gestural.att.ossia.Ges with meiall.mei.analytical.att.ossia.Anl with meiall.mei.cmn.model.OssiaLike {
+case class Ossia(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.cmn.att.ossia.Log with _root_.meiall.mei.visual.att.ossia.Vis with _root_.meiall.mei.gestural.att.ossia.Ges with _root_.meiall.mei.analytical.att.ossia.Anl with _root_.meiall.mei.cmn.model.OssiaLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "facs", "follows", "label", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

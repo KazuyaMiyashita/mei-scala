@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: ligature
  * Module: MEI.mensural
  */
-case class Ligature(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.mensural.att.ligature.Log with meiall.mei.visual.att.ligature.Vis with meiall.mei.gestural.att.ligature.Ges with meiall.mei.analytical.att.ligature.Anl with meiall.mei.mensural.model.eventlike.Mensural {
+case class Ligature(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.mensural.att.ligature.Log with _root_.meiall.mei.visual.att.ligature.Vis with _root_.meiall.mei.gestural.att.ligature.Ges with _root_.meiall.mei.analytical.att.ligature.Anl with _root_.meiall.mei.mensural.model.eventlike.Mensural {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "color", "copyof", "corresp", "facs", "follows", "form", "label", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

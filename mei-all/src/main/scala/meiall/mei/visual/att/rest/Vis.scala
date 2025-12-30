@@ -6,6 +6,6 @@ package meiall.mei.visual.att.rest
  * Ident: att.rest.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.usersymbols.att.AltSym with meiall.mei.shared.att.Color with meiall.mei.shared.att.EnclosingChars with meiall.mei.externalsymbols.att.ExtSym with meiall.mei.cmn.att.rest.vis.Cmn with meiall.mei.mensural.att.rest.vis.Mensural with meiall.mei.shared.att.StaffLoc with meiall.mei.shared.att.staffloc.Pitched with meiall.mei.shared.att.Typography with meiall.mei.shared.att.VisualOffset with meiall.mei.shared.att.Xy {
+trait Vis  extends _root_.meiall.mei.usersymbols.att.AltSym with _root_.meiall.mei.shared.att.Color with _root_.meiall.mei.shared.att.EnclosingChars with _root_.meiall.mei.externalsymbols.att.ExtSym with _root_.meiall.mei.cmn.att.rest.vis.Cmn with _root_.meiall.mei.mensural.att.rest.vis.Mensural with _root_.meiall.mei.shared.att.StaffLoc with _root_.meiall.mei.shared.att.staffloc.Pitched with _root_.meiall.mei.shared.att.Typography with _root_.meiall.mei.shared.att.VisualOffset with _root_.meiall.mei.shared.att.Xy {
 
 } 

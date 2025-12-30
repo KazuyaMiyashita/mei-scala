@@ -6,6 +6,6 @@ package meiall.mei.visual.att.lyrics
  * Ident: att.lyrics.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.PlacementRelStaff with meiall.mei.shared.att.Typography {
+trait Vis  extends _root_.meiall.mei.shared.att.PlacementRelStaff with _root_.meiall.mei.shared.att.Typography {
 
 } 

@@ -6,6 +6,6 @@ package meibasic.mei.externalsymbols.att
  * Ident: att.extSym
  * Module: MEI.externalsymbols
  */
-trait ExtSym  extends meibasic.mei.externalsymbols.att.extsym.Auth with meibasic.mei.externalsymbols.att.extsym.Names {
+trait ExtSym  extends _root_.meibasic.mei.externalsymbols.att.extsym.Auth with _root_.meibasic.mei.externalsymbols.att.extsym.Names {
 
 } 

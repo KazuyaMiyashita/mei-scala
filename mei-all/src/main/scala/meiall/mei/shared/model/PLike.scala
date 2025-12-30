@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.pLike
  * Module: MEI.shared
  */
-trait PLike  extends meiall.mei.shared.model.TextComponentLike {
+trait PLike  extends _root_.meiall.mei.shared.model.TextComponentLike {
 
 } 

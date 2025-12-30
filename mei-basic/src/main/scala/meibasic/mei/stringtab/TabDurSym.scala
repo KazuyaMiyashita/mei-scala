@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: tabDurSym
  * Module: MEI.stringtab
  */
-case class TabDurSym(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.stringtab.att.Stringtab with meibasic.mei.stringtab.att.tabdursym.Log with meibasic.mei.visual.att.tabdursym.Vis with meibasic.mei.gestural.att.tabdursym.Ges with meibasic.mei.analytical.att.tabdursym.Anl {
+case class TabDurSym(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.stringtab.att.Stringtab with _root_.meibasic.mei.stringtab.att.tabdursym.Log with _root_.meibasic.mei.visual.att.tabdursym.Vis with _root_.meibasic.mei.gestural.att.tabdursym.Ges with _root_.meibasic.mei.analytical.att.tabdursym.Anl {
   override def validate(): Boolean = {
     val allowedAttrs = Set("color", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "lineheight", "place", "tab.course", "tab.fing", "tab.fret", "tab.line", "tab.string", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

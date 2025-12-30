@@ -6,6 +6,6 @@ package meibasic.mei.shared.att
  * Ident: att.name
  * Module: MEI.shared
  */
-trait Name  extends meibasic.mei.shared.att.Datable {
+trait Name  extends _root_.meibasic.mei.shared.att.Datable {
 
 } 

@@ -6,6 +6,6 @@ package meiall.mei.visual.att.ending
  * Ident: att.ending.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.LineRend {
+trait Vis  extends _root_.meiall.mei.shared.att.LineRend {
 
 } 

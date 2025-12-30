@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: chordMember
  * Module: MEI.harmony
  */
-case class ChordMember(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.gestural.att.chordmember.Ges with meibasic.mei.harmony.att.chordmember.Log {
+case class ChordMember(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.gestural.att.chordmember.Ges with _root_.meibasic.mei.harmony.att.chordmember.Log {
   override def validate(): Boolean = {
     val allowedAttrs = Set("accid.ges", "label", "oct", "pname", "tab.course", "tab.fing", "tab.fret", "tab.line", "tab.string", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

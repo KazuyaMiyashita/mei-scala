@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.controlEventLike
  * Module: MEI.shared
  */
-trait ControlEventLike  extends meiall.mei.cmn.model.MeasurePart with meiall.mei.mensural.model.staffpart.Mensural with meiall.mei.neumes.model.SyllablePart with meiall.mei.critapp.model.rdgpart.Music with meiall.mei.edittrans.model.edittranspart.Music {
+trait ControlEventLike  extends _root_.meiall.mei.cmn.model.MeasurePart with _root_.meiall.mei.mensural.model.staffpart.Mensural with _root_.meiall.mei.neumes.model.SyllablePart with _root_.meiall.mei.critapp.model.rdgpart.Music with _root_.meiall.mei.edittrans.model.edittranspart.Music {
 
 } 

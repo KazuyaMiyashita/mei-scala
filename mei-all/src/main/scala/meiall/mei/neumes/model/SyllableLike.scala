@@ -6,6 +6,6 @@ package meiall.mei.neumes.model
  * Ident: model.syllableLike
  * Module: MEI.neumes
  */
-trait SyllableLike  extends meiall.mei.neumes.model.layerpart.Neumes {
+trait SyllableLike  extends _root_.meiall.mei.neumes.model.layerpart.Neumes {
 
 } 

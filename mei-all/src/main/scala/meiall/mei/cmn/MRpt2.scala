@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: mRpt2
  * Module: MEI.cmn
  */
-case class MRpt2(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.cmn.att.mrpt2.Log with meiall.mei.visual.att.mrpt2.Vis with meiall.mei.gestural.att.mrpt2.Ges with meiall.mei.analytical.att.mrpt2.Anl with meiall.mei.cmn.model.eventlike.MeasureFilling {
+case class MRpt2(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.cmn.att.mrpt2.Log with _root_.meiall.mei.visual.att.mrpt2.Vis with _root_.meiall.mei.gestural.att.mrpt2.Ges with _root_.meiall.mei.analytical.att.mrpt2.Anl with _root_.meiall.mei.cmn.model.eventlike.MeasureFilling {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "class", "color", "copyof", "corresp", "expand", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "label", "layer", "letterspacing", "lineheight", "n", "next", "precedes", "prev", "resp", "sameas", "staff", "synch", "tstamp", "tstamp.ges", "tstamp.real", "type", "when", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

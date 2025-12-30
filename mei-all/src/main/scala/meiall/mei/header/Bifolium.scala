@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: bifolium
  * Module: MEI.header
  */
-case class Bifolium(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Dimensions with meiall.mei.shared.att.Measurement with meiall.mei.header.att.BifoliumSurfaces with meiall.mei.header.model.BifoliumLike {
+case class Bifolium(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Dimensions with _root_.meiall.mei.shared.att.Measurement with _root_.meiall.mei.header.att.BifoliumSurfaces with _root_.meiall.mei.header.model.BifoliumLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "follows", "height", "inner.recto", "inner.verso", "label", "n", "next", "outer.recto", "outer.verso", "precedes", "prev", "resp", "sameas", "synch", "type", "unit", "width", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

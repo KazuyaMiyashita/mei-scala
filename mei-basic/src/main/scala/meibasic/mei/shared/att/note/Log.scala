@@ -6,6 +6,6 @@ package meibasic.mei.shared.att.note
  * Ident: att.note.log
  * Module: MEI.shared
  */
-trait Log  extends meibasic.mei.shared.att.AugmentDots with meibasic.mei.shared.att.Cue with meibasic.mei.shared.att.duration.Log with meibasic.mei.shared.att.Event with meibasic.mei.cmn.att.note.log.Cmn with meibasic.mei.shared.att.Pitched {
+trait Log  extends _root_.meibasic.mei.shared.att.AugmentDots with _root_.meibasic.mei.shared.att.Cue with _root_.meibasic.mei.shared.att.duration.Log with _root_.meibasic.mei.shared.att.Event with _root_.meibasic.mei.cmn.att.note.log.Cmn with _root_.meibasic.mei.shared.att.Pitched {
 
 } 

@@ -6,6 +6,6 @@ package meiall.mei.analytical.att.tupletspan
  * Ident: att.tupletSpan.anl
  * Module: MEI.analytical
  */
-trait Anl  extends meiall.mei.analytical.att.tuplet.Anl {
+trait Anl  extends _root_.meiall.mei.analytical.att.tuplet.Anl {
 
 } 

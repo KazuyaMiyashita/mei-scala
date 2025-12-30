@@ -6,6 +6,6 @@ package meiall.mei.figtable.model
  * Ident: model.tableLike
  * Module: MEI.figtable
  */
-trait TableLike  extends meiall.mei.shared.model.ParacontentPart with meiall.mei.shared.model.TextComponentLike {
+trait TableLike  extends _root_.meiall.mei.shared.model.ParacontentPart with _root_.meiall.mei.shared.model.TextComponentLike {
 
 } 

@@ -6,6 +6,6 @@ package meiall.mei.shared.att.grpsym
  * Ident: att.grpSym.log
  * Module: MEI.shared
  */
-trait Log  extends meiall.mei.shared.att.StaffGroupingSym with meiall.mei.shared.att.StartEndId {
+trait Log  extends _root_.meiall.mei.shared.att.StaffGroupingSym with _root_.meiall.mei.shared.att.StartEndId {
 
 } 

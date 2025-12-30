@@ -6,6 +6,6 @@ package meiall.mei.visual.att.beamspan
  * Ident: att.beamSpan.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.visual.att.beam.Vis {
+trait Vis  extends _root_.meiall.mei.visual.att.beam.Vis {
 
 } 

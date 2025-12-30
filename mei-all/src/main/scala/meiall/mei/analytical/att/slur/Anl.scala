@@ -6,6 +6,6 @@ package meiall.mei.analytical.att.slur
  * Ident: att.slur.anl
  * Module: MEI.analytical
  */
-trait Anl  extends meiall.mei.shared.att.Joined {
+trait Anl  extends _root_.meiall.mei.shared.att.Joined {
 
 } 

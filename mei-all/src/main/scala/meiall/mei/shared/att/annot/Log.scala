@@ -6,6 +6,6 @@ package meiall.mei.shared.att.annot
  * Ident: att.annot.log
  * Module: MEI.shared
  */
-trait Log  extends meiall.mei.performance.att.Alignment with meiall.mei.shared.att.duration.Additive with meiall.mei.shared.att.LayerIdent with meiall.mei.shared.att.PartIdent with meiall.mei.shared.att.StaffIdent with meiall.mei.shared.att.StartEndId with meiall.mei.shared.att.timestamp.Log with meiall.mei.shared.att.timestamp2.Log {
+trait Log  extends _root_.meiall.mei.performance.att.Alignment with _root_.meiall.mei.shared.att.duration.Additive with _root_.meiall.mei.shared.att.LayerIdent with _root_.meiall.mei.shared.att.PartIdent with _root_.meiall.mei.shared.att.StaffIdent with _root_.meiall.mei.shared.att.StartEndId with _root_.meiall.mei.shared.att.timestamp.Log with _root_.meiall.mei.shared.att.timestamp2.Log {
 
 } 

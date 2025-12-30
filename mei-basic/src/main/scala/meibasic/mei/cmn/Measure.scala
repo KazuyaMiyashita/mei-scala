@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: measure
  * Module: MEI.cmn
  */
-case class Measure(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.gestural.att.measure.Ges with meibasic.mei.cmn.att.measure.Log with meibasic.mei.cmn.model.MeasureLike with meibasic.mei.shared.att.NNumberLike {
+case class Measure(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.gestural.att.measure.Ges with _root_.meibasic.mei.cmn.att.measure.Log with _root_.meibasic.mei.cmn.model.MeasureLike with _root_.meibasic.mei.shared.att.NNumberLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("label", "left", "metcon", "n", "right", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

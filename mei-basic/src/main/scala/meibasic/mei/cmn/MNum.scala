@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: mNum
  * Module: MEI.cmn
  */
-case class MNum(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.Lang with meibasic.mei.visual.att.mnum.Vis {
+case class MNum(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.Lang with _root_.meibasic.mei.visual.att.mnum.Vis {
   override def validate(): Boolean = {
     val allowedAttrs = Set("color", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "ho", "label", "letterspacing", "lineheight", "place", "type", "vo", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

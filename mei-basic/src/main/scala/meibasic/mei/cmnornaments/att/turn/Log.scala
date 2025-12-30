@@ -6,6 +6,6 @@ package meibasic.mei.cmnornaments.att.turn
  * Ident: att.turn.log
  * Module: MEI.cmnOrnaments
  */
-trait Log  extends meibasic.mei.shared.att.ControlEvent with meibasic.mei.cmnornaments.att.OrnamentAccid with meibasic.mei.shared.att.StartId {
+trait Log  extends _root_.meibasic.mei.shared.att.ControlEvent with _root_.meibasic.mei.cmnornaments.att.OrnamentAccid with _root_.meibasic.mei.shared.att.StartId {
 
 } 

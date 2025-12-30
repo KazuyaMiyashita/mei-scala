@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: midi
  * Module: MEI.midi
  */
-case class Midi(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.midi.att.midi.Log with meiall.mei.gestural.att.midi.Ges with meiall.mei.analytical.att.midi.Anl with meiall.mei.midi.model.MidiLike {
+case class Midi(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.midi.att.midi.Log with _root_.meiall.mei.gestural.att.midi.Ges with _root_.meiall.mei.analytical.att.midi.Anl with _root_.meiall.mei.midi.model.MidiLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "follows", "label", "layer", "n", "next", "part", "partstaff", "precedes", "prev", "resp", "sameas", "staff", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

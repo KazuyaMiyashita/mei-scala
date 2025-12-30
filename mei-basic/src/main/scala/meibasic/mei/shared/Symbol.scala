@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: symbol
  * Module: MEI.shared
  */
-case class Symbol(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.visual.att.symbol.Vis with meibasic.mei.shared.model.textphraselike.Limited {
+case class Symbol(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.visual.att.symbol.Vis with _root_.meibasic.mei.shared.model.textphraselike.Limited {
   override def validate(): Boolean = {
     val allowedAttrs = Set("color", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "scale", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

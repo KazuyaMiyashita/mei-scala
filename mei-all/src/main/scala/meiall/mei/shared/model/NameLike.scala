@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.nameLike
  * Module: MEI.shared
  */
-trait NameLike  extends meiall.mei.shared.model.textphraselike.Limited {
+trait NameLike  extends _root_.meiall.mei.shared.model.textphraselike.Limited {
 
 } 

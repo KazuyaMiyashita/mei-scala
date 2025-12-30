@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: expansion
  * Module: MEI.shared
  */
-case class Expansion(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Plist with meiall.mei.shared.att.Source with meiall.mei.shared.att.TargetEval {
+case class Expansion(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Plist with _root_.meiall.mei.shared.att.Source with _root_.meiall.mei.shared.att.TargetEval {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "evaluate", "follows", "label", "n", "next", "plist", "precedes", "prev", "resp", "sameas", "source", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

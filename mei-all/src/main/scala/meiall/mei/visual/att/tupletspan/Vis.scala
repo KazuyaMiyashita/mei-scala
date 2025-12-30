@@ -6,6 +6,6 @@ package meiall.mei.visual.att.tupletspan
  * Ident: att.tupletSpan.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.visual.att.tuplet.Vis {
+trait Vis  extends _root_.meiall.mei.visual.att.tuplet.Vis {
 
 } 

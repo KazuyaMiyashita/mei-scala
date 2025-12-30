@@ -6,6 +6,6 @@ package meibasic.mei.shared.model
  * Ident: model.dateLike
  * Module: MEI.shared
  */
-trait DateLike  extends meibasic.mei.shared.model.textphraselike.Limited {
+trait DateLike  extends _root_.meibasic.mei.shared.model.textphraselike.Limited {
 
 } 

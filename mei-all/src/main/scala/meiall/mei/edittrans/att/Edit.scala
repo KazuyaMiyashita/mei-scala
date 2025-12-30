@@ -6,6 +6,6 @@ package meiall.mei.edittrans.att
  * Ident: att.edit
  * Module: MEI.edittrans
  */
-trait Edit  extends meiall.mei.shared.att.Source with meiall.mei.shared.att.Evidence {
+trait Edit  extends _root_.meiall.mei.shared.att.Source with _root_.meiall.mei.shared.att.Evidence {
 
 } 

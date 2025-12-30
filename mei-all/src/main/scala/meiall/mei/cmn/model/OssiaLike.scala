@@ -6,6 +6,6 @@ package meiall.mei.cmn.model
  * Ident: model.ossiaLike
  * Module: MEI.cmn
  */
-trait OssiaLike  extends meiall.mei.cmn.model.MeasurePart with meiall.mei.shared.model.StaffPart {
+trait OssiaLike  extends _root_.meiall.mei.cmn.model.MeasurePart with _root_.meiall.mei.shared.model.StaffPart {
 
 } 

@@ -6,6 +6,6 @@ package meibasic.mei.shared.att
  * Ident: att.event
  * Module: MEI.shared
  */
-trait Event  extends meibasic.mei.shared.att.LayerIdent with meibasic.mei.shared.att.StaffIdent {
+trait Event  extends _root_.meibasic.mei.shared.att.LayerIdent with _root_.meibasic.mei.shared.att.StaffIdent {
 
 } 

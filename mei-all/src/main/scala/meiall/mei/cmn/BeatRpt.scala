@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: beatRpt
  * Module: MEI.cmn
  */
-case class BeatRpt(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.cmn.att.beatrpt.Log with meiall.mei.visual.att.beatrpt.Vis with meiall.mei.gestural.att.beatrpt.Ges with meiall.mei.analytical.att.beatrpt.Anl with meiall.mei.shared.att.Plist with meiall.mei.shared.att.TargetEval with meiall.mei.cmn.model.eventlike.Cmn {
+case class BeatRpt(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.cmn.att.beatrpt.Log with _root_.meiall.mei.visual.att.beatrpt.Vis with _root_.meiall.mei.gestural.att.beatrpt.Ges with _root_.meiall.mei.analytical.att.beatrpt.Anl with _root_.meiall.mei.shared.att.Plist with _root_.meiall.mei.shared.att.TargetEval with _root_.meiall.mei.cmn.model.eventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "beatdef", "class", "color", "copyof", "corresp", "evaluate", "expand", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "label", "layer", "letterspacing", "lineheight", "n", "next", "plist", "precedes", "prev", "resp", "sameas", "slash", "staff", "synch", "tstamp", "tstamp.ges", "tstamp.real", "type", "when", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

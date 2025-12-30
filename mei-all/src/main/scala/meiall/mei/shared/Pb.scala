@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: pb
  * Module: MEI.shared
  */
-case class Pb(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Pointing with meiall.mei.shared.att.Source with meiall.mei.analytical.att.pb.Anl with meiall.mei.gestural.att.pb.Ges with meiall.mei.shared.att.pb.Log with meiall.mei.visual.att.pb.Vis with meiall.mei.shared.model.PbLike {
+case class Pb(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Pointing with _root_.meiall.mei.shared.att.Source with _root_.meiall.mei.analytical.att.pb.Anl with _root_.meiall.mei.gestural.att.pb.Ges with _root_.meiall.mei.shared.att.pb.Log with _root_.meiall.mei.visual.att.pb.Vis with _root_.meiall.mei.shared.model.PbLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "facs", "folium", "follows", "label", "n", "next", "precedes", "prev", "resp", "sameas", "source", "synch", "target", "targettype", "type", "when", "xlink:actuate", "xlink:role", "xlink:show", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

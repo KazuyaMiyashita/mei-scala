@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: abbr
  * Module: MEI.edittrans
  */
-case class Abbr(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.edittrans.att.Edit with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.edittrans.att.Trans with meiall.mei.shared.model.EditorialLike {
+case class Abbr(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.edittrans.att.Edit with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.edittrans.att.Trans with _root_.meiall.mei.shared.model.EditorialLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("cert", "class", "copyof", "corresp", "decls", "evidence", "expan", "facs", "follows", "hand", "instant", "label", "n", "next", "precedes", "prev", "resp", "sameas", "seq", "source", "state", "synch", "translit", "type", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

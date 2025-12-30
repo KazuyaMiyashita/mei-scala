@@ -6,6 +6,6 @@ package meiall.mei.shared.att
  * Ident: att.controlEvent
  * Module: MEI.shared
  */
-trait ControlEvent  extends meiall.mei.performance.att.Alignment with meiall.mei.shared.att.LayerIdent with meiall.mei.shared.att.PartIdent with meiall.mei.shared.att.Plist with meiall.mei.shared.att.StaffIdent with meiall.mei.shared.att.TargetEval with meiall.mei.shared.att.timestamp.Log with meiall.mei.gestural.att.timestamp.Ges {
+trait ControlEvent  extends _root_.meiall.mei.performance.att.Alignment with _root_.meiall.mei.shared.att.LayerIdent with _root_.meiall.mei.shared.att.PartIdent with _root_.meiall.mei.shared.att.Plist with _root_.meiall.mei.shared.att.StaffIdent with _root_.meiall.mei.shared.att.TargetEval with _root_.meiall.mei.shared.att.timestamp.Log with _root_.meiall.mei.gestural.att.timestamp.Ges {
 
 } 

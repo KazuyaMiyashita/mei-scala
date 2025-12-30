@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: score
  * Module: MEI.shared
  */
-case class Score(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.MetadataPointing with meiall.mei.analytical.att.score.Anl with meiall.mei.gestural.att.score.Ges with meiall.mei.shared.att.score.Log with meiall.mei.visual.att.score.Vis with meiall.mei.shared.model.ScoreLike {
+case class Score(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.MetadataPointing with _root_.meiall.mei.analytical.att.score.Anl with _root_.meiall.mei.gestural.att.score.Ges with _root_.meiall.mei.shared.att.score.Log with _root_.meiall.mei.visual.att.score.Vis with _root_.meiall.mei.shared.model.ScoreLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "decls", "follows", "label", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

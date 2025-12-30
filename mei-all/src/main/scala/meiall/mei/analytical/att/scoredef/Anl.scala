@@ -6,6 +6,6 @@ package meiall.mei.analytical.att.scoredef
  * Ident: att.scoreDef.anl
  * Module: MEI.analytical
  */
-trait Anl  extends meiall.mei.analytical.att.keysigdefault.Anl {
+trait Anl  extends _root_.meiall.mei.analytical.att.keysigdefault.Anl {
 
 } 

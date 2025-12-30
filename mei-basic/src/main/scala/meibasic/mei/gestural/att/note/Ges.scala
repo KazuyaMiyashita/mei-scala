@@ -6,6 +6,6 @@ package meibasic.mei.gestural.att.note
  * Ident: att.note.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meibasic.mei.midi.att.InstrumentIdent with meibasic.mei.midi.att.MidiVelocity with meibasic.mei.stringtab.att.Stringtab {
+trait Ges  extends _root_.meibasic.mei.midi.att.InstrumentIdent with _root_.meibasic.mei.midi.att.MidiVelocity with _root_.meibasic.mei.stringtab.att.Stringtab {
 
 } 

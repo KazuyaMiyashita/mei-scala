@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: turn
  * Module: MEI.cmnOrnaments
  */
-case class Turn(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmnornaments.att.turn.Log with meibasic.mei.visual.att.turn.Vis with meibasic.mei.cmnornaments.model.ornamentlike.Cmn {
+case class Turn(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmnornaments.att.turn.Log with _root_.meibasic.mei.visual.att.turn.Vis with _root_.meibasic.mei.cmnornaments.model.ornamentlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("accidlower", "accidlower.ges", "accidupper", "accidupper.ges", "color", "delayed", "enclose", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "form", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "lineheight", "place", "plist", "staff", "startid", "tstamp", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

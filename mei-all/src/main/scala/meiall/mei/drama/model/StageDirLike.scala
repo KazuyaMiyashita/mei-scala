@@ -6,6 +6,6 @@ package meiall.mei.drama.model
  * Ident: model.stageDirLike
  * Module: MEI.drama
  */
-trait StageDirLike  extends meiall.mei.shared.model.ControlEventLike with meiall.mei.shared.model.ParacontentPart {
+trait StageDirLike  extends _root_.meiall.mei.shared.model.ControlEventLike with _root_.meiall.mei.shared.model.ParacontentPart {
 
 } 

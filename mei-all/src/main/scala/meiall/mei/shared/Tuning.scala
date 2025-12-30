@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: tuning
  * Module: MEI.shared
  */
-case class Tuning(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.tuning.Log with meiall.mei.visual.att.tuning.Vis with meiall.mei.gestural.att.tuning.Ges with meiall.mei.analytical.att.tuning.Anl with meiall.mei.shared.model.StaffDefPart {
+case class Tuning(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.tuning.Log with _root_.meiall.mei.visual.att.tuning.Vis with _root_.meiall.mei.gestural.att.tuning.Ges with _root_.meiall.mei.analytical.att.tuning.Anl with _root_.meiall.mei.shared.model.StaffDefPart {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "follows", "label", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "tuning.standard", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

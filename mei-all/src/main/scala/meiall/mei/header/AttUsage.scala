@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: attUsage
  * Module: MEI.header
  */
-case class AttUsage(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Bibl {
+case class AttUsage(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Bibl {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "class", "context", "copyof", "corresp", "follows", "label", "n", "name", "next", "precedes", "prev", "resp", "sameas", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

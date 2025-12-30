@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.sylLike
  * Module: MEI.shared
  */
-trait SylLike  extends meiall.mei.edittrans.model.EditTransPart with meiall.mei.critapp.model.RdgPart with meiall.mei.neumes.model.SyllablePart {
+trait SylLike  extends _root_.meiall.mei.edittrans.model.EditTransPart with _root_.meiall.mei.critapp.model.RdgPart with _root_.meiall.mei.neumes.model.SyllablePart {
 
 } 

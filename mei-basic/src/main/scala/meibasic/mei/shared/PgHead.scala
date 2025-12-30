@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: pgHead
  * Module: MEI.shared
  */
-case class PgHead(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.Formework with meibasic.mei.shared.att.HorizontalAlign with meibasic.mei.shared.att.Lang {
+case class PgHead(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.Formework with _root_.meibasic.mei.shared.att.HorizontalAlign with _root_.meibasic.mei.shared.att.Lang {
   override def validate(): Boolean = {
     val allowedAttrs = Set("func", "halign", "label", "type", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

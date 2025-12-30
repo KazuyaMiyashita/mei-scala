@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: pubPlace
  * Module: MEI.shared
  */
-case class PubPlace(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.Lang {
+case class PubPlace(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.Lang {
   override def validate(): Boolean = {
     val allowedAttrs = Set("label", "type", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

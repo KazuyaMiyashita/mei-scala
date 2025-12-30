@@ -6,6 +6,6 @@ package meiall.mei.mensural.att.scoredef.vis
  * Ident: att.scoreDef.vis.mensural
  * Module: MEI.mensural
  */
-trait Mensural  extends meiall.mei.visual.att.mensural.Vis {
+trait Mensural  extends _root_.meiall.mei.visual.att.mensural.Vis {
 
 } 

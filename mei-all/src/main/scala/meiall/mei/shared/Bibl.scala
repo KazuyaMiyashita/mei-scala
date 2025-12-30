@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: bibl
  * Module: MEI.shared
  */
-case class Bibl(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Bibl with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.shared.att.Pointing with meiall.mei.shared.model.BiblLike {
+case class Bibl(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.shared.att.Pointing with _root_.meiall.mei.shared.model.BiblLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "class", "copyof", "corresp", "facs", "follows", "label", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "target", "targettype", "translit", "type", "xlink:actuate", "xlink:role", "xlink:show", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

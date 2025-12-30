@@ -6,6 +6,6 @@ package meiall.mei.shared.att
  * Ident: att.name
  * Module: MEI.shared
  */
-trait Name  extends meiall.mei.shared.att.Authorized with meiall.mei.shared.att.Datable with meiall.mei.shared.att.Filing {
+trait Name  extends _root_.meiall.mei.shared.att.Authorized with _root_.meiall.mei.shared.att.Datable with _root_.meiall.mei.shared.att.Filing {
 
 } 

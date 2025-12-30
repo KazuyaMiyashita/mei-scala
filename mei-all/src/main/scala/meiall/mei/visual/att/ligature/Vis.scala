@@ -6,6 +6,6 @@ package meiall.mei.visual.att.ligature
  * Ident: att.ligature.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.Color {
+trait Vis  extends _root_.meiall.mei.shared.att.Color {
 
 } 

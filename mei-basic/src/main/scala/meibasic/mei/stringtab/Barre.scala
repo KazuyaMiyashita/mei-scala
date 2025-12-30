@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: barre
  * Module: MEI.stringtab
  */
-case class Barre(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.StartEndId {
+case class Barre(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.StartEndId {
   override def validate(): Boolean = {
     val allowedAttrs = Set("endid", "fret", "label", "startid", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

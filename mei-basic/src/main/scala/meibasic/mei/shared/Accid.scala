@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: accid
  * Module: MEI.shared
  */
-case class Accid(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.gestural.att.accid.Ges with meibasic.mei.shared.att.accid.Log with meibasic.mei.visual.att.accid.Vis with meibasic.mei.shared.model.NoteModifierLike {
+case class Accid(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.gestural.att.accid.Ges with _root_.meibasic.mei.shared.att.accid.Log with _root_.meibasic.mei.visual.att.accid.Vis with _root_.meibasic.mei.shared.model.NoteModifierLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("accid", "accid.ges", "color", "enclose", "func", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "plist", "staff", "tstamp", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

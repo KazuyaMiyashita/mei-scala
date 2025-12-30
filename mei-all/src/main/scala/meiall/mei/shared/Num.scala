@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: num
  * Module: MEI.shared
  */
-case class Num(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.shared.att.Measurement with meiall.mei.shared.att.Ranging with meiall.mei.shared.model.NumLike {
+case class Num(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.shared.att.Measurement with _root_.meiall.mei.shared.att.Ranging with _root_.meiall.mei.shared.model.NumLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("atleast", "atmost", "class", "confidence", "copyof", "corresp", "facs", "follows", "label", "max", "min", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "translit", "type", "unit", "value", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: harpPedal
  * Module: MEI.cmn
  */
-case class HarpPedal(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.cmn.att.harppedal.Log with meiall.mei.visual.att.harppedal.Vis with meiall.mei.gestural.att.harppedal.Ges with meiall.mei.analytical.att.harppedal.Anl with meiall.mei.cmn.model.controleventlike.Cmn {
+case class HarpPedal(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.cmn.att.harppedal.Log with _root_.meiall.mei.visual.att.harppedal.Vis with _root_.meiall.mei.gestural.att.harppedal.Ges with _root_.meiall.mei.analytical.att.harppedal.Anl with _root_.meiall.mei.cmn.model.controleventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("a", "altsym", "b", "c", "class", "color", "copyof", "corresp", "d", "dots.ges", "dur.ges", "dur.metrical", "dur.ppq", "dur.real", "dur.recip", "e", "endid", "evaluate", "f", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "g", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "lineheight", "n", "next", "part", "partstaff", "place", "plist", "precedes", "prev", "resp", "sameas", "staff", "startid", "synch", "to", "tstamp", "tstamp.ges", "tstamp.real", "type", "vgrp", "vo", "when", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

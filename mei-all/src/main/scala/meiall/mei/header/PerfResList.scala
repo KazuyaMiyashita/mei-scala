@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: perfResList
  * Module: MEI.header
  */
-case class PerfResList(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Authorized with meiall.mei.shared.att.Bibl with meiall.mei.edittrans.att.Edit with meiall.mei.shared.att.Lang with meiall.mei.header.att.perfres.Basic {
+case class PerfResList(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Authorized with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.edittrans.att.Edit with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.header.att.perfres.Basic {
   override def validate(): Boolean = {
     val allowedAttrs = Set("adlib", "analog", "auth", "auth.uri", "cert", "class", "codedval", "copyof", "corresp", "count", "evidence", "follows", "label", "n", "next", "precedes", "prev", "resp", "sameas", "source", "synch", "translit", "type", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

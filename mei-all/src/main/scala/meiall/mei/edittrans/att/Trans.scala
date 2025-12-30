@@ -6,6 +6,6 @@ package meiall.mei.edittrans.att
  * Ident: att.trans
  * Module: MEI.edittrans
  */
-trait Trans  extends meiall.mei.genetic.att.GeneticState with meiall.mei.shared.att.HandIdent with meiall.mei.shared.att.MetadataPointing with meiall.mei.shared.att.Sequence {
+trait Trans  extends _root_.meiall.mei.genetic.att.GeneticState with _root_.meiall.mei.shared.att.HandIdent with _root_.meiall.mei.shared.att.MetadataPointing with _root_.meiall.mei.shared.att.Sequence {
 
 } 

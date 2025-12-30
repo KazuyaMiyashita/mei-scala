@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.addressLike
  * Module: MEI.shared
  */
-trait AddressLike  extends meiall.mei.shared.model.textphraselike.Limited with meiall.mei.header.model.PubStmtPart with meiall.mei.header.model.EventPart {
+trait AddressLike  extends _root_.meiall.mei.shared.model.textphraselike.Limited with _root_.meiall.mei.header.model.PubStmtPart with _root_.meiall.mei.header.model.EventPart {
 
 } 

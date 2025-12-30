@@ -6,6 +6,6 @@ package meiall.mei.gestural.att.attacca
  * Ident: att.attacca.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meiall.mei.gestural.att.timestamp2.Ges {
+trait Ges  extends _root_.meiall.mei.gestural.att.timestamp2.Ges {
 
 } 

@@ -6,6 +6,6 @@ package meiall.mei.cmn.model.eventlike
  * Ident: model.eventLike.measureFilling
  * Module: MEI.cmn
  */
-trait MeasureFilling  extends meiall.mei.cmn.model.layerpart.Cmn {
+trait MeasureFilling  extends _root_.meiall.mei.cmn.model.layerpart.Cmn {
 
 } 

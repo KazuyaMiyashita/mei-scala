@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: space
  * Module: MEI.shared
  */
-case class Space(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.space.Log with meibasic.mei.visual.att.space.Vis with meibasic.mei.gestural.att.space.Ges with meibasic.mei.shared.model.EventLike {
+case class Space(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.space.Log with _root_.meibasic.mei.visual.att.space.Vis with _root_.meibasic.mei.gestural.att.space.Ges with _root_.meibasic.mei.shared.model.EventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("compressable", "cutout", "dots", "dur", "label", "layer", "staff", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

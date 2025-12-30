@@ -6,6 +6,6 @@ package meiall.mei.shared.att
  * Ident: att.stems
  * Module: MEI.shared
  */
-trait Stems  extends meiall.mei.cmn.att.stems.Cmn with meiall.mei.mensural.att.stems.Mensural {
+trait Stems  extends _root_.meiall.mei.cmn.att.stems.Cmn with _root_.meiall.mei.mensural.att.stems.Mensural {
 
 } 

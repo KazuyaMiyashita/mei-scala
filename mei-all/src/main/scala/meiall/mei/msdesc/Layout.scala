@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: layout
  * Module: MEI.msDesc
  */
-case class Layout(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Bibl with meiall.mei.shared.att.Lang {
+case class Layout(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.shared.att.Lang {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "class", "cols", "copyof", "corresp", "follows", "label", "n", "next", "precedes", "prev", "resp", "ruledlines", "ruledstaves", "sameas", "synch", "translit", "type", "writtenlines", "writtenstaves", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

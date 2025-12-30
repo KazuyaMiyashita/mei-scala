@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.identifierLike
  * Module: MEI.shared
  */
-trait IdentifierLike  extends meiall.mei.shared.model.textphraselike.Limited with meiall.mei.header.model.PubStmtPart with meiall.mei.shared.model.TitlePagePart {
+trait IdentifierLike  extends _root_.meiall.mei.shared.model.textphraselike.Limited with _root_.meiall.mei.header.model.PubStmtPart with _root_.meiall.mei.shared.model.TitlePagePart {
 
 } 

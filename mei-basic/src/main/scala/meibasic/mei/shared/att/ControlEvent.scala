@@ -6,6 +6,6 @@ package meibasic.mei.shared.att
  * Ident: att.controlEvent
  * Module: MEI.shared
  */
-trait ControlEvent  extends meibasic.mei.shared.att.LayerIdent with meibasic.mei.shared.att.Plist with meibasic.mei.shared.att.StaffIdent with meibasic.mei.shared.att.timestamp.Log {
+trait ControlEvent  extends _root_.meibasic.mei.shared.att.LayerIdent with _root_.meibasic.mei.shared.att.Plist with _root_.meibasic.mei.shared.att.StaffIdent with _root_.meibasic.mei.shared.att.timestamp.Log {
 
 } 

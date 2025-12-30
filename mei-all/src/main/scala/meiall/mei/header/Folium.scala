@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: folium
  * Module: MEI.header
  */
-case class Folium(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Dimensions with meiall.mei.shared.att.Measurement with meiall.mei.header.att.FoliumSurfaces with meiall.mei.header.model.FoliumLike {
+case class Folium(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Dimensions with _root_.meiall.mei.shared.att.Measurement with _root_.meiall.mei.header.att.FoliumSurfaces with _root_.meiall.mei.header.model.FoliumLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "follows", "height", "label", "n", "next", "precedes", "prev", "recto", "resp", "sameas", "synch", "type", "unit", "verso", "width", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

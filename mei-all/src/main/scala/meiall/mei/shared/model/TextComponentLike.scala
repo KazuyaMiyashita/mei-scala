@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.textComponentLike
  * Module: MEI.shared
  */
-trait TextComponentLike  extends meiall.mei.critapp.model.rdgpart.Text with meiall.mei.edittrans.model.edittranspart.Text {
+trait TextComponentLike  extends _root_.meiall.mei.critapp.model.rdgpart.Text with _root_.meiall.mei.edittrans.model.edittranspart.Text {
 
 } 

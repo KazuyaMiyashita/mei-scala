@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.refrain
  * Ident: att.refrain.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.shared.att.Color with meibasic.mei.shared.att.PlacementRelStaff with meibasic.mei.shared.att.Typography with meibasic.mei.shared.att.visualoffset.Vo with meibasic.mei.shared.att.VoltaGroupingSym {
+trait Vis  extends _root_.meibasic.mei.shared.att.Color with _root_.meibasic.mei.shared.att.PlacementRelStaff with _root_.meibasic.mei.shared.att.Typography with _root_.meibasic.mei.shared.att.visualoffset.Vo with _root_.meibasic.mei.shared.att.VoltaGroupingSym {
 
 } 

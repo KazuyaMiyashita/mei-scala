@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: zone
  * Module: MEI.facsimile
  */
-case class Zone(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Coordinated with meiall.mei.shared.att.DataPointing {
+case class Zone(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Coordinated with _root_.meiall.mei.shared.att.DataPointing {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "data", "follows", "label", "lrx", "lry", "n", "next", "precedes", "prev", "resp", "rotate", "sameas", "synch", "type", "ulx", "uly", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.midi.att.midi
  * Ident: att.midi.log
  * Module: MEI.midi
  */
-trait Log  extends meiall.mei.shared.att.LayerIdent with meiall.mei.shared.att.PartIdent with meiall.mei.shared.att.StaffIdent {
+trait Log  extends _root_.meiall.mei.shared.att.LayerIdent with _root_.meiall.mei.shared.att.PartIdent with _root_.meiall.mei.shared.att.StaffIdent {
 
 } 

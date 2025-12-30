@@ -6,6 +6,6 @@ package meibasic.mei.namesdates.model
  * Ident: model.geogNamePart
  * Module: MEI.namesdates
  */
-trait GeogNamePart  extends meibasic.mei.namesdates.model.AddressPart {
+trait GeogNamePart  extends _root_.meibasic.mei.namesdates.model.AddressPart {
 
 } 

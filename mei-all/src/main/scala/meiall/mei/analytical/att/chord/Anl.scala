@@ -6,6 +6,6 @@ package meiall.mei.analytical.att.chord
  * Ident: att.chord.anl
  * Module: MEI.analytical
  */
-trait Anl  extends meiall.mei.cmn.att.chord.anl.Cmn {
+trait Anl  extends _root_.meiall.mei.cmn.att.chord.anl.Cmn {
 
 } 

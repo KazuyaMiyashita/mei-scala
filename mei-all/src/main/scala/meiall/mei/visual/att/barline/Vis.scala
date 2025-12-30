@@ -6,6 +6,6 @@ package meiall.mei.visual.att.barline
  * Ident: att.barLine.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.usersymbols.att.AltSym with meiall.mei.shared.att.Color with meiall.mei.externalsymbols.att.ExtSym with meiall.mei.shared.att.Visibility with meiall.mei.shared.att.Width {
+trait Vis  extends _root_.meiall.mei.usersymbols.att.AltSym with _root_.meiall.mei.shared.att.Color with _root_.meiall.mei.externalsymbols.att.ExtSym with _root_.meiall.mei.shared.att.Visibility with _root_.meiall.mei.shared.att.Width {
 
 } 

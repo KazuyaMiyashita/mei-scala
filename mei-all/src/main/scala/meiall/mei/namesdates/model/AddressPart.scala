@@ -6,6 +6,6 @@ package meiall.mei.namesdates.model
  * Ident: model.addressPart
  * Module: MEI.namesdates
  */
-trait AddressPart  extends meiall.mei.shared.model.textphraselike.Limited {
+trait AddressPart  extends _root_.meiall.mei.shared.model.textphraselike.Limited {
 
 } 

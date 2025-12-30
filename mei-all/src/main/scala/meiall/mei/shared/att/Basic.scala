@@ -6,6 +6,6 @@ package meiall.mei.shared.att
  * Ident: att.basic
  * Module: MEI.shared
  */
-trait Basic  extends meiall.mei.shared.att.Id {
+trait Basic  extends _root_.meiall.mei.shared.att.Id {
 
 } 

@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.tuplet
  * Ident: att.tuplet.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.shared.att.Color with meibasic.mei.cmn.att.NumberPlacement {
+trait Vis  extends _root_.meibasic.mei.shared.att.Color with _root_.meibasic.mei.cmn.att.NumberPlacement {
 
 } 

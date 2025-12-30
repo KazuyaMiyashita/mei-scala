@@ -6,6 +6,6 @@ package meibasic.mei.shared.att.chord
  * Ident: att.chord.log
  * Module: MEI.shared
  */
-trait Log  extends meibasic.mei.shared.att.AugmentDots with meibasic.mei.cmn.att.chord.log.Cmn with meibasic.mei.shared.att.Cue with meibasic.mei.shared.att.duration.Log with meibasic.mei.shared.att.Event {
+trait Log  extends _root_.meibasic.mei.shared.att.AugmentDots with _root_.meibasic.mei.cmn.att.chord.log.Cmn with _root_.meibasic.mei.shared.att.Cue with _root_.meibasic.mei.shared.att.duration.Log with _root_.meibasic.mei.shared.att.Event {
 
 } 

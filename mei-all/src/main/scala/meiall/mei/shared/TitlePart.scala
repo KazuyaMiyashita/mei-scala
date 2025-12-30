@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: titlePart
  * Module: MEI.shared
  */
-case class TitlePart(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Authorized with meiall.mei.shared.att.Basic with meiall.mei.shared.att.Bibl with meiall.mei.shared.att.Classed with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Filing with meiall.mei.shared.att.Labelled with meiall.mei.shared.att.Lang with meiall.mei.shared.att.Linking with meiall.mei.shared.att.NInteger with meiall.mei.shared.att.Responsibility with meiall.mei.shared.model.TitlePagePart {
+case class TitlePart(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Authorized with _root_.meiall.mei.shared.att.Basic with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.shared.att.Classed with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Filing with _root_.meiall.mei.shared.att.Labelled with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.shared.att.Linking with _root_.meiall.mei.shared.att.NInteger with _root_.meiall.mei.shared.att.Responsibility with _root_.meiall.mei.shared.model.TitlePagePart {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "auth", "auth.uri", "class", "codedval", "copyof", "corresp", "facs", "follows", "label", "n", "next", "nonfiling", "precedes", "prev", "resp", "sameas", "synch", "translit", "type", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

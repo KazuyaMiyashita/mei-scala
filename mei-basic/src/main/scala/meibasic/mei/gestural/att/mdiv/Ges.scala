@@ -6,6 +6,6 @@ package meibasic.mei.gestural.att.mdiv
  * Ident: att.mdiv.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meibasic.mei.gestural.att.Attacking {
+trait Ges  extends _root_.meibasic.mei.gestural.att.Attacking {
 
 } 

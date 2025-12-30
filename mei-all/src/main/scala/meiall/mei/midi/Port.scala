@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: port
  * Module: MEI.midi
  */
-case class Port(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.midi.att.midi.Event with meiall.mei.midi.att.MidiNumber {
+case class Port(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.midi.att.midi.Event with _root_.meiall.mei.midi.att.MidiNumber {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "follows", "label", "layer", "n", "next", "num", "part", "partstaff", "precedes", "prev", "resp", "sameas", "staff", "synch", "tstamp", "tstamp.ges", "tstamp.real", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

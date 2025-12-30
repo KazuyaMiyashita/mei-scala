@@ -6,6 +6,6 @@ package meibasic.mei.shared.att
  * Ident: att.extender
  * Module: MEI.shared
  */
-trait Extender  extends meibasic.mei.shared.att.LineRend {
+trait Extender  extends _root_.meibasic.mei.shared.att.LineRend {
 
 } 

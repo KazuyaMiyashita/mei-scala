@@ -6,6 +6,6 @@ package meibasic.mei.namesdates.model.namelike
  * Ident: model.nameLike.agent
  * Module: MEI.namesdates
  */
-trait Agent  extends meibasic.mei.shared.model.NameLike {
+trait Agent  extends _root_.meibasic.mei.shared.model.NameLike {
 
 } 

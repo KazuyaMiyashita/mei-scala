@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: space
  * Module: MEI.shared
  */
-case class Space(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.mensural.att.duration.Quality with meiall.mei.shared.att.space.Log with meiall.mei.visual.att.space.Vis with meiall.mei.gestural.att.space.Ges with meiall.mei.analytical.att.space.Anl with meiall.mei.shared.model.EventLike {
+case class Space(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.mensural.att.duration.Quality with _root_.meiall.mei.shared.att.space.Log with _root_.meiall.mei.visual.att.space.Vis with _root_.meiall.mei.gestural.att.space.Ges with _root_.meiall.mei.analytical.att.space.Anl with _root_.meiall.mei.shared.model.EventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("beam", "class", "compressable", "copyof", "corresp", "cutout", "dots", "dots.ges", "dur", "dur.ges", "dur.metrical", "dur.ppq", "dur.quality", "dur.real", "dur.recip", "facs", "fermata", "follows", "label", "layer", "n", "next", "precedes", "prev", "resp", "sameas", "staff", "synch", "tstamp", "tstamp.ges", "tstamp.real", "tuplet", "type", "when", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

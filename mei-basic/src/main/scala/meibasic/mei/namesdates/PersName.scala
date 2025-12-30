@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: persName
  * Module: MEI.namesdates
  */
-case class PersName(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.Lang with meibasic.mei.shared.att.Name with meibasic.mei.namesdates.model.namelike.Agent {
+case class PersName(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.Lang with _root_.meibasic.mei.shared.att.Name with _root_.meibasic.mei.namesdates.model.namelike.Agent {
   override def validate(): Boolean = {
     val allowedAttrs = Set("enddate", "isodate", "label", "notafter", "notbefore", "nymref", "role", "startdate", "type", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

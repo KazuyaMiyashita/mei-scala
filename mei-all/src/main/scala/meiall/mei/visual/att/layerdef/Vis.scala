@@ -6,6 +6,6 @@ package meiall.mei.visual.att.layerdef
  * Ident: att.layerDef.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.visual.att.beaming.Vis with meiall.mei.shared.att.TextStyle with meiall.mei.shared.att.Visibility {
+trait Vis  extends _root_.meiall.mei.visual.att.beaming.Vis with _root_.meiall.mei.shared.att.TextStyle with _root_.meiall.mei.shared.att.Visibility {
 
 } 

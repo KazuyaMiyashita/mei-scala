@@ -6,6 +6,6 @@ package meibasic.mei.shared.model
  * Ident: model.annotLike
  * Module: MEI.shared
  */
-trait AnnotLike  extends meibasic.mei.shared.model.textphraselike.Limited {
+trait AnnotLike  extends _root_.meibasic.mei.shared.model.textphraselike.Limited {
 
 } 

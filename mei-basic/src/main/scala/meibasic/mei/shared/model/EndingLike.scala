@@ -6,6 +6,6 @@ package meibasic.mei.shared.model
  * Ident: model.endingLike
  * Module: MEI.shared
  */
-trait EndingLike  extends meibasic.mei.shared.model.ScorePart with meibasic.mei.shared.model.SectionPart {
+trait EndingLike  extends _root_.meibasic.mei.shared.model.ScorePart with _root_.meibasic.mei.shared.model.SectionPart {
 
 } 

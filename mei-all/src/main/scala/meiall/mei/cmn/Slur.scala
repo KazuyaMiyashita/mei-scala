@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: slur
  * Module: MEI.cmn
  */
-case class Slur(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.cmn.att.slur.Log with meiall.mei.visual.att.slur.Vis with meiall.mei.gestural.att.slur.Ges with meiall.mei.analytical.att.slur.Anl with meiall.mei.cmn.model.controleventlike.Cmn {
+case class Slur(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.cmn.att.slur.Log with _root_.meiall.mei.visual.att.slur.Vis with _root_.meiall.mei.gestural.att.slur.Ges with _root_.meiall.mei.analytical.att.slur.Anl with _root_.meiall.mei.cmn.model.controleventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("bezier", "bulge", "class", "color", "copyof", "corresp", "curvedir", "dots.ges", "dur", "dur.ges", "dur.metrical", "dur.ppq", "dur.real", "dur.recip", "endho", "endid", "endto", "endvo", "evaluate", "facs", "follows", "ho", "join", "label", "layer", "lform", "lsegs", "lwidth", "n", "next", "part", "partstaff", "plist", "precedes", "prev", "resp", "sameas", "staff", "startho", "startid", "startto", "startvo", "synch", "to", "tstamp", "tstamp.ges", "tstamp.real", "tstamp2", "tstamp2.ges", "tstamp2.real", "type", "vo", "when", "x", "x2", "xml:base", "xml:id", "y", "y2")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

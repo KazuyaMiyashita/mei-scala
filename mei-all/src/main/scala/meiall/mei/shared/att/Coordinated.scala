@@ -6,6 +6,6 @@ package meiall.mei.shared.att
  * Ident: att.coordinated
  * Module: MEI.shared
  */
-trait Coordinated  extends meiall.mei.shared.att.coordinated.Ul {
+trait Coordinated  extends _root_.meiall.mei.shared.att.coordinated.Ul {
 
 } 

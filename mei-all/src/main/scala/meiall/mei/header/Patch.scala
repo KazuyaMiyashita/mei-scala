@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: patch
  * Module: MEI.header
  */
-case class Patch(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Evidence with meiall.mei.shared.att.Measurement with meiall.mei.edittrans.att.Trans with meiall.mei.shared.att.Xy with meiall.mei.header.model.PaperModLike {
+case class Patch(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Evidence with _root_.meiall.mei.shared.att.Measurement with _root_.meiall.mei.edittrans.att.Trans with _root_.meiall.mei.shared.att.Xy with _root_.meiall.mei.header.model.PaperModLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("attached.by", "attached.to", "cert", "class", "copyof", "corresp", "decls", "evidence", "follows", "hand", "instant", "label", "n", "next", "precedes", "prev", "resp", "sameas", "seq", "state", "synch", "type", "unit", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

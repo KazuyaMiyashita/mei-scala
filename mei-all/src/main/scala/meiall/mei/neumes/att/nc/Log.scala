@@ -6,6 +6,6 @@ package meiall.mei.neumes.att.nc
  * Ident: att.nc.log
  * Module: MEI.neumes
  */
-trait Log  extends meiall.mei.performance.att.Alignment with meiall.mei.shared.att.LayerIdent with meiall.mei.shared.att.StaffIdent {
+trait Log  extends _root_.meiall.mei.performance.att.Alignment with _root_.meiall.mei.shared.att.LayerIdent with _root_.meiall.mei.shared.att.StaffIdent {
 
 } 

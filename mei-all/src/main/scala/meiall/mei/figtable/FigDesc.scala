@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: figDesc
  * Module: MEI.figtable
  */
-case class FigDesc(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Lang with meiall.mei.figtable.model.FigDescLike {
+case class FigDesc(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.figtable.model.FigDescLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "follows", "label", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "translit", "type", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

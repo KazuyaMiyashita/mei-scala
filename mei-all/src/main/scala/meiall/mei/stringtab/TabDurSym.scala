@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: tabDurSym
  * Module: MEI.stringtab
  */
-case class TabDurSym(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.stringtab.att.Stringtab with meiall.mei.stringtab.att.tabdursym.Log with meiall.mei.visual.att.tabdursym.Vis with meiall.mei.gestural.att.tabdursym.Ges with meiall.mei.analytical.att.tabdursym.Anl {
+case class TabDurSym(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.stringtab.att.Stringtab with _root_.meiall.mei.stringtab.att.tabdursym.Log with _root_.meiall.mei.visual.att.tabdursym.Vis with _root_.meiall.mei.gestural.att.tabdursym.Ges with _root_.meiall.mei.analytical.att.tabdursym.Anl {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "class", "color", "copyof", "corresp", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "lineheight", "n", "next", "part", "partstaff", "place", "precedes", "prev", "resp", "sameas", "synch", "tab.course", "tab.fing", "tab.fret", "tab.line", "tab.string", "to", "type", "visible", "vo", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

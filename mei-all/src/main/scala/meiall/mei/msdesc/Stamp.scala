@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: stamp
  * Module: MEI.msDesc
  */
-case class Stamp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Bibl with meiall.mei.shared.att.Datable with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.msdesc.model.MsInline with meiall.mei.header.model.PhysDescPart {
+case class Stamp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.shared.att.Datable with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.msdesc.model.MsInline with _root_.meiall.mei.header.model.PhysDescPart {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "class", "copyof", "corresp", "enddate", "facs", "follows", "isodate", "label", "n", "next", "notafter", "notbefore", "precedes", "prev", "resp", "sameas", "startdate", "synch", "translit", "type", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

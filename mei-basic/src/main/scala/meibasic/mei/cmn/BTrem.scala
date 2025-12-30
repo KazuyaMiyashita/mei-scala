@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: bTrem
  * Module: MEI.cmn
  */
-case class BTrem(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmn.att.btrem.Log with meibasic.mei.visual.att.btrem.Vis with meibasic.mei.gestural.att.btrem.Ges with meibasic.mei.cmn.model.eventlike.Cmn {
+case class BTrem(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmn.att.btrem.Log with _root_.meibasic.mei.visual.att.btrem.Vis with _root_.meibasic.mei.gestural.att.btrem.Ges with _root_.meibasic.mei.cmn.model.eventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("dots", "dur", "form", "label", "layer", "num", "num.place", "num.visible", "staff", "type", "unitdur", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

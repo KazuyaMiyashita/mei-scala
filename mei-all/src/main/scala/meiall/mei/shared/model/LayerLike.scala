@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.layerLike
  * Module: MEI.shared
  */
-trait LayerLike  extends meiall.mei.shared.model.StaffPart with meiall.mei.critapp.model.rdgpart.Music with meiall.mei.edittrans.model.edittranspart.Music {
+trait LayerLike  extends _root_.meiall.mei.shared.model.StaffPart with _root_.meiall.mei.critapp.model.rdgpart.Music with _root_.meiall.mei.edittrans.model.edittranspart.Music {
 
 } 

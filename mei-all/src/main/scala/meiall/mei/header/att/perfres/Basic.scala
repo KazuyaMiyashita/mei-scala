@@ -6,6 +6,6 @@ package meiall.mei.header.att.perfres
  * Ident: att.perfRes.basic
  * Module: MEI.header
  */
-trait Basic  extends meiall.mei.header.att.Adlibitum {
+trait Basic  extends _root_.meiall.mei.header.att.Adlibitum {
 
 } 

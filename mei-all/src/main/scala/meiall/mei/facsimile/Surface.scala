@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: surface
  * Module: MEI.facsimile
  */
-case class Surface(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Coordinated with meiall.mei.shared.att.DataPointing with meiall.mei.shared.att.MetadataPointing with meiall.mei.shared.att.StartId {
+case class Surface(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Coordinated with _root_.meiall.mei.shared.att.DataPointing with _root_.meiall.mei.shared.att.MetadataPointing with _root_.meiall.mei.shared.att.StartId {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "data", "decls", "follows", "label", "lrx", "lry", "n", "next", "precedes", "prev", "resp", "rotate", "sameas", "startid", "synch", "type", "ulx", "uly", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

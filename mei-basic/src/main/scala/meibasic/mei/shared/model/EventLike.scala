@@ -6,6 +6,6 @@ package meibasic.mei.shared.model
  * Ident: model.eventLike
  * Module: MEI.shared
  */
-trait EventLike  extends meibasic.mei.shared.model.LayerPart {
+trait EventLike  extends _root_.meibasic.mei.shared.model.LayerPart {
 
 } 

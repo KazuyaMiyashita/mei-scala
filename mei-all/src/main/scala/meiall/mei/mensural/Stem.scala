@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: stem
  * Module: MEI.mensural
  */
-case class Stem(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.mensural.att.stem.Log with meiall.mei.visual.att.stem.Vis with meiall.mei.gestural.att.stem.Ges with meiall.mei.analytical.att.stem.Anl {
+case class Stem(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.mensural.att.stem.Log with _root_.meiall.mei.visual.att.stem.Vis with _root_.meiall.mei.gestural.att.stem.Ges with _root_.meiall.mei.analytical.att.stem.Anl {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "color", "copyof", "corresp", "dir", "facs", "flag.form", "flag.pos", "follows", "form", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "label", "len", "n", "next", "pos", "precedes", "prev", "resp", "sameas", "synch", "type", "visible", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

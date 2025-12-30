@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: mdiv
  * Module: MEI.shared
  */
-case class Mdiv(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.MetadataPointing with meiall.mei.analytical.att.mdiv.Anl with meiall.mei.gestural.att.mdiv.Ges with meiall.mei.shared.att.mdiv.Log with meiall.mei.visual.att.mdiv.Vis with meiall.mei.shared.model.MdivLike {
+case class Mdiv(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.MetadataPointing with _root_.meiall.mei.analytical.att.mdiv.Anl with _root_.meiall.mei.gestural.att.mdiv.Ges with _root_.meiall.mei.shared.att.mdiv.Log with _root_.meiall.mei.visual.att.mdiv.Vis with _root_.meiall.mei.shared.model.MdivLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("attacca", "class", "copyof", "corresp", "decls", "facs", "follows", "label", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "type", "when", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

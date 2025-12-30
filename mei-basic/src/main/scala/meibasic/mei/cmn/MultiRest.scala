@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: multiRest
  * Module: MEI.cmn
  */
-case class MultiRest(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmn.att.multirest.Log with meibasic.mei.visual.att.multirest.Vis with meibasic.mei.gestural.att.multirest.Ges with meibasic.mei.cmn.model.eventlike.MeasureFilling {
+case class MultiRest(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmn.att.multirest.Log with _root_.meibasic.mei.visual.att.multirest.Vis with _root_.meibasic.mei.gestural.att.multirest.Ges with _root_.meibasic.mei.cmn.model.eventlike.MeasureFilling {
   override def validate(): Boolean = {
     val allowedAttrs = Set("block", "color", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "label", "layer", "letterspacing", "lineheight", "num", "num.place", "num.visible", "oloc", "ploc", "staff", "type", "width", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

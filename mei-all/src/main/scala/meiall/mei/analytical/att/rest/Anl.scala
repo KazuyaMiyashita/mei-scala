@@ -6,6 +6,6 @@ package meiall.mei.analytical.att.rest
  * Ident: att.rest.anl
  * Module: MEI.analytical
  */
-trait Anl  extends meiall.mei.cmn.att.rest.anl.Cmn {
+trait Anl  extends _root_.meiall.mei.cmn.att.rest.anl.Cmn {
 
 } 

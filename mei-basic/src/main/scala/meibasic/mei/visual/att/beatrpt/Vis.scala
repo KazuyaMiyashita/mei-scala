@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.beatrpt
  * Ident: att.beatRpt.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.shared.att.Color with meibasic.mei.cmn.att.Expandable with meibasic.mei.externalsymbols.att.ExtSym {
+trait Vis  extends _root_.meibasic.mei.shared.att.Color with _root_.meibasic.mei.cmn.att.Expandable with _root_.meibasic.mei.externalsymbols.att.ExtSym {
 
 } 

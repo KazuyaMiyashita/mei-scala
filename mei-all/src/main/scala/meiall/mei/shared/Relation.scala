@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: relation
  * Module: MEI.shared
  */
-case class Relation(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Authorized with meiall.mei.shared.att.Bibl with meiall.mei.shared.att.Datable with meiall.mei.shared.att.Evidence with meiall.mei.shared.att.Plist with meiall.mei.shared.att.Pointing with meiall.mei.shared.att.TargetEval with meiall.mei.shared.model.RelationLike {
+case class Relation(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Authorized with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.shared.att.Datable with _root_.meiall.mei.shared.att.Evidence with _root_.meiall.mei.shared.att.Plist with _root_.meiall.mei.shared.att.Pointing with _root_.meiall.mei.shared.att.TargetEval with _root_.meiall.mei.shared.model.RelationLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "auth", "auth.uri", "cert", "class", "codedval", "copyof", "corresp", "enddate", "evaluate", "evidence", "follows", "isodate", "label", "n", "next", "notafter", "notbefore", "plist", "precedes", "prev", "rel", "resp", "sameas", "startdate", "synch", "target", "targettype", "type", "xlink:actuate", "xlink:role", "xlink:show", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.editorialLike
  * Module: MEI.shared
  */
-trait EditorialLike  extends meiall.mei.shared.model.textphraselike.Limited with meiall.mei.edittrans.model.ChoicePart {
+trait EditorialLike  extends _root_.meiall.mei.shared.model.textphraselike.Limited with _root_.meiall.mei.edittrans.model.ChoicePart {
 
 } 

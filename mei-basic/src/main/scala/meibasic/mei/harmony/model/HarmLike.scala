@@ -6,6 +6,6 @@ package meibasic.mei.harmony.model
  * Ident: model.harmLike
  * Module: MEI.harmony
  */
-trait HarmLike  extends meibasic.mei.harmony.model.controleventlike.Harmony {
+trait HarmLike  extends _root_.meibasic.mei.harmony.model.controleventlike.Harmony {
 
 } 

@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.dateLike
  * Module: MEI.shared
  */
-trait DateLike  extends meiall.mei.shared.model.textphraselike.Limited with meiall.mei.header.model.PubStmtPart with meiall.mei.header.model.EventPart with meiall.mei.shared.model.TitlePagePart {
+trait DateLike  extends _root_.meiall.mei.shared.model.textphraselike.Limited with _root_.meiall.mei.header.model.PubStmtPart with _root_.meiall.mei.header.model.EventPart with _root_.meiall.mei.shared.model.TitlePagePart {
 
 } 

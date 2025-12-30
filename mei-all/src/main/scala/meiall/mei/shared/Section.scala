@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: section
  * Module: MEI.shared
  */
-case class Section(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.MetadataPointing with meiall.mei.shared.att.Pointing with meiall.mei.shared.att.TargetEval with meiall.mei.analytical.att.section.Anl with meiall.mei.gestural.att.section.Ges with meiall.mei.shared.att.section.Log with meiall.mei.visual.att.section.Vis with meiall.mei.shared.model.SectionLike {
+case class Section(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.MetadataPointing with _root_.meiall.mei.shared.att.Pointing with _root_.meiall.mei.shared.att.TargetEval with _root_.meiall.mei.analytical.att.section.Anl with _root_.meiall.mei.gestural.att.section.Ges with _root_.meiall.mei.shared.att.section.Log with _root_.meiall.mei.visual.att.section.Vis with _root_.meiall.mei.shared.model.SectionLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("attacca", "class", "copyof", "corresp", "decls", "evaluate", "facs", "follows", "label", "n", "next", "precedes", "prev", "resp", "restart", "sameas", "synch", "target", "targettype", "type", "when", "xlink:actuate", "xlink:role", "xlink:show", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

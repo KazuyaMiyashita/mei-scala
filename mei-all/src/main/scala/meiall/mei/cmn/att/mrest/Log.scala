@@ -6,6 +6,6 @@ package meiall.mei.cmn.att.mrest
  * Ident: att.mRest.log
  * Module: MEI.cmn
  */
-trait Log  extends meiall.mei.shared.att.Cue with meiall.mei.shared.att.duration.Additive with meiall.mei.shared.att.Event {
+trait Log  extends _root_.meiall.mei.shared.att.Cue with _root_.meiall.mei.shared.att.duration.Additive with _root_.meiall.mei.shared.att.Event {
 
 } 

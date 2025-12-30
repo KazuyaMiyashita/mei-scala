@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: layer
  * Module: MEI.shared
  */
-case class Layer(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Basic with meibasic.mei.shared.att.Labelled with meibasic.mei.shared.att.NInteger with meibasic.mei.shared.att.Typed with meibasic.mei.visual.att.layer.Vis with meibasic.mei.shared.model.LayerLike {
+case class Layer(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Basic with _root_.meibasic.mei.shared.att.Labelled with _root_.meibasic.mei.shared.att.NInteger with _root_.meibasic.mei.shared.att.Typed with _root_.meibasic.mei.visual.att.layer.Vis with _root_.meibasic.mei.shared.model.LayerLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("label", "n", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

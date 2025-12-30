@@ -6,6 +6,6 @@ package meiall.mei.visual.att.sp
  * Ident: att.sp.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.PlacementRelStaff with meiall.mei.shared.att.VisualOffset with meiall.mei.shared.att.visualoffset2.Ho with meiall.mei.shared.att.visualoffset2.To with meiall.mei.shared.att.Xy {
+trait Vis  extends _root_.meiall.mei.shared.att.PlacementRelStaff with _root_.meiall.mei.shared.att.VisualOffset with _root_.meiall.mei.shared.att.visualoffset2.Ho with _root_.meiall.mei.shared.att.visualoffset2.To with _root_.meiall.mei.shared.att.Xy {
 
 } 

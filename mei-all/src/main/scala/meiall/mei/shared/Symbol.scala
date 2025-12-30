@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: symbol
  * Module: MEI.shared
  */
-case class Symbol(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.symbol.Anl with meiall.mei.gestural.att.symbol.Ges with meiall.mei.shared.att.symbol.Log with meiall.mei.visual.att.symbol.Vis with meiall.mei.shared.model.textphraselike.Limited {
+case class Symbol(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.symbol.Anl with _root_.meiall.mei.gestural.att.symbol.Ges with _root_.meiall.mei.shared.att.symbol.Log with _root_.meiall.mei.visual.att.symbol.Vis with _root_.meiall.mei.shared.model.textphraselike.Limited {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "class", "color", "copyof", "corresp", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "letterspacing", "lineheight", "n", "next", "precedes", "prev", "resp", "sameas", "scale", "startid", "synch", "to", "type", "vo", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

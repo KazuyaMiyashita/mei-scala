@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: ambitus
  * Module: MEI.shared
  */
-case class Ambitus(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.ambitus.Anl with meiall.mei.gestural.att.ambitus.Ges with meiall.mei.shared.att.ambitus.Log with meiall.mei.visual.att.ambitus.Vis with meiall.mei.shared.att.MetadataPointing {
+case class Ambitus(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.ambitus.Anl with _root_.meiall.mei.gestural.att.ambitus.Ges with _root_.meiall.mei.shared.att.ambitus.Log with _root_.meiall.mei.visual.att.ambitus.Vis with _root_.meiall.mei.shared.att.MetadataPointing {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "decls", "facs", "follows", "inth", "label", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.visual.att.beam
  * Ident: att.beam.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.Color with meiall.mei.shared.att.Cue with meiall.mei.cmn.att.BeamRend with meiall.mei.shared.att.Visibility {
+trait Vis  extends _root_.meiall.mei.shared.att.Color with _root_.meiall.mei.shared.att.Cue with _root_.meiall.mei.cmn.att.BeamRend with _root_.meiall.mei.shared.att.Visibility {
 
 } 

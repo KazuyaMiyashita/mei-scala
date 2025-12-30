@@ -6,6 +6,6 @@ package meiall.mei.shared.att
  * Ident: att.extent
  * Module: MEI.shared
  */
-trait Extent  extends meiall.mei.shared.att.Measurement with meiall.mei.shared.att.Ranging {
+trait Extent  extends _root_.meiall.mei.shared.att.Measurement with _root_.meiall.mei.shared.att.Ranging {
 
 } 

@@ -6,6 +6,6 @@ package meibasic.mei.shared.model
  * Ident: model.layerLike
  * Module: MEI.shared
  */
-trait LayerLike  extends meibasic.mei.shared.model.StaffPart {
+trait LayerLike  extends _root_.meibasic.mei.shared.model.StaffPart {
 
 } 

@@ -6,6 +6,6 @@ package meiall.mei.visual.att.ambnote
  * Ident: att.ambNote.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.Color with meiall.mei.shared.att.EnclosingChars with meiall.mei.shared.att.NoteHeads with meiall.mei.shared.att.StaffLoc with meiall.mei.shared.att.Stems with meiall.mei.shared.att.Typography {
+trait Vis  extends _root_.meiall.mei.shared.att.Color with _root_.meiall.mei.shared.att.EnclosingChars with _root_.meiall.mei.shared.att.NoteHeads with _root_.meiall.mei.shared.att.StaffLoc with _root_.meiall.mei.shared.att.Stems with _root_.meiall.mei.shared.att.Typography {
 
 } 

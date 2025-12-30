@@ -6,6 +6,6 @@ package meiall.mei.cmn.att.chord.log
  * Ident: att.chord.log.cmn
  * Module: MEI.cmn
  */
-trait Cmn  extends meiall.mei.cmn.att.Graced {
+trait Cmn  extends _root_.meiall.mei.cmn.att.Graced {
 
 } 

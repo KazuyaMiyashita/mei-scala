@@ -6,6 +6,6 @@ package meiall.mei.gestural.att.mspace
  * Ident: att.mSpace.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meiall.mei.gestural.att.duration.Ges {
+trait Ges  extends _root_.meiall.mei.gestural.att.duration.Ges {
 
 } 

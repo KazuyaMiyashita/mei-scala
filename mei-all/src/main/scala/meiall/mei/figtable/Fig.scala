@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: fig
  * Module: MEI.figtable
  */
-case class Fig(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.HorizontalAlign with meiall.mei.shared.att.VerticalAlign with meiall.mei.shared.att.Xy with meiall.mei.figtable.model.FigureLike {
+case class Fig(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.HorizontalAlign with _root_.meiall.mei.shared.att.VerticalAlign with _root_.meiall.mei.shared.att.Xy with _root_.meiall.mei.figtable.model.FigureLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "facs", "follows", "halign", "label", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "type", "valign", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.namesdates.model.namelike
  * Ident: model.nameLike.agent
  * Module: MEI.namesdates
  */
-trait Agent  extends meiall.mei.header.model.EventPart with meiall.mei.shared.model.NameLike {
+trait Agent  extends _root_.meiall.mei.header.model.EventPart with _root_.meiall.mei.shared.model.NameLike {
 
 } 

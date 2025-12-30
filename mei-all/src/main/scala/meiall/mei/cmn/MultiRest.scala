@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: multiRest
  * Module: MEI.cmn
  */
-case class MultiRest(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.cmn.att.multirest.Log with meiall.mei.visual.att.multirest.Vis with meiall.mei.gestural.att.multirest.Ges with meiall.mei.analytical.att.multirest.Anl with meiall.mei.cmn.model.eventlike.MeasureFilling {
+case class MultiRest(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.cmn.att.multirest.Log with _root_.meiall.mei.visual.att.multirest.Vis with _root_.meiall.mei.gestural.att.multirest.Ges with _root_.meiall.mei.analytical.att.multirest.Anl with _root_.meiall.mei.cmn.model.eventlike.MeasureFilling {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "block", "class", "color", "copyof", "corresp", "dots.ges", "dur.ges", "dur.metrical", "dur.ppq", "dur.real", "dur.recip", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "label", "layer", "letterspacing", "lineheight", "loc", "n", "next", "num", "num.place", "num.visible", "oloc", "ploc", "precedes", "prev", "resp", "sameas", "staff", "synch", "tstamp", "tstamp.ges", "tstamp.real", "type", "visible", "when", "width", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

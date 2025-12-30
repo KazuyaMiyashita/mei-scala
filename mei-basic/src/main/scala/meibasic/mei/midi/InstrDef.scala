@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: instrDef
  * Module: MEI.midi
  */
-case class InstrDef(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Basic with meibasic.mei.shared.att.Labelled with meibasic.mei.shared.att.NInteger with meibasic.mei.shared.att.Typed with meibasic.mei.gestural.att.instrdef.Ges with meibasic.mei.midi.att.instrdef.Log with meibasic.mei.shared.model.InstrDefLike {
+case class InstrDef(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Basic with _root_.meibasic.mei.shared.att.Labelled with _root_.meibasic.mei.shared.att.NInteger with _root_.meibasic.mei.shared.att.Typed with _root_.meibasic.mei.gestural.att.instrdef.Ges with _root_.meibasic.mei.midi.att.instrdef.Log with _root_.meibasic.mei.shared.model.InstrDefLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("azimuth", "elevation", "label", "midi.channel", "midi.duty", "midi.instrname", "midi.instrnum", "midi.pan", "midi.patchname", "midi.patchnum", "midi.port", "midi.track", "midi.volume", "n", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

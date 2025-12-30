@@ -6,6 +6,6 @@ package meiall.mei.analytical.att.measure
  * Ident: att.measure.anl
  * Module: MEI.analytical
  */
-trait Anl  extends meiall.mei.shared.att.Joined {
+trait Anl  extends _root_.meiall.mei.shared.att.Joined {
 
 } 

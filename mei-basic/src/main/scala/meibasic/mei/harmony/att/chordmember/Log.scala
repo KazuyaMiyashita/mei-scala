@@ -6,6 +6,6 @@ package meibasic.mei.harmony.att.chordmember
  * Ident: att.chordMember.log
  * Module: MEI.harmony
  */
-trait Log  extends meibasic.mei.shared.att.Pitched with meibasic.mei.stringtab.att.Stringtab {
+trait Log  extends _root_.meibasic.mei.shared.att.Pitched with _root_.meibasic.mei.stringtab.att.Stringtab {
 
 } 

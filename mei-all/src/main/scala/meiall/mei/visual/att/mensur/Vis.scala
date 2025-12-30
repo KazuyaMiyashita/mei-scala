@@ -6,6 +6,6 @@ package meiall.mei.visual.att.mensur
  * Ident: att.mensur.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.usersymbols.att.AltSym with meiall.mei.shared.att.Color with meiall.mei.externalsymbols.att.ExtSym with meiall.mei.shared.att.StaffLoc with meiall.mei.shared.att.Typography with meiall.mei.shared.att.SlashCount {
+trait Vis  extends _root_.meiall.mei.usersymbols.att.AltSym with _root_.meiall.mei.shared.att.Color with _root_.meiall.mei.externalsymbols.att.ExtSym with _root_.meiall.mei.shared.att.StaffLoc with _root_.meiall.mei.shared.att.Typography with _root_.meiall.mei.shared.att.SlashCount {
 
 } 

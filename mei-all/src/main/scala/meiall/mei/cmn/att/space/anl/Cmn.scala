@@ -6,6 +6,6 @@ package meiall.mei.cmn.att.space.anl
  * Ident: att.space.anl.cmn
  * Module: MEI.cmn
  */
-trait Cmn  extends meiall.mei.cmn.att.BeamPresent with meiall.mei.shared.att.FermataPresent with meiall.mei.shared.att.TupletPresent {
+trait Cmn  extends _root_.meiall.mei.cmn.att.BeamPresent with _root_.meiall.mei.shared.att.FermataPresent with _root_.meiall.mei.shared.att.TupletPresent {
 
 } 

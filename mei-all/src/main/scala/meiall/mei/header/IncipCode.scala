@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: incipCode
  * Module: MEI.header
  */
-case class IncipCode(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Bibl with meiall.mei.shared.att.InternetMedia with meiall.mei.shared.att.Pointing with meiall.mei.shared.att.Whitespace {
+case class IncipCode(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.shared.att.InternetMedia with _root_.meiall.mei.shared.att.Pointing with _root_.meiall.mei.shared.att.Whitespace {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "class", "copyof", "corresp", "follows", "form", "label", "mimetype", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "target", "targettype", "type", "xlink:actuate", "xlink:role", "xlink:show", "xml:base", "xml:id", "xml:space")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

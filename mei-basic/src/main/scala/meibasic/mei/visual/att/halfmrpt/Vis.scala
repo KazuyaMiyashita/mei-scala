@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.halfmrpt
  * Ident: att.halfmRpt.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.shared.att.Color with meibasic.mei.cmn.att.Expandable with meibasic.mei.externalsymbols.att.ExtSym with meibasic.mei.shared.att.Typography with meibasic.mei.shared.att.VisualOffset {
+trait Vis  extends _root_.meibasic.mei.shared.att.Color with _root_.meibasic.mei.cmn.att.Expandable with _root_.meibasic.mei.externalsymbols.att.ExtSym with _root_.meibasic.mei.shared.att.Typography with _root_.meibasic.mei.shared.att.VisualOffset {
 
 } 

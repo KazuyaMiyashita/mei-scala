@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: dot
  * Module: MEI.shared
  */
-case class Dot(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.dot.Anl with meiall.mei.gestural.att.dot.Ges with meiall.mei.shared.att.dot.Log with meiall.mei.visual.att.dot.Vis with meiall.mei.shared.model.NoteModifierLike with meiall.mei.mensural.model.eventlike.Mensural {
+case class Dot(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.dot.Anl with _root_.meiall.mei.gestural.att.dot.Ges with _root_.meiall.mei.shared.att.dot.Log with _root_.meiall.mei.visual.att.dot.Vis with _root_.meiall.mei.shared.model.NoteModifierLike with _root_.meiall.mei.mensural.model.eventlike.Mensural {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "class", "color", "copyof", "corresp", "evaluate", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "form", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "lineheight", "loc", "n", "next", "oloc", "part", "partstaff", "plist", "ploc", "precedes", "prev", "resp", "sameas", "staff", "synch", "tstamp", "tstamp.ges", "tstamp.real", "type", "vo", "when", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

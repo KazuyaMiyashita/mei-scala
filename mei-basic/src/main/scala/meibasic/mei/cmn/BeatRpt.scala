@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: beatRpt
  * Module: MEI.cmn
  */
-case class BeatRpt(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmn.att.beatrpt.Log with meibasic.mei.visual.att.beatrpt.Vis with meibasic.mei.shared.att.Plist with meibasic.mei.cmn.model.eventlike.Cmn {
+case class BeatRpt(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmn.att.beatrpt.Log with _root_.meibasic.mei.visual.att.beatrpt.Vis with _root_.meibasic.mei.shared.att.Plist with _root_.meibasic.mei.cmn.model.eventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("beatdef", "color", "expand", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "label", "layer", "plist", "slash", "staff", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

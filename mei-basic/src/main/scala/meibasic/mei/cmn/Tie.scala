@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: tie
  * Module: MEI.cmn
  */
-case class Tie(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmn.att.tie.Log with meibasic.mei.visual.att.tie.Vis with meibasic.mei.gestural.att.tie.Ges with meibasic.mei.cmn.model.controleventlike.Cmn {
+case class Tie(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmn.att.tie.Log with _root_.meibasic.mei.visual.att.tie.Vis with _root_.meibasic.mei.gestural.att.tie.Ges with _root_.meibasic.mei.cmn.model.controleventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("color", "curvedir", "endho", "endid", "endvo", "ho", "label", "layer", "lform", "lsegs", "lwidth", "plist", "staff", "startho", "startid", "startvo", "tstamp", "tstamp2", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

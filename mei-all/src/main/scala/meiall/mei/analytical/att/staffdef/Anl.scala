@@ -6,6 +6,6 @@ package meiall.mei.analytical.att.staffdef
  * Ident: att.staffDef.anl
  * Module: MEI.analytical
  */
-trait Anl  extends meiall.mei.analytical.att.keysigdefault.Anl {
+trait Anl  extends _root_.meiall.mei.analytical.att.keysigdefault.Anl {
 
 } 

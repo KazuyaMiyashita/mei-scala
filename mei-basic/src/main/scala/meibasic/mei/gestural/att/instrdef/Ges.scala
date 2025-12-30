@@ -6,6 +6,6 @@ package meibasic.mei.gestural.att.instrdef
  * Ident: att.instrDef.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meibasic.mei.midi.att.Channelized with meibasic.mei.midi.att.MidiInstrument with meibasic.mei.gestural.att.SoundLocation {
+trait Ges  extends _root_.meibasic.mei.midi.att.Channelized with _root_.meibasic.mei.midi.att.MidiInstrument with _root_.meibasic.mei.gestural.att.SoundLocation {
 
 } 

@@ -6,6 +6,6 @@ package meiall.mei.cmn.att.measure
  * Ident: att.measure.log
  * Module: MEI.cmn
  */
-trait Log  extends meiall.mei.performance.att.Alignment with meiall.mei.shared.att.meterconformance.Bar {
+trait Log  extends _root_.meiall.mei.performance.att.Alignment with _root_.meiall.mei.shared.att.meterconformance.Bar {
 
 } 

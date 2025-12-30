@@ -6,6 +6,6 @@ package meiall.mei.shared.att.tempo
  * Ident: att.tempo.log
  * Module: MEI.shared
  */
-trait Log  extends meiall.mei.shared.att.ControlEvent with meiall.mei.shared.att.MmTempo with meiall.mei.shared.att.StartEndId with meiall.mei.shared.att.timestamp2.Log {
+trait Log  extends _root_.meiall.mei.shared.att.ControlEvent with _root_.meiall.mei.shared.att.MmTempo with _root_.meiall.mei.shared.att.StartEndId with _root_.meiall.mei.shared.att.timestamp2.Log {
 
 } 

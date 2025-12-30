@@ -6,6 +6,6 @@ package meibasic.mei.shared.model
  * Ident: model.relationLike
  * Module: MEI.shared
  */
-trait RelationLike  extends meibasic.mei.shared.model.textphraselike.Limited {
+trait RelationLike  extends _root_.meibasic.mei.shared.model.textphraselike.Limited {
 
 } 

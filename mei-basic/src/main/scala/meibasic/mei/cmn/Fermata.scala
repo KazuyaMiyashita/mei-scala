@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: fermata
  * Module: MEI.cmn
  */
-case class Fermata(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmn.att.fermata.Log with meibasic.mei.visual.att.fermata.Vis with meibasic.mei.cmn.model.controleventlike.Cmn {
+case class Fermata(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmn.att.fermata.Log with _root_.meibasic.mei.visual.att.fermata.Vis with _root_.meibasic.mei.cmn.model.controleventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("color", "endid", "form", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "place", "plist", "shape", "staff", "startid", "tstamp", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

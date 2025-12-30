@@ -6,6 +6,6 @@ package meiall.mei.visual.att.syl
  * Ident: att.syl.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.PlacementRelStaff with meiall.mei.shared.att.Typography with meiall.mei.shared.att.VisualOffset with meiall.mei.shared.att.Xy with meiall.mei.shared.att.HorizontalAlign {
+trait Vis  extends _root_.meiall.mei.shared.att.PlacementRelStaff with _root_.meiall.mei.shared.att.Typography with _root_.meiall.mei.shared.att.VisualOffset with _root_.meiall.mei.shared.att.Xy with _root_.meiall.mei.shared.att.HorizontalAlign {
 
 } 

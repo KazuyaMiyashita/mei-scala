@@ -6,6 +6,6 @@ package meiall.mei.shared.model.textphraselike
  * Ident: model.textPhraseLike.limited
  * Module: MEI.shared
  */
-trait Limited  extends meiall.mei.critapp.model.rdgpart.Text with meiall.mei.edittrans.model.edittranspart.Text with meiall.mei.shared.model.TextPhraseLike {
+trait Limited  extends _root_.meiall.mei.critapp.model.rdgpart.Text with _root_.meiall.mei.edittrans.model.edittranspart.Text with _root_.meiall.mei.shared.model.TextPhraseLike {
 
 } 

@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: pad
  * Module: MEI.shared
  */
-case class Pad(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.analytical.att.pad.Anl with meiall.mei.gestural.att.pad.Ges with meiall.mei.shared.att.pad.Log with meiall.mei.visual.att.pad.Vis with meiall.mei.shared.model.EventLike {
+case class Pad(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.analytical.att.pad.Anl with _root_.meiall.mei.gestural.att.pad.Ges with _root_.meiall.mei.shared.att.pad.Log with _root_.meiall.mei.visual.att.pad.Vis with _root_.meiall.mei.shared.model.EventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "follows", "label", "layer", "n", "next", "precedes", "prev", "resp", "sameas", "staff", "synch", "tstamp", "tstamp.ges", "tstamp.real", "type", "when", "width", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

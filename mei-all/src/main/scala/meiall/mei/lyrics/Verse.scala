@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: verse
  * Module: MEI.lyrics
  */
-case class Verse(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.lyrics.att.verse.Log with meiall.mei.visual.att.verse.Vis with meiall.mei.gestural.att.verse.Ges with meiall.mei.analytical.att.verse.Anl with meiall.mei.lyrics.model.VerseLike {
+case class Verse(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.lyrics.att.verse.Log with _root_.meiall.mei.visual.att.verse.Vis with _root_.meiall.mei.gestural.att.verse.Ges with _root_.meiall.mei.analytical.att.verse.Anl with _root_.meiall.mei.lyrics.model.VerseLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "color", "copyof", "corresp", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "label", "letterspacing", "lineheight", "n", "next", "place", "precedes", "prev", "resp", "sameas", "synch", "to", "translit", "type", "vo", "voltasym", "x", "xml:base", "xml:id", "xml:lang", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

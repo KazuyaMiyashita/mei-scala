@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: score
  * Module: MEI.shared
  */
-case class Score(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.gestural.att.score.Ges with meibasic.mei.shared.model.ScoreLike {
+case class Score(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.gestural.att.score.Ges with _root_.meibasic.mei.shared.model.ScoreLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("label", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

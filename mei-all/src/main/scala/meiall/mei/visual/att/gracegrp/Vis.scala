@@ -6,6 +6,6 @@ package meiall.mei.visual.att.gracegrp
  * Ident: att.graceGrp.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.Color {
+trait Vis  extends _root_.meiall.mei.shared.att.Color {
 
 } 

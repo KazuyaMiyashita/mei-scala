@@ -6,6 +6,6 @@ package meiall.mei.shared.att.chord
  * Ident: att.chord.log
  * Module: MEI.shared
  */
-trait Log  extends meiall.mei.shared.att.Articulation with meiall.mei.shared.att.AugmentDots with meiall.mei.cmn.att.chord.log.Cmn with meiall.mei.shared.att.Cue with meiall.mei.shared.att.duration.Log with meiall.mei.shared.att.Event with meiall.mei.shared.att.SylText {
+trait Log  extends _root_.meiall.mei.shared.att.Articulation with _root_.meiall.mei.shared.att.AugmentDots with _root_.meiall.mei.cmn.att.chord.log.Cmn with _root_.meiall.mei.shared.att.Cue with _root_.meiall.mei.shared.att.duration.Log with _root_.meiall.mei.shared.att.Event with _root_.meiall.mei.shared.att.SylText {
 
 } 

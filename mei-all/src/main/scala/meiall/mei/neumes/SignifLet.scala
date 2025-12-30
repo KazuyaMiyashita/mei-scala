@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: signifLet
  * Module: MEI.neumes
  */
-case class SignifLet(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.signiflet.Anl with meiall.mei.gestural.att.signiflet.Ges with meiall.mei.neumes.att.signiflet.Log with meiall.mei.visual.att.signiflet.Vis with meiall.mei.neumes.model.NeumeModifierLike {
+case class SignifLet(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.signiflet.Anl with _root_.meiall.mei.gestural.att.signiflet.Ges with _root_.meiall.mei.neumes.att.signiflet.Log with _root_.meiall.mei.visual.att.signiflet.Vis with _root_.meiall.mei.neumes.model.NeumeModifierLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "class", "color", "copyof", "corresp", "enclose", "evaluate", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "lineheight", "loc", "n", "next", "part", "partstaff", "place", "plist", "precedes", "prev", "resp", "sameas", "staff", "synch", "type", "visible", "when", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

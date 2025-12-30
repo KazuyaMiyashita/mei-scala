@@ -6,6 +6,6 @@ package meiall.mei.shared.model
  * Ident: model.numLike
  * Module: MEI.shared
  */
-trait NumLike  extends meiall.mei.shared.model.MeasurementLike {
+trait NumLike  extends _root_.meiall.mei.shared.model.MeasurementLike {
 
 } 

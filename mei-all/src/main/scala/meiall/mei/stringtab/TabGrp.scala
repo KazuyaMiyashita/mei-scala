@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: tabGrp
  * Module: MEI.stringtab
  */
-case class TabGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.stringtab.att.tabgrp.Log with meiall.mei.visual.att.tabgrp.Vis with meiall.mei.gestural.att.tabgrp.Ges with meiall.mei.analytical.att.tabgrp.Anl with meiall.mei.shared.model.EventLike {
+case class TabGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.stringtab.att.tabgrp.Log with _root_.meiall.mei.visual.att.tabgrp.Vis with _root_.meiall.mei.gestural.att.tabgrp.Ges with _root_.meiall.mei.analytical.att.tabgrp.Anl with _root_.meiall.mei.shared.model.EventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "dots", "dots.ges", "dur", "dur.ges", "dur.metrical", "dur.ppq", "dur.real", "dur.recip", "facs", "follows", "ho", "label", "layer", "n", "next", "precedes", "prev", "resp", "sameas", "staff", "synch", "to", "tstamp", "tstamp.ges", "tstamp.real", "type", "visible", "when", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

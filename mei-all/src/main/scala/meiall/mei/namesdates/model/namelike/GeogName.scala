@@ -6,6 +6,6 @@ package meiall.mei.namesdates.model.namelike
  * Ident: model.nameLike.geogName
  * Module: MEI.namesdates
  */
-trait GeogName  extends meiall.mei.header.model.EventPart with meiall.mei.namesdates.model.namelike.Place {
+trait GeogName  extends _root_.meiall.mei.header.model.EventPart with _root_.meiall.mei.namesdates.model.namelike.Place {
 
 } 

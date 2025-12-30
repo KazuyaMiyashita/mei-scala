@@ -6,6 +6,6 @@ package meiall.mei.shared.att.barline
  * Ident: att.barLine.log
  * Module: MEI.shared
  */
-trait Log  extends meiall.mei.shared.att.meterconformance.Bar {
+trait Log  extends _root_.meiall.mei.shared.att.meterconformance.Bar {
 
 } 

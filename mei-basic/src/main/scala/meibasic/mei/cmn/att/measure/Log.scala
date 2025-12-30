@@ -6,6 +6,6 @@ package meibasic.mei.cmn.att.measure
  * Ident: att.measure.log
  * Module: MEI.cmn
  */
-trait Log  extends meibasic.mei.shared.att.meterconformance.Bar {
+trait Log  extends _root_.meibasic.mei.shared.att.meterconformance.Bar {
 
 } 

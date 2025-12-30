@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: tempo
  * Module: MEI.shared
  */
-case class Tempo(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.Lang with meibasic.mei.gestural.att.tempo.Ges with meibasic.mei.shared.att.tempo.Log with meibasic.mei.visual.att.tempo.Vis with meibasic.mei.shared.model.ControlEventLike {
+case class Tempo(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.Lang with _root_.meibasic.mei.gestural.att.tempo.Ges with _root_.meibasic.mei.shared.att.tempo.Log with _root_.meibasic.mei.visual.att.tempo.Vis with _root_.meibasic.mei.shared.model.ControlEventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("color", "endho", "endid", "extender", "func", "ho", "label", "layer", "lendsym", "lendsym.size", "lform", "lsegs", "lstartsym", "lstartsym.size", "lwidth", "midi.bpm", "midi.mspb", "mm", "mm.dots", "mm.unit", "place", "plist", "staff", "startho", "startid", "tstamp", "tstamp2", "type", "vo", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

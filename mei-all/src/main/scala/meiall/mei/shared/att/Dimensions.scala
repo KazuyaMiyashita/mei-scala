@@ -6,6 +6,6 @@ package meiall.mei.shared.att
  * Ident: att.dimensions
  * Module: MEI.shared
  */
-trait Dimensions  extends meiall.mei.shared.att.Height with meiall.mei.shared.att.Width {
+trait Dimensions  extends _root_.meiall.mei.shared.att.Height with _root_.meiall.mei.shared.att.Width {
 
 } 

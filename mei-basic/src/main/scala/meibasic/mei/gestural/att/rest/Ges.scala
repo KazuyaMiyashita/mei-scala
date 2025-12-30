@@ -6,6 +6,6 @@ package meibasic.mei.gestural.att.rest
  * Ident: att.rest.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meibasic.mei.midi.att.InstrumentIdent {
+trait Ges  extends _root_.meibasic.mei.midi.att.InstrumentIdent {
 
 } 

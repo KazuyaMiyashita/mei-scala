@@ -6,6 +6,6 @@ package meiall.mei.msdesc.model
  * Ident: model.msInline
  * Module: MEI.msDesc
  */
-trait MsInline  extends meiall.mei.shared.model.textphraselike.Limited {
+trait MsInline  extends _root_.meiall.mei.shared.model.textphraselike.Limited {
 
 } 

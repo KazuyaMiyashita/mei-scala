@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: mNum
  * Module: MEI.cmn
  */
-case class MNum(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.cmn.att.mnum.Log with meiall.mei.visual.att.mnum.Vis with meiall.mei.gestural.att.mnum.Ges with meiall.mei.analytical.att.mnum.Anl {
+case class MNum(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.cmn.att.mnum.Log with _root_.meiall.mei.visual.att.mnum.Vis with _root_.meiall.mei.gestural.att.mnum.Ges with _root_.meiall.mei.analytical.att.mnum.Anl {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "color", "copyof", "corresp", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "ho", "label", "letterspacing", "lineheight", "n", "next", "place", "precedes", "prev", "resp", "sameas", "synch", "to", "translit", "type", "vo", "x", "xml:base", "xml:id", "xml:lang", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

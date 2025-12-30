@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: accid
  * Module: MEI.shared
  */
-case class Accid(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.accid.Anl with meiall.mei.gestural.att.accid.Ges with meiall.mei.shared.att.accid.Log with meiall.mei.visual.att.accid.Vis with meiall.mei.shared.model.NoteModifierLike with meiall.mei.neumes.model.SyllablePart {
+case class Accid(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.accid.Anl with _root_.meiall.mei.gestural.att.accid.Ges with _root_.meiall.mei.shared.att.accid.Log with _root_.meiall.mei.visual.att.accid.Vis with _root_.meiall.mei.shared.model.NoteModifierLike with _root_.meiall.mei.neumes.model.SyllablePart {
   override def validate(): Boolean = {
     val allowedAttrs = Set("accid", "accid.ges", "altsym", "class", "color", "copyof", "corresp", "enclose", "evaluate", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "func", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "lineheight", "loc", "n", "next", "oloc", "onstaff", "part", "partstaff", "place", "plist", "ploc", "precedes", "prev", "resp", "sameas", "staff", "synch", "tstamp", "tstamp.ges", "tstamp.real", "type", "vo", "when", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

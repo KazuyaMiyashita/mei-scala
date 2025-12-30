@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: ambNote
  * Module: MEI.shared
  */
-case class AmbNote(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.ambnote.Anl with meiall.mei.gestural.att.ambnote.Ges with meiall.mei.shared.att.ambnote.Log with meiall.mei.visual.att.ambnote.Vis {
+case class AmbNote(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.ambnote.Anl with _root_.meiall.mei.gestural.att.ambnote.Ges with _root_.meiall.mei.shared.att.ambnote.Log with _root_.meiall.mei.visual.att.ambnote.Vis {
   override def validate(): Boolean = {
     val allowedAttrs = Set("accid", "class", "color", "colored", "copyof", "corresp", "dur", "enclose", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "head.altsym", "head.auth", "head.color", "head.fill", "head.fillcolor", "head.mod", "head.rotation", "head.shape", "head.visible", "label", "letterspacing", "lineheight", "loc", "n", "next", "oct", "pname", "precedes", "prev", "resp", "sameas", "stem.dir", "stem.form", "stem.len", "stem.mod", "stem.pos", "stem.sameas", "stem.visible", "stem.with", "stem.x", "stem.y", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

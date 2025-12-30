@@ -6,6 +6,6 @@ package meiall.mei.cmn.model.sectionpart
  * Ident: model.sectionPart.cmn
  * Module: MEI.cmn
  */
-trait Cmn  extends meiall.mei.shared.model.SectionPart {
+trait Cmn  extends _root_.meiall.mei.shared.model.SectionPart {
 
 } 

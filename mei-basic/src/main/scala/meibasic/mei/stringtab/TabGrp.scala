@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: tabGrp
  * Module: MEI.stringtab
  */
-case class TabGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.stringtab.att.tabgrp.Log with meibasic.mei.visual.att.tabgrp.Vis with meibasic.mei.gestural.att.tabgrp.Ges with meibasic.mei.analytical.att.tabgrp.Anl with meibasic.mei.shared.model.EventLike {
+case class TabGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.stringtab.att.tabgrp.Log with _root_.meibasic.mei.visual.att.tabgrp.Vis with _root_.meibasic.mei.gestural.att.tabgrp.Ges with _root_.meibasic.mei.analytical.att.tabgrp.Anl with _root_.meibasic.mei.shared.model.EventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("dots", "dur", "ho", "label", "layer", "staff", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

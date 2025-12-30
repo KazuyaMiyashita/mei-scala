@@ -6,6 +6,6 @@ package meiall.mei.gestural.att.chordmember
  * Ident: att.chordMember.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meiall.mei.gestural.att.accidental.Ges {
+trait Ges  extends _root_.meiall.mei.gestural.att.accidental.Ges {
 
 } 

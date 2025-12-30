@@ -6,6 +6,6 @@ package meibasic.mei.midi.model
  * Ident: model.midiLike
  * Module: MEI.midi
  */
-trait MidiLike  extends meibasic.mei.cmn.model.MeasurePart {
+trait MidiLike  extends _root_.meibasic.mei.cmn.model.MeasurePart {
 
 } 

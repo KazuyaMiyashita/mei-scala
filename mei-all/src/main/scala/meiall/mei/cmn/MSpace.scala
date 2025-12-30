@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: mSpace
  * Module: MEI.cmn
  */
-case class MSpace(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.cmn.att.mspace.Log with meiall.mei.visual.att.mspace.Vis with meiall.mei.gestural.att.mspace.Ges with meiall.mei.analytical.att.mspace.Anl with meiall.mei.cmn.model.eventlike.MeasureFilling {
+case class MSpace(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.cmn.att.mspace.Log with _root_.meiall.mei.visual.att.mspace.Vis with _root_.meiall.mei.gestural.att.mspace.Ges with _root_.meiall.mei.analytical.att.mspace.Anl with _root_.meiall.mei.cmn.model.eventlike.MeasureFilling {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "class", "copyof", "corresp", "cutout", "dots.ges", "dur", "dur.ges", "dur.metrical", "dur.ppq", "dur.real", "dur.recip", "facs", "fermata", "follows", "label", "layer", "n", "next", "precedes", "prev", "resp", "sameas", "staff", "synch", "tstamp", "tstamp.ges", "tstamp.real", "type", "when", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

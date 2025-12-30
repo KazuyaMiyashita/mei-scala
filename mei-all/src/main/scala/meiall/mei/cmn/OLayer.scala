@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: oLayer
  * Module: MEI.cmn
  */
-case class OLayer(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Basic with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Labelled with meiall.mei.shared.att.Linking with meiall.mei.shared.att.MetadataPointing with meiall.mei.shared.att.NInteger with meiall.mei.shared.att.Responsibility with meiall.mei.shared.att.Typed with meiall.mei.shared.att.layer.Log with meiall.mei.visual.att.layer.Vis with meiall.mei.gestural.att.layer.Ges with meiall.mei.analytical.att.layer.Anl {
+case class OLayer(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Basic with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Labelled with _root_.meiall.mei.shared.att.Linking with _root_.meiall.mei.shared.att.MetadataPointing with _root_.meiall.mei.shared.att.NInteger with _root_.meiall.mei.shared.att.Responsibility with _root_.meiall.mei.shared.att.Typed with _root_.meiall.mei.shared.att.layer.Log with _root_.meiall.mei.visual.att.layer.Vis with _root_.meiall.mei.gestural.att.layer.Ges with _root_.meiall.mei.analytical.att.layer.Anl {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "cue", "decls", "def", "facs", "follows", "label", "metcon", "n", "next", "precedes", "prev", "resp", "sameas", "synch", "type", "visible", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

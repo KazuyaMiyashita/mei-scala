@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: key
  * Module: MEI.header
  */
-case class Key(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Accidental with meiall.mei.shared.att.Bibl with meiall.mei.shared.att.KeyMode with meiall.mei.shared.att.Pitch with meiall.mei.header.model.WorkIdent {
+case class Key(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Accidental with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.shared.att.KeyMode with _root_.meiall.mei.shared.att.Pitch with _root_.meiall.mei.header.model.WorkIdent {
   override def validate(): Boolean = {
     val allowedAttrs = Set("accid", "analog", "class", "copyof", "corresp", "follows", "label", "mode", "n", "next", "pname", "precedes", "prev", "resp", "sameas", "synch", "type", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meibasic.mei.cmn.att.gracegrp
  * Ident: att.graceGrp.log
  * Module: MEI.cmn
  */
-trait Log  extends meibasic.mei.shared.att.Event with meibasic.mei.cmn.att.Graced {
+trait Log  extends _root_.meibasic.mei.shared.att.Event with _root_.meibasic.mei.cmn.att.Graced {
 
 } 

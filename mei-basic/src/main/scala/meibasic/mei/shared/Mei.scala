@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: mei
  * Module: MEI.shared
  */
-case class Mei(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Id with meibasic.mei.shared.att.MeiVersion {
+case class Mei(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Id with _root_.meibasic.mei.shared.att.MeiVersion {
   override def validate(): Boolean = {
     val allowedAttrs = Set("meiversion", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

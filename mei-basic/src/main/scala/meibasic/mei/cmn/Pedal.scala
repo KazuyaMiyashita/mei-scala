@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: pedal
  * Module: MEI.cmn
  */
-case class Pedal(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmn.att.pedal.Log with meibasic.mei.visual.att.pedal.Vis with meibasic.mei.gestural.att.pedal.Ges with meibasic.mei.cmn.model.controleventlike.Cmn {
+case class Pedal(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmn.att.pedal.Log with _root_.meibasic.mei.visual.att.pedal.Vis with _root_.meibasic.mei.gestural.att.pedal.Ges with _root_.meibasic.mei.cmn.model.controleventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("color", "dir", "endid", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "form", "func", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "lendsym", "lendsym.size", "letterspacing", "lform", "lineheight", "lsegs", "lstartsym", "lstartsym.size", "lwidth", "place", "plist", "staff", "startid", "tstamp", "tstamp2", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

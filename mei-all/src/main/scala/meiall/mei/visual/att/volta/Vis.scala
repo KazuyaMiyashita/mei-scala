@@ -6,6 +6,6 @@ package meiall.mei.visual.att.volta
  * Ident: att.volta.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.Color with meiall.mei.shared.att.Typography with meiall.mei.shared.att.visualoffset.To with meiall.mei.shared.att.visualoffset.Vo with meiall.mei.shared.att.Xy {
+trait Vis  extends _root_.meiall.mei.shared.att.Color with _root_.meiall.mei.shared.att.Typography with _root_.meiall.mei.shared.att.visualoffset.To with _root_.meiall.mei.shared.att.visualoffset.Vo with _root_.meiall.mei.shared.att.Xy {
 
 } 

@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: graceGrp
  * Module: MEI.cmn
  */
-case class GraceGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmn.att.gracegrp.Log with meibasic.mei.visual.att.gracegrp.Vis with meibasic.mei.cmn.model.eventlike.Cmn {
+case class GraceGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmn.att.gracegrp.Log with _root_.meibasic.mei.visual.att.gracegrp.Vis with _root_.meibasic.mei.cmn.model.eventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("attach", "color", "grace", "grace.time", "label", "layer", "staff", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

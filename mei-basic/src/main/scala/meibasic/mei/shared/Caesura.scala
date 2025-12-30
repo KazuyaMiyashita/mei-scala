@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: caesura
  * Module: MEI.shared
  */
-case class Caesura(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.gestural.att.caesura.Ges with meibasic.mei.shared.att.caesura.Log with meibasic.mei.visual.att.caesura.Vis with meibasic.mei.shared.model.ControlEventLike {
+case class Caesura(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.gestural.att.caesura.Ges with _root_.meibasic.mei.shared.att.caesura.Log with _root_.meibasic.mei.visual.att.caesura.Vis with _root_.meibasic.mei.shared.model.ControlEventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("color", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "staff", "startid", "tstamp", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.mensural.att.note.ges
  * Ident: att.note.ges.mensural
  * Module: MEI.mensural
  */
-trait Mensural  extends meiall.mei.shared.att.duration.Ratio {
+trait Mensural  extends _root_.meiall.mei.shared.att.duration.Ratio {
 
 } 

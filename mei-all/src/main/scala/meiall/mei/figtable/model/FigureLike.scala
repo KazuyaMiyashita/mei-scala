@@ -6,6 +6,6 @@ package meiall.mei.figtable.model
  * Ident: model.figureLike
  * Module: MEI.figtable
  */
-trait FigureLike  extends meiall.mei.shared.model.textphraselike.Limited {
+trait FigureLike  extends _root_.meiall.mei.shared.model.textphraselike.Limited {
 
 } 

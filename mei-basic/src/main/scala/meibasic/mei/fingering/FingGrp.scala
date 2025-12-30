@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: fingGrp
  * Module: MEI.fingering
  */
-case class FingGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.gestural.att.finggrp.Ges with meibasic.mei.fingering.att.finggrp.Log with meibasic.mei.fingering.model.FingeringLike {
+case class FingGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.gestural.att.finggrp.Ges with _root_.meibasic.mei.fingering.att.finggrp.Log with _root_.meibasic.mei.fingering.model.FingeringLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("dur", "endid", "form", "label", "layer", "plist", "staff", "startid", "tstamp", "tstamp2", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.midi.model
  * Ident: model.midiLike
  * Module: MEI.midi
  */
-trait MidiLike  extends meiall.mei.shared.model.layerpart.MensuralAndNeumes with meiall.mei.cmn.model.MeasurePart with meiall.mei.neumes.model.SyllablePart {
+trait MidiLike  extends _root_.meiall.mei.shared.model.layerpart.MensuralAndNeumes with _root_.meiall.mei.cmn.model.MeasurePart with _root_.meiall.mei.neumes.model.SyllablePart {
 
 } 

@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: clef
  * Module: MEI.shared
  */
-case class Clef(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.Event with meibasic.mei.shared.att.clef.Log with meibasic.mei.visual.att.clef.Vis with meibasic.mei.shared.model.EventLike with meibasic.mei.shared.model.StaffDefPart {
+case class Clef(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.Event with _root_.meibasic.mei.shared.att.clef.Log with _root_.meibasic.mei.visual.att.clef.Vis with _root_.meibasic.mei.shared.model.EventLike with _root_.meibasic.mei.shared.model.StaffDefPart {
   override def validate(): Boolean = {
     val allowedAttrs = Set("cautionary", "color", "dis", "dis.place", "enclose", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "line", "lineheight", "oct", "shape", "staff", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: barLine
  * Module: MEI.shared
  */
-case class BarLine(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Pointing with meiall.mei.shared.att.TargetEval with meiall.mei.analytical.att.barline.Anl with meiall.mei.gestural.att.barline.Ges with meiall.mei.shared.att.barline.Log with meiall.mei.visual.att.barline.Vis with meiall.mei.shared.model.EventLike {
+case class BarLine(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Pointing with _root_.meiall.mei.shared.att.TargetEval with _root_.meiall.mei.analytical.att.barline.Anl with _root_.meiall.mei.gestural.att.barline.Ges with _root_.meiall.mei.shared.att.barline.Log with _root_.meiall.mei.visual.att.barline.Vis with _root_.meiall.mei.shared.model.EventLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("altsym", "class", "color", "control", "copyof", "corresp", "evaluate", "facs", "follows", "form", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "label", "len", "metcon", "method", "n", "next", "place", "precedes", "prev", "resp", "sameas", "synch", "target", "targettype", "type", "visible", "width", "xlink:actuate", "xlink:role", "xlink:show", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

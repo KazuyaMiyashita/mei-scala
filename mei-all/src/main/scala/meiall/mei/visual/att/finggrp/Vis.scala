@@ -6,6 +6,6 @@ package meiall.mei.visual.att.finggrp
  * Ident: att.fingGrp.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.usersymbols.att.AltSym with meiall.mei.shared.att.Color with meiall.mei.shared.att.Extender with meiall.mei.shared.att.PlacementRelStaff with meiall.mei.shared.att.VerticalGroup with meiall.mei.shared.att.VisualOffset with meiall.mei.shared.att.Xy {
+trait Vis  extends _root_.meiall.mei.usersymbols.att.AltSym with _root_.meiall.mei.shared.att.Color with _root_.meiall.mei.shared.att.Extender with _root_.meiall.mei.shared.att.PlacementRelStaff with _root_.meiall.mei.shared.att.VerticalGroup with _root_.meiall.mei.shared.att.VisualOffset with _root_.meiall.mei.shared.att.Xy {
 
 } 

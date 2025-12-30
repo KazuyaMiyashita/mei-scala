@@ -6,6 +6,6 @@ package meibasic.mei.shared.model
  * Ident: model.repositoryLike
  * Module: MEI.shared
  */
-trait RepositoryLike  extends meibasic.mei.namesdates.model.namelike.Place {
+trait RepositoryLike  extends _root_.meibasic.mei.namesdates.model.namelike.Place {
 
 } 

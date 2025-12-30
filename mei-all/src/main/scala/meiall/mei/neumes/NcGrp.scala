@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: ncGrp
  * Module: MEI.neumes
  */
-case class NcGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.analytical.att.ncgrp.Anl with meiall.mei.gestural.att.ncgrp.Ges with meiall.mei.neumes.att.ncgrp.Log with meiall.mei.visual.att.ncgrp.Vis with meiall.mei.neumes.model.NeumePart {
+case class NcGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.analytical.att.ncgrp.Anl with _root_.meiall.mei.gestural.att.ncgrp.Ges with _root_.meiall.mei.neumes.att.ncgrp.Log with _root_.meiall.mei.visual.att.ncgrp.Vis with _root_.meiall.mei.neumes.model.NeumePart {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "color", "copyof", "corresp", "facs", "follows", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "ho", "label", "layer", "letterspacing", "lineheight", "loc", "n", "next", "precedes", "prev", "resp", "sameas", "staff", "syl", "synch", "tstamp.ges", "tstamp.real", "type", "visible", "when", "x", "xml:base", "xml:id", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

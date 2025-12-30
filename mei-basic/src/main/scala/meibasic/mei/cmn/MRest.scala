@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: mRest
  * Module: MEI.cmn
  */
-case class MRest(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmn.att.mrest.Log with meibasic.mei.visual.att.mrest.Vis with meibasic.mei.gestural.att.mrest.Ges with meibasic.mei.cmn.model.eventlike.MeasureFilling {
+case class MRest(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmn.att.mrest.Log with _root_.meibasic.mei.visual.att.mrest.Vis with _root_.meibasic.mei.gestural.att.mrest.Ges with _root_.meibasic.mei.cmn.model.eventlike.MeasureFilling {
   override def validate(): Boolean = {
     val allowedAttrs = Set("color", "cue", "cutout", "dur", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "letterspacing", "lineheight", "oloc", "ploc", "staff", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

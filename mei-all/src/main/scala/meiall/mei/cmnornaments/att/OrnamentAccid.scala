@@ -6,6 +6,6 @@ package meiall.mei.cmnornaments.att
  * Ident: att.ornamentAccid
  * Module: MEI.cmnOrnaments
  */
-trait OrnamentAccid  extends meiall.mei.gestural.att.ornamentaccid.Ges {
+trait OrnamentAccid  extends _root_.meiall.mei.gestural.att.ornamentaccid.Ges {
 
 } 

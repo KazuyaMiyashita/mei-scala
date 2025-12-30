@@ -6,6 +6,6 @@ package meiall.mei.edittrans.model
  * Ident: model.transcriptionLike
  * Module: MEI.edittrans
  */
-trait TranscriptionLike  extends meiall.mei.shared.model.ParacontentPart {
+trait TranscriptionLike  extends _root_.meiall.mei.shared.model.ParacontentPart {
 
 } 

@@ -6,6 +6,6 @@ package meiall.mei.shared.att
  * Ident: att.typed
  * Module: MEI.shared
  */
-trait Typed  extends meiall.mei.shared.att.Classed {
+trait Typed  extends _root_.meiall.mei.shared.att.Classed {
 
 } 

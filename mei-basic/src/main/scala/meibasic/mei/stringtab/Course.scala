@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: course
  * Module: MEI.stringtab
  */
-case class Course(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.stringtab.att.course.Log with meibasic.mei.visual.att.course.Vis with meibasic.mei.gestural.att.course.Ges with meibasic.mei.analytical.att.course.Anl {
+case class Course(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.stringtab.att.course.Log with _root_.meibasic.mei.visual.att.course.Vis with _root_.meibasic.mei.gestural.att.course.Ges with _root_.meibasic.mei.analytical.att.course.Anl {
   override def validate(): Boolean = {
     val allowedAttrs = Set("accid", "label", "oct", "pname", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: harm
  * Module: MEI.harmony
  */
-case class Harm(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.harmony.att.harm.Log with meibasic.mei.visual.att.harm.Vis with meibasic.mei.harmony.model.HarmLike {
+case class Harm(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.harmony.att.harm.Log with _root_.meibasic.mei.visual.att.harm.Vis with _root_.meibasic.mei.harmony.model.HarmLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("chordref", "color", "dur", "endho", "endid", "extender", "ho", "label", "layer", "lendsym", "lendsym.size", "lform", "lsegs", "lstartsym", "lstartsym.size", "lwidth", "place", "plist", "rendgrid", "staff", "startho", "startid", "tstamp", "tstamp2", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

@@ -6,6 +6,6 @@ package meiall.mei.mensural.att.scoredef.log
  * Ident: att.scoreDef.log.mensural
  * Module: MEI.mensural
  */
-trait Mensural  extends meiall.mei.mensural.att.mensural.Log {
+trait Mensural  extends _root_.meiall.mei.mensural.att.mensural.Log {
 
 } 

@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: genState
  * Module: MEI.genetic
  */
-case class GenState(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.Bibl with meiall.mei.shared.att.Datable with meiall.mei.shared.att.DataPointing with meiall.mei.shared.att.MetadataPointing with meiall.mei.shared.att.Pointing {
+case class GenState(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.Bibl with _root_.meiall.mei.shared.att.Datable with _root_.meiall.mei.shared.att.DataPointing with _root_.meiall.mei.shared.att.MetadataPointing with _root_.meiall.mei.shared.att.Pointing {
   override def validate(): Boolean = {
     val allowedAttrs = Set("analog", "class", "copyof", "corresp", "data", "decls", "enddate", "follows", "isodate", "label", "n", "next", "notafter", "notbefore", "precedes", "prev", "resp", "sameas", "startdate", "synch", "target", "targettype", "type", "xlink:actuate", "xlink:role", "xlink:show", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

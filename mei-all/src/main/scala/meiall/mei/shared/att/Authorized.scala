@@ -6,6 +6,6 @@ package meiall.mei.shared.att
  * Ident: att.authorized
  * Module: MEI.shared
  */
-trait Authorized  extends meiall.mei.shared.att.Canonical {
+trait Authorized  extends _root_.meiall.mei.shared.att.Canonical {
 
 } 

@@ -6,6 +6,6 @@ package meibasic.mei.cmn.model.layerpart
  * Ident: model.layerPart.cmn
  * Module: MEI.cmn
  */
-trait Cmn  extends meibasic.mei.shared.model.LayerPart {
+trait Cmn  extends _root_.meibasic.mei.shared.model.LayerPart {
 
 } 

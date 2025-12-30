@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: tuplet
  * Module: MEI.cmn
  */
-case class Tuplet(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmn.att.tuplet.Log with meibasic.mei.visual.att.tuplet.Vis with meibasic.mei.gestural.att.tuplet.Ges with meibasic.mei.cmn.model.eventlike.Cmn {
+case class Tuplet(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmn.att.tuplet.Log with _root_.meibasic.mei.visual.att.tuplet.Vis with _root_.meibasic.mei.gestural.att.tuplet.Ges with _root_.meibasic.mei.cmn.model.eventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("bracket.place", "bracket.visible", "color", "dur", "dur.visible", "endid", "label", "layer", "num", "num.format", "num.place", "num.visible", "numbase", "staff", "startid", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

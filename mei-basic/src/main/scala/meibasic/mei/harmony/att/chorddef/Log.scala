@@ -6,6 +6,6 @@ package meibasic.mei.harmony.att.chorddef
  * Ident: att.chordDef.log
  * Module: MEI.harmony
  */
-trait Log  extends meibasic.mei.stringtab.att.stringtab.Position with meibasic.mei.stringtab.att.stringtab.Tuning {
+trait Log  extends _root_.meibasic.mei.stringtab.att.stringtab.Position with _root_.meibasic.mei.stringtab.att.stringtab.Tuning {
 
 } 

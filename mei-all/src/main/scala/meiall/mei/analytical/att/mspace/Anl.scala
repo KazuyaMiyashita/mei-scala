@@ -6,6 +6,6 @@ package meiall.mei.analytical.att.mspace
  * Ident: att.mSpace.anl
  * Module: MEI.analytical
  */
-trait Anl  extends meiall.mei.shared.att.FermataPresent {
+trait Anl  extends _root_.meiall.mei.shared.att.FermataPresent {
 
 } 

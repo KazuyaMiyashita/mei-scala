@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: gap
  * Module: MEI.edittrans
  */
-case class Gap(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.edittrans.att.Edit with meiall.mei.shared.att.Extent with meiall.mei.shared.att.HandIdent with meiall.mei.edittrans.att.ReasonIdent with meiall.mei.edittrans.model.TranscriptionLike {
+case class Gap(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.edittrans.att.Edit with _root_.meiall.mei.shared.att.Extent with _root_.meiall.mei.shared.att.HandIdent with _root_.meiall.mei.edittrans.att.ReasonIdent with _root_.meiall.mei.edittrans.model.TranscriptionLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("atleast", "atmost", "cert", "class", "confidence", "copyof", "corresp", "evidence", "extent", "follows", "hand", "label", "max", "min", "n", "next", "precedes", "prev", "reason", "resp", "sameas", "source", "synch", "type", "unit", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

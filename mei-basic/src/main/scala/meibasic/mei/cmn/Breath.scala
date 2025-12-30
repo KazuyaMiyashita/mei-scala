@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: breath
  * Module: MEI.cmn
  */
-case class Breath(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmn.att.breath.Log with meibasic.mei.visual.att.breath.Vis with meibasic.mei.gestural.att.breath.Ges with meibasic.mei.cmn.model.controleventlike.Cmn {
+case class Breath(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmn.att.breath.Log with _root_.meibasic.mei.visual.att.breath.Vis with _root_.meibasic.mei.gestural.att.breath.Ges with _root_.meibasic.mei.cmn.model.controleventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("color", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "ho", "label", "layer", "staff", "startid", "tstamp", "type", "vo", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

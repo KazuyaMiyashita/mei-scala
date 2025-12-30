@@ -6,6 +6,6 @@ package meibasic.mei.visual.att.beam
  * Ident: att.beam.vis
  * Module: MEI.visual
  */
-trait Vis  extends meibasic.mei.shared.att.Color with meibasic.mei.shared.att.Cue {
+trait Vis  extends _root_.meibasic.mei.shared.att.Color with _root_.meibasic.mei.shared.att.Cue {
 
 } 

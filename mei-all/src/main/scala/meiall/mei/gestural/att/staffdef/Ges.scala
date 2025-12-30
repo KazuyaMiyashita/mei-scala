@@ -6,6 +6,6 @@ package meiall.mei.gestural.att.staffdef
  * Ident: att.staffDef.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meiall.mei.midi.att.InstrumentIdent with meiall.mei.stringtab.att.stringtab.Tuning with meiall.mei.midi.att.TimeBase with meiall.mei.shared.att.Tuning {
+trait Ges  extends _root_.meiall.mei.midi.att.InstrumentIdent with _root_.meiall.mei.stringtab.att.stringtab.Tuning with _root_.meiall.mei.midi.att.TimeBase with _root_.meiall.mei.shared.att.Tuning {
 
 } 

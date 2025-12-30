@@ -6,6 +6,6 @@ package meiall.mei.visual.att.stem
  * Ident: att.stem.vis
  * Module: MEI.visual
  */
-trait Vis  extends meiall.mei.shared.att.Xy with meiall.mei.shared.att.Color with meiall.mei.externalsymbols.att.ExtSym with meiall.mei.shared.att.Visibility {
+trait Vis  extends _root_.meiall.mei.shared.att.Xy with _root_.meiall.mei.shared.att.Color with _root_.meiall.mei.externalsymbols.att.ExtSym with _root_.meiall.mei.shared.att.Visibility {
 
 } 

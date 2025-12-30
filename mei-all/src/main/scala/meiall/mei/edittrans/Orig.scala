@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: orig
  * Module: MEI.edittrans
  */
-case class Orig(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.edittrans.att.Edit with meiall.mei.shared.att.Extent with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.edittrans.model.ChoicePart with meiall.mei.edittrans.model.TranscriptionLike {
+case class Orig(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.edittrans.att.Edit with _root_.meiall.mei.shared.att.Extent with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.edittrans.model.ChoicePart with _root_.meiall.mei.edittrans.model.TranscriptionLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("atleast", "atmost", "cert", "class", "confidence", "copyof", "corresp", "evidence", "extent", "facs", "follows", "label", "max", "min", "n", "next", "precedes", "prev", "resp", "sameas", "source", "synch", "translit", "type", "unit", "xml:base", "xml:id", "xml:lang")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

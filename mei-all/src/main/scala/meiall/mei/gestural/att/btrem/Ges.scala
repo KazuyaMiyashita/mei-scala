@@ -6,6 +6,6 @@ package meiall.mei.gestural.att.btrem
  * Ident: att.bTrem.ges
  * Module: MEI.gestural
  */
-trait Ges  extends meiall.mei.cmn.att.TremMeasured {
+trait Ges  extends _root_.meiall.mei.cmn.att.TremMeasured {
 
 } 

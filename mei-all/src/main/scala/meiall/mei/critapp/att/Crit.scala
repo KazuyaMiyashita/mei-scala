@@ -6,6 +6,6 @@ package meiall.mei.critapp.att
  * Ident: att.crit
  * Module: MEI.critapp
  */
-trait Crit  extends meiall.mei.shared.att.HandIdent with meiall.mei.shared.att.Sequence with meiall.mei.shared.att.Source {
+trait Crit  extends _root_.meiall.mei.shared.att.HandIdent with _root_.meiall.mei.shared.att.Sequence with _root_.meiall.mei.shared.att.Source {
 
 } 

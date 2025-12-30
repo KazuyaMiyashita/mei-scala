@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: anchoredText
  * Module: MEI.usersymbols
  */
-case class AnchoredText(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.Lang with meiall.mei.analytical.att.anchoredtext.Anl with meiall.mei.gestural.att.anchoredtext.Ges with meiall.mei.usersymbols.att.anchoredtext.Log with meiall.mei.visual.att.anchoredtext.Vis with meiall.mei.usersymbols.model.GraphicPrimitiveLike {
+case class AnchoredText(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.Lang with _root_.meiall.mei.analytical.att.anchoredtext.Anl with _root_.meiall.mei.gestural.att.anchoredtext.Ges with _root_.meiall.mei.usersymbols.att.anchoredtext.Log with _root_.meiall.mei.visual.att.anchoredtext.Vis with _root_.meiall.mei.usersymbols.model.GraphicPrimitiveLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "facs", "follows", "func", "ho", "label", "n", "next", "precedes", "prev", "resp", "sameas", "startid", "synch", "to", "translit", "type", "vo", "x", "xml:base", "xml:id", "xml:lang", "y")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

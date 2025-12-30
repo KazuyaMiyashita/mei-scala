@@ -6,6 +6,6 @@ package meiall.mei.edittrans.model
  * Ident: model.editLike
  * Module: MEI.edittrans
  */
-trait EditLike  extends meiall.mei.shared.model.ParacontentPart with meiall.mei.edittrans.model.ChoicePart {
+trait EditLike  extends _root_.meiall.mei.shared.model.ParacontentPart with _root_.meiall.mei.edittrans.model.ChoicePart {
 
 } 

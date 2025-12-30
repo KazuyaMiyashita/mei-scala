@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: mRpt
  * Module: MEI.cmn
  */
-case class MRpt(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.cmn.att.mrpt.Log with meibasic.mei.visual.att.mrpt.Vis with meibasic.mei.cmn.model.eventlike.MeasureFilling {
+case class MRpt(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.cmn.att.mrpt.Log with _root_.meibasic.mei.visual.att.mrpt.Vis with _root_.meibasic.mei.cmn.model.eventlike.MeasureFilling {
   override def validate(): Boolean = {
     val allowedAttrs = Set("color", "expand", "fontfam", "fontname", "fontsize", "fontstyle", "fontweight", "glyph.auth", "glyph.name", "glyph.num", "glyph.uri", "label", "layer", "letterspacing", "lineheight", "num", "num.place", "num.visible", "staff", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

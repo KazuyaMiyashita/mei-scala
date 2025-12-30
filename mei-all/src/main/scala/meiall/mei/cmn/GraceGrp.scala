@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: graceGrp
  * Module: MEI.cmn
  */
-case class GraceGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.facsimile.att.Facsimile with meiall.mei.cmn.att.gracegrp.Log with meiall.mei.visual.att.gracegrp.Vis with meiall.mei.gestural.att.gracegrp.Ges with meiall.mei.analytical.att.gracegrp.Anl with meiall.mei.cmn.model.eventlike.Cmn {
+case class GraceGrp(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.cmn.att.gracegrp.Log with _root_.meiall.mei.visual.att.gracegrp.Vis with _root_.meiall.mei.gestural.att.gracegrp.Ges with _root_.meiall.mei.analytical.att.gracegrp.Anl with _root_.meiall.mei.cmn.model.eventlike.Cmn {
   override def validate(): Boolean = {
     val allowedAttrs = Set("attach", "class", "color", "copyof", "corresp", "facs", "follows", "grace", "grace.time", "label", "layer", "n", "next", "precedes", "prev", "resp", "sameas", "staff", "synch", "tstamp", "tstamp.ges", "tstamp.real", "type", "when", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

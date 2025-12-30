@@ -6,6 +6,6 @@ package meiall.mei.mensural.model.eventlike
  * Ident: model.eventLike.mensural
  * Module: MEI.mensural
  */
-trait Mensural  extends meiall.mei.mensural.model.layerpart.Mensural {
+trait Mensural  extends _root_.meiall.mei.mensural.model.layerpart.Mensural {
 
 } 

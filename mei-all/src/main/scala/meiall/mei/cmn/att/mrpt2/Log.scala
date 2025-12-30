@@ -6,6 +6,6 @@ package meiall.mei.cmn.att.mrpt2
  * Ident: att.mRpt2.log
  * Module: MEI.cmn
  */
-trait Log  extends meiall.mei.shared.att.Event {
+trait Log  extends _root_.meiall.mei.shared.att.Event {
 
 } 

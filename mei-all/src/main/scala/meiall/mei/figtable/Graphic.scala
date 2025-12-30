@@ -10,7 +10,7 @@ import meiall.Validator
  * Ident: graphic
  * Module: MEI.figtable
  */
-case class Graphic(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with meiall.mei.shared.att.Common with meiall.mei.shared.att.coordinated.Ul with meiall.mei.shared.att.Dimensions with meiall.mei.shared.att.InternetMedia with meiall.mei.facsimile.att.Facsimile with meiall.mei.shared.att.MetadataPointing with meiall.mei.shared.att.Pointing with meiall.mei.shared.att.StartId with meiall.mei.shared.att.VisualOffset with meiall.mei.figtable.model.GraphicLike {
+case class Graphic(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meiall.Element with _root_.meiall.mei.shared.att.Common with _root_.meiall.mei.shared.att.coordinated.Ul with _root_.meiall.mei.shared.att.Dimensions with _root_.meiall.mei.shared.att.InternetMedia with _root_.meiall.mei.facsimile.att.Facsimile with _root_.meiall.mei.shared.att.MetadataPointing with _root_.meiall.mei.shared.att.Pointing with _root_.meiall.mei.shared.att.StartId with _root_.meiall.mei.shared.att.VisualOffset with _root_.meiall.mei.figtable.model.GraphicLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("class", "copyof", "corresp", "decls", "facs", "follows", "height", "ho", "label", "mimetype", "n", "next", "precedes", "prev", "resp", "sameas", "startid", "synch", "target", "targettype", "to", "type", "ulx", "uly", "vo", "width", "xlink:actuate", "xlink:role", "xlink:show", "xml:base", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)

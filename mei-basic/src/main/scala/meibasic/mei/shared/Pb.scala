@@ -10,7 +10,7 @@ import meibasic.Validator
  * Ident: pb
  * Module: MEI.shared
  */
-case class Pb(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with meibasic.mei.shared.att.Common with meibasic.mei.shared.att.pb.Log with meibasic.mei.visual.att.pb.Vis with meibasic.mei.shared.model.PbLike {
+case class Pb(elements: scala.List[Element], attributes: scala.collection.immutable.SeqMap[java.lang.String, java.lang.String])  extends meibasic.Element with _root_.meibasic.mei.shared.att.Common with _root_.meibasic.mei.shared.att.pb.Log with _root_.meibasic.mei.visual.att.pb.Vis with _root_.meibasic.mei.shared.model.PbLike {
   override def validate(): Boolean = {
     val allowedAttrs = Set("folium", "label", "type", "xml:id")
     val attributesValid = attributes.keys.forall(allowedAttrs.contains)
