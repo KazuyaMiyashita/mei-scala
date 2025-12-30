@@ -20,7 +20,12 @@ object MeiXML {
           case m => (m.key, m.value.text)
         }
       )
-      val children = e.child.flatMap(n => Option(loadElement(n))).toList
+      val children = e.child.flatMap { n => 
+        loadElement(n) match {
+          case t: meibasic.Text if t.value.trim.isEmpty => None // No blank Text nodes are created
+          case other => Some(other)
+        }
+      }.toList
       
       e.label match {
       case "accid" => _root_.meibasic.mei.shared.Accid(children, attributes)

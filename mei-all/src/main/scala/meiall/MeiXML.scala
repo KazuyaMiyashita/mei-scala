@@ -20,7 +20,12 @@ object MeiXML {
           case m => (m.key, m.value.text)
         }
       )
-      val children = e.child.flatMap(n => Option(loadElement(n))).toList
+      val children = e.child.flatMap { n => 
+        loadElement(n) match {
+          case t: meiall.Text if t.value.trim.isEmpty => None // No blank Text nodes are created
+          case other => Some(other)
+        }
+      }.toList
       
       e.label match {
       case "abbr" => _root_.meiall.mei.edittrans.Abbr(children, attributes)
