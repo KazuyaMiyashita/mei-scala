@@ -38,9 +38,12 @@ object Generator {
     val elementContent =
       s"""package $prefix
          |
+         |import scala.collection.immutable.SeqMap
+         |
          |trait Element {
          |  def validate(): Boolean = true
          |  def children: scala.List[Element]
+         |  def attributes: SeqMap[String, String]
          |  def withChildren(newChildren: scala.List[Element]): Element
          |
          |  /**
@@ -75,6 +78,7 @@ object Generator {
          |
          |case class Text(value: java.lang.String) extends Element {
          |  override def children: scala.List[Element] = scala.Nil
+         |  override def attributes: SeqMap[String, String] = SeqMap()
          |  override def withChildren(newChildren: scala.List[Element]): Element = {
          |    if (newChildren.nonEmpty) throw new IllegalArgumentException("Text node cannot have children")
          |    this
