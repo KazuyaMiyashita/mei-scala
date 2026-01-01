@@ -1,0 +1,11 @@
+package meicmn.mei.analytical.att.chordmember
+
+/**
+ * Analytical domain attributes.
+ * 
+ * Ident: att.chordMember.anl
+ * Module: MEI.analytical
+ */
+trait Anl  extends _root_.meicmn.mei.analytical.att.IntervalHarmonic {
+
+} 

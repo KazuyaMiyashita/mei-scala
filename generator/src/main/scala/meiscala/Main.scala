@@ -14,6 +14,7 @@ object Main {
 
     List(
       RunEachArgs("/odd/mei-basic_compiled_formatted.odd", "meibasic", "mei-basic/src/main/scala"),
+      RunEachArgs("/odd/mei-CMN_compiled.odd", "meicmn", "mei-cmn/src/main/scala"),
       RunEachArgs("/odd/mei-all_compiled.odd", "meiall", "mei-all/src/main/scala"),
     ).foreach(runEach)
   }
@@ -32,12 +33,11 @@ object Main {
 
     val outputRoot = Paths.get(args.outputPath)
 
-    // 出力先ディレクトリが存在する場合は中身を削除
     if (Files.exists(outputRoot)) {
       Files
         .walk(outputRoot)
-        .sorted(Comparator.reverseOrder())                           // 深い階層から削除
-        .forEach(path => if (path != outputRoot) Files.delete(path)) // outputRoot自体は残す（または削除して再作成でも可）
+        .sorted(Comparator.reverseOrder())
+        .forEach(path => if (path != outputRoot) Files.delete(path))
     }
 
     println(s"Writing ${files.size} files to ${outputRoot.toAbsolutePath}...")
